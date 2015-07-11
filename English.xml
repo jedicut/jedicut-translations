@@ -1,0 +1,629 @@
+<!-- ******************	-->
+<!-- Jedicut - English 	-->
+<!-- Auteur : Jerome 	-->
+<!-- Date création : 25/09/05 	-->
+<!-- ******************	-->
+
+
+<Translation>
+
+<FAPropos Caption="Jedicut">
+	<MemoAPropos>
+		<Lines>
+			<Items Index="0" Value="I refuse all responsabilities in the use  that it has been done with this software."/>
+			<Items Index="1" Value=""/>
+			<Items Index="2" Value=""/>
+			<Items Index="3" Value="Thanks to report any bug on Aeropassion's forum."/>
+		</Lines>
+	</MemoAPropos>
+	<BtnOk Caption="OK"/>
+</FAPropos>
+
+<FAssistantDecoupe Caption="Cutting Wizard">
+	<LblDecalage Caption="Offset (mm):"/>
+	<LblEnvergure Caption="Scale (mm):"/>
+	<LblFleche Caption="Sweepback (mm):"/>
+	<LblAile Caption="Wing"/>
+	<LblLongueurTable Caption="Length of hot wire (mm):"/>
+	<LblLongueurX Caption="Length of X (mm):"/>
+	<CheckBoxTroncon Caption="Multiple sections" />
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Cancel"/>
+
+	<JvSpeedBtnCentrer Hint="Center cut" />
+	<JvSpeedBtnAdd Hint="Add a section" />
+	<JvSpeedBtnDelete Hint="Delete the section" />
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="The value of offset is not compatible with the length of the cut."/>
+		<Item Name="MessageErreur02" Value="The length of the cut is not compatible with the length of the table."/>
+		<Item Name="JvStringGridNumero" Value="i"/>
+  		<Item Name="JvStringGridLongueur" Value="Length"/>
+		<Item Name="IHMAssistantDecalage" Value="O"/>
+  		<Item Name="IHMAssistantLongueur" Value="L"/>
+		<Item Name="IHMAssistantFleche" Value="S"/>
+	</JvTranslatorStrings>
+</FAssistantDecoupe>
+
+<FAssociation Caption="Preferences">
+	<LblTitreP1 Caption="Do you want to associate files types"/>
+	<LblTitreP2 Caption="with Jedicut ?"/>
+	<CheckBoxDAT Caption="*.dat - Profile file"/>
+	<CheckBoxJDC Caption="*.jdc - Wing cutting file"/>
+	<CheckBoxJDP Caption="*.jdp - Profile file"/>
+	<CheckBoxPRF Caption="*.prf - Profile file"/>
+	<LblLangue Caption="Select a language for Jedicut."/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Cancel"/>
+</FAssociation>
+
+<FChildDecoupe>
+	<LabeledEditEmplanture>
+		<SubLabel Caption="Wing Root :"/>
+	</LabeledEditEmplanture>
+	<LabeledEditSaumon>
+		<SubLabel Caption="Wing Tip :"/>
+	</LabeledEditSaumon>
+	<LEditCordeEmplanture>
+		<SubLabel Caption="Wing Root Chord (mm) :"/>
+	</LEditCordeEmplanture>
+	<LEditEpRelativeEmplanture>
+		<SubLabel Caption="Wing root relative thickness :"/>
+	</LEditEpRelativeEmplanture>
+	<LEditCordeSaumon>
+		<SubLabel Caption="Wing Tip Chord (mm) :"/>
+	</LEditCordeSaumon>
+	<LEditEpRelativeSaumon>
+		<SubLabel Caption="Wing tip relative thickness :"/>
+	</LEditEpRelativeSaumon>
+	<LEditVrillageEmplanture>
+		<SubLabel Caption="Twist Angle (°) :"/>
+	</LEditVrillageEmplanture>
+	<LEditVrillageSaumon>
+		<SubLabel Caption="Twist Angle (°) :"/>
+	</LEditVrillageSaumon>
+	<LabeledEditDepart>
+		<SubLabel Caption="Start Height"/>
+	</LabeledEditDepart>
+	<LabeledEditDegagement>
+		<SubLabel Caption="Release Height"/>
+	</LabeledEditDegagement>
+	<CheckBoxVrillage Caption="View Twist"/>
+	<CheckBoxAssistantDecoupe Caption="Cut Wizard"/>
+
+	<RadioGroupAile Caption="Wing">
+		<Items>
+			<Item Index="0" Value="Left"/>
+     			<Item Index="1" Value="Right"/>
+		</Items>
+	</RadioGroupAile>
+	
+	<GroupBoxPeauEmpl Caption="Skin Property"/>
+	<LabeledEditEpaisseurEmpl>
+		<SubLabel Caption="Thickness (mm) :"/>
+	</LabeledEditEpaisseurEmpl>
+	<CheckBoxInverserPeauEmpl Caption="Inverse"/>
+
+	<GroupBoxPeauSaum Caption="Skin Property"/>
+	<LabeledEditEpaisseurSaum>
+		<SubLabel Caption="Thickness (mm) :"/>
+	</LabeledEditEpaisseurSaum>
+	<CheckBoxInverserPeauSaum Caption="Inverse"/>
+
+	<LabelDescription Caption="Description :"/>
+	<CheckBoxProfilSymetrique Caption="Symmetrical profile"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Jedicut can't open this file."/>
+		<Item Name="MessageErreur02" Value="An error occured'a calculating points of profiles."/>
+		<Item Name="TexteInterface01" Value="No Name - Cut"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Profile (*.jdp)|*.jdp|Profile (*.prf)|*.prf|Profile (*.dat)|*.dat"/>
+	</JvTranslatorStrings>
+</FChildDecoupe>
+
+<FChildProfil>
+	<LblNom Caption="Name :"/>	
+	<LblEpaisseurRelative Caption="Relative thickness :"/>
+	<LblDescription Caption="Description :"/>
+	<LblExtrado Caption="--> Above"/>
+	<BitBtnAppliquer Caption="Apply"/>
+	<LblIntrado Caption="--> Below"/>
+
+	<!-- <PopupMenuChildProfil> -->
+		<Insrer1 Caption="Insert"/>
+		<Supprimer1 Caption="Delete"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Jedicut can't open this file."/>
+		<Item Name="MessageErreur02" Value="Relative thickness can't be equal to 0."/>
+		<Item Name="MessageTexte01" Value="There is no description for this file type."/>
+		<Item Name="TexteInterface01" Value="No name - Profile"/>
+	</JvTranslatorStrings>
+
+</FChildProfil>
+
+<FConfirmationDecoupe Caption="Cut">
+	<MemoAssistant>
+		<Lines>
+			<Item Index="0" Value="Cut wizard configuration"/>
+		</Lines>
+	</MemoAssistant>
+	<BtnAssistant Caption="Configuration"/>
+	<RadioButtonMateriau Caption="Material heating control"/>
+	<RadioButtonManuel Caption="Manuel heating control"/>
+	<LblConfirmation Caption="Do you really want to start to cut out?"/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Cancel"/>
+	<LblModeChauffe Caption="Heating control configuration of the board :"/>
+	<JvTranslatorStrings>
+		<Item Name="MessageEtatChauffeManuel" Value="External"/>
+		<Item Name="MessageEtatChauffePC" Value="Computeur"/>
+	</JvTranslatorStrings>
+</FConfirmationDecoupe>
+
+<FCycleDecoupe Caption="Cycle of Cut Manager">
+
+	<RadioGroupCote Caption="Profile">
+		<Items>
+			<Item Index="0" Value="Wing Root"/>
+     			<Item Index="1" Value="Wing Tip"/>
+		</Items>
+	</RadioGroupCote>
+
+	<GroupBoxAffichage Caption="View"/>
+		<SpeedBtnZoomIn Hint="Zoom in"/>
+		<SpeedBtnZoomOut Hint="Zoom out"/>
+		<SpeedBtnShowPoint Hint="View all points"/>
+
+	<GroupBoxKeyPoint Caption="Key point"/>
+		<SpeedBtnAddKey Hint="Add a key point"/>
+		<SpeedBtnDeleteKey Hint="Delete a key point"/>
+
+	<BtnParDefaut Caption="Default..."/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Cancel"/>
+	<BtnAppliquer Caption="Apply"/>
+
+	<FrameCycleAile>	
+		<LblListe Caption="Cut cycle"/>
+	
+		<BtnSupprimer Caption="Delete"/>
+		<BtnSupprimerTout Caption="Delete all"/>
+	
+		<GroupBoxProprietes Caption="Properties"/>
+			<LabeledEditDeplacement>
+				<SubLabel Caption="Move (mm) :"/>
+			</LabeledEditDeplacement>
+			<CheckBoxLissage Caption="Smooth"/>
+			<CheckBoxInverser Caption="Inverse"/>
+			<RadioGroupQualification Caption="Type">
+				<Items>
+					<Item Index="0" Value="Neutral"/>
+	     				<Item Index="1" Value="Count"/>
+	     				<Item Index="2" Value="RAZ Counter"/>
+				</Items>
+			</RadioGroupQualification>
+			<RadioGroupVitesse Caption="Speed">
+				<Items>
+					<Item Index="0" Value="Cut"/>
+	     				<Item Index="1" Value="Fast"/>
+				</Items>
+			</RadioGroupVitesse>
+			<RadioGroupSpecial Caption="Special">
+				<Items>
+					<Item Index="0" Value="Standard"/>
+	     				<Item Index="1" Value="Start Height"/>
+	     				<Item Index="2" Value="Release Height"/>
+				</Items>
+			</RadioGroupSpecial>
+
+		<JvTranslatorStringsCycleAile>
+			<Item Name="MessageTexte01" Value="Extrado"/>
+			<Item Name="MessageTexte02" Value="Intrado"/>
+			<Item Name="MessageTexte03" Value="Pause"/>
+			<Item Name="MessageTexte04" Value="Horizontal"/>
+			<Item Name="MessageTexte05" Value="Vertical"/>
+			<Item Name="MessageTexte06" Value="Time (ms) :"/>
+			<Item Name="MessageTexte07" Value="Move (mm) :"/>
+		</JvTranslatorStringsCycleAile>
+
+	</FrameCycleAile>
+	
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="Do you want to use this cut cycle as default ?"/>
+		<Item Name="MessageDialogue02" Value="The number of key points is different between wing root and wing tip.\nDo you want to correct it ?"/>
+		<Item Name="MessageDialogue03" Value="The number of key points is different between wing root and wing tip."/>
+	</JvTranslatorStrings>
+
+</FCycleDecoupe>
+
+<FDecoupeEnCours Caption="CNC controller communication">
+	<LabelDecoupe Caption="Cut in progress..."/>
+	<BtnPause Caption="Pause"/>
+	<BtnAnnuler Caption="Cancel"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageBtn01" Value="Pause"/>
+		<Item Name="MessageBtn02" Value="Resume"/>
+		<Item Name="MessageTexte01" Value="Cut in progress..."/>
+		<Item Name="MessageTexte02" Value="Cut in pause."/>
+	</JvTranslatorStrings>
+
+</FDecoupeEnCours>
+
+<FGestionLongeron Caption="Ribs Manager">
+	<LblListeLongerons Caption="Ribs List"/>
+
+	<GroupboxProprietes Caption="Properties"/>
+		<LabeledEditEmplantureHauteur>
+			<SubLabel Caption="Height (mm) :"/>
+		</LabeledEditEmplantureHauteur>
+		<LabeledEditEmplantureLargeur>
+			<SubLabel Caption="Width (mm) :"/>
+		</LabeledEditEmplantureLargeur>
+		<LabeledEditSaumonHauteur>
+			<SubLabel Caption="Height (mm) :"/>
+		</LabeledEditSaumonHauteur>
+		<LabeledEditSaumonLargeur>
+			<SubLabel Caption="Width (mm) :"/>
+		</LabeledEditSaumonLargeur>
+		<LabeledEditAngle>
+			<SubLabel Caption="Angle (°) :"/>
+		</LabeledEditAngle>
+		<CheckBoxParalleleAttaque Caption="Parallel to Leading Edge"/>
+		<CheckBoxRegulier Caption="Constant section"/>
+		<LabeledEditEmplantureOffsetX>
+			<SubLabel Caption="Wing root - Offset X (mm) :"/>
+		</LabeledEditEmplantureOffsetX>
+		<LabeledEditSaumonOffsetX>
+			<SubLabel Caption="Wing tip - Offset X (mm) :"/>
+		</LabeledEditSaumonOffsetX>
+		<RadioGroupPosition Caption="Position">
+			<Items>
+				<Item Index="0" Value="Above"/>
+     				<Item Index="1" Value="Below"/>
+			</Items>
+		</RadioGroupPosition>
+		<LblEmplanture Caption="Wing Root"/>
+		<LblSaumon Caption="Wing Tip"/>
+
+	<BtnNouveau Caption="New"/>
+	<BtnSupprimer Caption="Delete"/>
+	<BtnSupprimerTout Caption="Delete all"/>
+	<BtnOk Caption="OK"/>
+	<Btnannuler Caption="Cancel"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageTexte01" Value="Rectangle"/>
+		<Item Name="MessageTexte02" Value="Round"/>
+		<Item Name="MessageTexte03" Value="Height (mm) :"/>
+		<Item Name="MessageTexte04" Value="Width (mm) :"/>
+		<Item Name="MessageTexte05" Value="Depth (mm) :"/>
+		<Item Name="MessageTexte06" Value="Diameter (mm) :"/>
+	</JvTranslatorStrings>
+
+</FGestionLongeron>
+
+<FMain>
+<!-- MainMenu -->
+		<Fichier1 Caption="&File"/>
+			<Nouveau1 Caption="&New"/>
+				<Dcoupe1 Caption="Wing Cut"/>
+				<Profil1 Caption="Profile"/>
+			<Ouvrir1 caption="&Open"/>
+			<Enregistrer1 Caption="&Save"/>
+			<Enregistrersous1 Caption="Save &As..."/>
+			<Fermer1 Caption="Close"/>
+			<ToutFermer1 Caption="Close All"/>
+			<ImporterDXF1 Caption="Import DXF"/>
+			<Aperuavantdcoupe1 Caption="Cut Preview"/>
+			<Dcouper1 Caption="Cut"/>
+			<Quitter1 Caption="Exit"/>
+		<Option1 Caption="&Tools"/>
+			<RinitialiserPosition1 Caption="Go to the reference position"/>
+			<EnregistrerPosition1 Caption="Save the reference position"/>
+			<Assistantdcoupe1 Caption="Cutting &Wizard"/>
+			<Gestiondeslongerons1 Caption="&Ribs Manager"/>
+			<Cycledecoupe1 Caption="&Cycle of Cut Manager"/>
+			<Logiciel1 Caption="&Options"/>
+		<Fentre1 Caption="&Window"/>
+			<Barredoutils1 Caption="Tool Bar"/>
+			<Convertisseur1	 Caption="Converter in/mm"/>
+			<Contrlemanuel1 Caption="Manual control"/>
+		<Help1 Caption="&Help"/>
+			<AideJedicut Caption="Jedicut Help"/>
+			<Preferences1 Caption="Preferences"/>
+			<About1 Caption="About..."/>
+<!-- /MainMenu -->
+<!-- JVPopupMenu -->
+		<PetitesIcones1 Caption="Small Icons"/>
+		<GrandesIcones1 Caption="Big Icons"/>
+		<Masquer1 Caption="Hide"/>
+<!-- /JVPopupMenu -->
+	<LabeledEditDeplacement>
+		<SubLabel Caption="Move (mm) :"/>
+	</LabeledEditDeplacement>
+
+	<CheckBoxDependance Caption="Dependence"/>
+	<CheckBoxGuillotine Caption="Guillotine"/>
+	<CheckBoxOblique Caption="Oblique"/>
+	<CheckBoxLissage Caption="Smooth"/>
+
+	<RadioButtonLente Caption="Slow"/>
+	<RadioButtonRapide Caption="Fast"/>
+
+	<CheckBoxActiverChauffe Caption="Activate Heating"/>
+	<GroupBoxChauffe Caption=""/>
+	<RadioButtonMateriau Caption="Choose Material"/>
+	<RadioButtonManuel Caption="Manual Control"/>
+
+	<BitBtnValider Caption="Validate"/>
+
+	<!-- Liste des chaines en dures -->
+	<JvTranslatorStringsMain>
+		<Item Name="MessageErreur01" Value="The language file is missing : "/>
+		<Item Name="MessageErreur02" Value="An error occured with the language file."/>
+		<Item Name="MessageErreur03" Value="Dll Jedipix is missing."/>
+		<Item Name="MessageErreur04" Value="Help file can't be found."/>
+		<Item Name="MessageErreur05" Value="You should install Microsoft HTML Help 1.2 or superior."/>
+		<Item Name="MessageErreur06" Value="The number of key points is different between wing root and wing tip."/>
+  		<Item Name="OpenDialogFilterAll" Value="Wing Cut (*.jdc)|*.jdc|Profile  (*.jdp)|*.jdp|Profile (*.prf)|*.prf|Profile (*.dat)|*.dat|All|*.*"/>
+  		<Item Name="OpenDialogFilterImporterDXF" Value="Import DXF File|*.dxf"/>
+  		<Item Name="SaveDialogFilterJDC" Value="Wing Cut (*.jdc)|*.jdc"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Profile (*.jdp)|*.jdp|Profile (*.prf)|*.prf|Profile (*.dat)|*.dat"/>
+  		<Item Name="MessageDialogue01" Value="Are you sure you want to bring the machine to the reference position ?"/>
+  		<Item Name="MessageDialogue02" Value="Do you want to save the reference position ?"/>
+  		<Item Name="PilotageManuel01" Value="Move (mm) :"/>
+  		<Item Name="PilotageManuel02" Value="X (mm) :"/>
+  		<Item Name="PilotageManuel03" Value="Y (mm) :"/>
+  		<Item Name="PilotageManuel04" Value="Angle (°) :"/>
+	</JvTranslatorStringsMain>
+</FMain>
+
+<FOptions Caption="Options">
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="Do you want to remove this table ?"/>
+		<Item Name="MessageDialogue02" Value="This table doesn't exist."/>
+		<Item Name="MessageDialogue03" Value="The table was created successfully."/>
+		<Item Name="MessageDialogue04" Value="Error writing file."/>
+		<Item Name="MessageDialogue05" Value="This table already exist. Enter un new table name."/>
+	</JvTranslatorStrings>
+
+	<JvNavPanelPageCommunication Caption="Communication"/>
+
+	<JvNavPanelPageChauffe Caption="Heating"/>
+
+	<JvNavPanelPageMachine Caption="CNC controller"/>
+
+	<FrameNavChauffe1>
+		<LblTitre1 Caption="Activate heating :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="To activate heating you have"/>
+				<Item Index="1" Value="to synchronize engines with"/>
+				<Item Index="2" Value="an external timer."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Materials List :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="You can configure your"/>
+				<Item Index="1" Value="favorites materials list in order"/>
+				<Item Index="2" Value="to save heating value for"/>
+				<Item Index="3" Value="each cut."/>
+			</Lines>
+		</Memo2>
+	</FrameNavChauffe1>
+	
+	<FrameNavCommunication1>
+		<LblTitre1 Caption="Plug-in :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Choose plug-in corresponding"/>
+				<Item Index="1" Value="to your CNC."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Parallel Port :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="The manual configuration of the"/>
+				<Item Index="1" Value="heating control bits is not available."/>
+				<Item Index="2" Value=""/>
+			</Lines>
+		</Memo2>
+	</FrameNavCommunication1>
+	
+	<FrameNavMachine1>
+		<LblTitre1 Caption="Engine"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Number mm / step : Indicate"/>
+				<Item Index="1" Value="distance between 2 steps."/>
+				<Item Index="2" Value=""/>
+				<Item Index="3" Value=""/>
+				<Item Index="4" Value="Speed : Integer indicating time"/>
+				<Item Index="5" Value="elapse between 2 step of"/>
+				<Item Index="6" Value="engine."/>
+				<Item Index="7" Value=""/>
+				<Item Index="8" Value="Inverse : Enable to inverse"/>
+				<Item Index="9" Value="engine direction."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Important :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="If heating control is enable,"/>
+				<Item Index="1" Value="speed engine is control by the"/>
+				<Item Index="2" Value="external timer."/>
+				<Item Index="3" Value=""/>
+			</Lines>
+		</Memo2>
+	</FrameNavMachine1>
+
+
+	<FrameOptionCommunication1>
+		<GroupBoxPlugIn Caption="Plug-in"/>
+		<LblListePlugIn Caption="Communication mode"/>
+		<LblDescription Caption="Description"/>
+
+		<GroupBoxConfiguration Caption="Parallel Port configuation"/>
+		<Label1 Caption="Engine On/Off : "/>
+		<Label3 Caption="View of the DB25 connector"/>
+		<Label4 Caption="Engine X1"/>
+		<Label5 Caption="Engine X2"/>
+		<Label6 Caption="Engine Y1"/>
+		<Label7 Caption="Engine Y2"/>
+		<Label8 Caption="Direction"/>
+		<Label9 Caption="Clock"/>
+		<Label11 Caption="External Timer Pin :"/>
+		<Label12 Caption="Heating Status Pin :"/>
+		<Label13 Caption="Heating Control Pin :"/>
+		<Label14 Caption="Heating Return Pin :"/>
+
+		<CheckBoxSynchroniserMoteurAvecTimerExterne Caption="Synchronize engine rotation with external timer."/>
+
+		<LblEditFrequenceTimer>
+			<SubLabel Caption="Frequency timer :"/>
+		</LblEditFrequenceTimer>
+
+	</FrameOptionCommunication1>
+
+	<FrameOptionChauffe1>
+		<JvTranslatorStrings>
+			<Item Name="JvStringGridNom" Value="Name of the material"/>
+			<Item Name="JvStringGridV1" Value="V1"/>
+			<Item Name="JvStringGridC1" Value="C1"/>
+			<Item Name="JvStringGridR1" Value="R1"/>
+			<Item Name="JvStringGridV2" Value="V2"/>
+			<Item Name="JvStringGridC2" Value="C2"/>
+			<Item Name="JvStringGridR2" Value="R2"/>
+		</JvTranslatorStrings>
+		<CheckBoxActiverChauffe Caption="Enable / Disable heating control "/>
+		<CheckBoxLireMode Caption="Read the heating controle mode on parallel port (Manu / Auto)"/>
+		<CheckBoxChauffeDynamique Caption="Enable dynamic heating control"/>
+		<LblListeMateriaux Caption="Materials List :"/>
+		<BtnAjouter Caption="Add"/>
+		<BtnSupprimer Caption="Delete"/>
+		<LblEditDeplacement>
+			<SubLabel Caption="Move axis X (mm) :"/>
+		</LblEditDeplacement>
+		<LblVitesse Caption="Speed value :"/>
+		<BtnTester Caption="Test"/>
+		<LblTitreValChauffe Caption="Heating value :"/>
+		<BtnEnregistrer Caption="Save"/>
+		<LblEditNomMateriau>
+			<SubLabel Caption="Name of material :"/>
+		</LblEditNomMateriau>
+		<LblEditRayonnement>
+			<SubLabel Caption="Radiation (mm) :"/>
+		</LblEditRayonnement>
+		<RadioBtnMesure1 Caption="Measurement 1"/>
+		<RadioBtnMesure2 Caption="Measurement 2"/>	
+	</FrameOptionChauffe1>
+	
+	<FrameOptionMachine1>
+		<GroupBoxX1 Caption="Engine X1"/>
+		<LabeledEditCoeffX1>
+			<SubLabel Caption="Nb mm / pas"/>
+		</LabeledEditCoeffX1>
+		<LabeledEditVDecoupeX1>
+			<SubLabel Caption="Cut speed"/>
+		</LabeledEditVDecoupeX1>
+		<LabeledEditVRapideX1>
+			<SubLabel Caption="Fast Speed"/>
+		</LabeledEditVRapideX1>
+		<CheckBoxInverserX1 Caption="Inverse"/>
+
+		<GroupBoxX2 Caption="Engine X2"/>
+		<LabeledEditCoeffX2>
+			<SubLabel Caption="Nb mm / pas"/>
+		</LabeledEditCoeffX2>
+		<LabeledEditVDecoupeX2>
+			<SubLabel Caption="Cut speed"/>
+		</LabeledEditVDecoupeX2>
+		<LabeledEditVRapideX2>
+			<SubLabel Caption="Fast Speed"/>
+		</LabeledEditVRapideX2>
+		<CheckBoxInverserX2 Caption="Inverse"/>
+
+		<GroupBoxY1 Caption="Engine Y1"/>
+		<LabeledEditCoeffY1>
+			<SubLabel Caption="Nb mm / pas"/>
+		</LabeledEditCoeffY1>
+		<LabeledEditVDecoupeY1>
+			<SubLabel Caption="Cut speed"/>
+		</LabeledEditVDecoupeY1>
+		<LabeledEditVRapideY1>
+			<SubLabel Caption="Fast Speed"/>
+		</LabeledEditVRapideY1>
+		<CheckBoxInverserY11 Caption="Inverse"/>
+
+		<GroupBoxY2 Caption="Engine Y2"/>
+		<LabeledEditCoeffY2>
+			<SubLabel Caption="Nb mm / pas"/>
+		</LabeledEditCoeffY2>
+		<LabeledEditVDecoupeY2>
+			<SubLabel Caption="Cut speed"/>
+		</LabeledEditVDecoupeY2>
+		<LabeledEditVRapideY2>
+			<SubLabel Caption="Fast Speed"/>
+		</LabeledEditVRapideY2>
+		<CheckBoxInverserY2 Caption="Inverse"/>
+
+		<LblEditLongueurMachine>
+			<SubLabel Caption="Length of hot wire (mm) :"/>
+		</LblEditLongueurMachine>
+		<LblEditLargeurMachine>
+			<SubLabel Caption="Length of X axis (mm) :"/>
+		</LblEditLargeurMachine>
+
+		<LblEstimationDecoupeX1 Caption="Estimate (mm/s)"/>
+		<LblEstimationRapideX1 Caption="Estimate (mm/s)"/>
+		<LblEstimationDecoupeX2 Caption="Estimate (mm/s)"/>
+		<LblEstimationRapideX2 Caption="Estimate (mm/s)"/>
+		<LblEstimationDecoupeY1 Caption="Estimate (mm/s)"/>
+		<LblEstimationRapideY1 Caption="Estimate (mm/s)"/>
+		<LblEstimationDecoupeY2 Caption="Estimate (mm/s)"/>
+		<LblEstimationRapideY2 Caption="Estimate (mm/s)"/>
+
+	</FrameOptionMachine1>
+
+	<JvLblNomTable Caption="Active Table :"/>
+	<JvBitBtnChargerTable Caption="Load"/>
+	<JvBitBtnCreerTable Caption="New"/>
+	<JvBitBtnSupprimerTable Caption="Delete"/>
+
+	<BtnOk Caption="OK"/>
+	<BtnAppliquer Caption="Apply"/>	
+	<BtnAnnuler Caption="Cancel"/>
+</FOptions>
+
+<FSimulation Caption="">
+	<TabSheet1 Caption="Cut"/>
+	<TabSheet2 Caption="Heating"/>
+	<GroupBoxPoly Caption="Foam"/>
+		<LabeledEditHauteur>
+			<SubLabel Caption="Height"/>
+		</LabeledEditHauteur>
+		<LabeledEditLargeur>
+			<SubLabel Caption="Width"/>
+		</LabeledEditLargeur>
+	<GroupBoxSimulation Caption="Simulation"/>
+		<CheckBoxMoteurX1Y1 Caption="Engine X1 and Y1"/>
+		<CheckBoxMoteurX2Y2 Caption="Engine X2 and Y2"/>
+	<GroupBoxZoom Caption="View"/>
+	<BitBtnFermer Caption="Close"/>
+</FSimulation>
+
+<FConvertisseur Caption="Converter">
+	<LblDescription Caption="Enter value to convert by his unit :"/>
+	<LblEdtMm>
+		<SubLabel Caption="mm"/>
+	</LblEdtMm>
+	<LblEditIn>
+		<SubLabel Caption="in"/>
+	</LblEditIn>
+</FConvertisseur>
+
+</Translation>
+

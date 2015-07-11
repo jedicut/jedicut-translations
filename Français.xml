@@ -1,0 +1,628 @@
+<!-- ******************	-->
+<!-- Jedicut - Français 	-->
+<!-- Auteur : Jerome 	-->
+<!-- Date création : 25/09/05 	-->
+<!-- ******************	-->
+
+<Translation>
+
+<FAPropos Caption="Jedicut">
+	<MemoAPropos>
+		<Lines>
+			<Items Index="0" Value="Je décline toute responsabilité dans l'usage qu'il sera fait de cette"/>
+			<Items Index="1" Value="application."/>
+			<Items Index="2" Value=""/>
+			<Items Index="3" Value="Merci de reporter tous problèmes d'utilisation sur le forum de Aeropassion."/>
+		</Lines>
+	</MemoAPropos>
+	<BtnOk Caption="OK"/>
+</FAPropos>
+
+<FAssistantDecoupe Caption="Assistant de découpe">
+	<LblDecalage Caption="Décalage (mm):"/>
+	<LblEnvergure Caption="Longueur Découpe (mm):"/>
+	<LblFleche Caption="Flèche (mm):"/>
+	<LblAile Caption="Aile"/>
+	<LblLongueurTable Caption="Longueur du fil chaud (mm):"/>
+	<LblLongueurX Caption="Longueur des X (mm):"/>
+	<CheckBoxTroncon Caption="Multi tronçons" />
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Annuler"/>
+	
+	<JvSpeedBtnCentrer Hint="Centrer la découpe" />
+	<JvSpeedBtnAdd Hint="Ajouter un tronçon" />
+	<JvSpeedBtnDelete Hint="Supprimer le tronçon" />
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="La valeur du décalage n'est pas compatible avec la longueur de la découpe."/>
+		<Item Name="MessageErreur02" Value="La longueur de la découpe n'est pas réalisable avec cette machine."/>
+		<Item Name="JvStringGridNumero" Value="i"/>
+  		<Item Name="JvStringGridLongueur" Value="Longueur"/>
+		<Item Name="IHMAssistantDecalage" Value="D"/>
+  		<Item Name="IHMAssistantLongueur" Value="L"/>
+		<Item Name="IHMAssistantFleche" Value="F"/>
+	</JvTranslatorStrings>
+</FAssistantDecoupe>
+
+<FAssociation Caption="Préférences">
+	<LblTitreP1 Caption="Voulez-vous associer les types de fichiers"/>
+	<LblTitreP2 Caption="suivant avec Jedicut ?"/>
+	<CheckBoxDAT Caption="*.dat - Fichier de profil"/>
+	<CheckBoxJDC Caption="*.jdc - Fichier de découpe d'aile"/>
+	<CheckBoxJDP Caption="*.jdp - Fichier de profil"/>
+	<CheckBoxPRF Caption="*.prf - Fichier de profil"/>
+	<LblLangue Caption="Choix de la langue de Jedicut."/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Annuler"/>
+</FAssociation>
+
+<FChildDecoupe>
+	<LabeledEditEmplanture>
+		<SubLabel Caption="Emplanture:"/>
+	</LabeledEditEmplanture>
+	<LabeledEditSaumon>
+		<SubLabel Caption="Saumon :"/>
+	</LabeledEditSaumon>
+	<LEditCordeEmplanture>
+		<SubLabel Caption="Corde Emplanture (mm) :"/>
+	</LEditCordeEmplanture>
+	<LEditEpRelativeEmplanture>
+		<SubLabel Caption="Epaisseur relative Emplanture :"/>
+	</LEditEpRelativeEmplanture>
+	<LEditCordeSaumon>
+		<SubLabel Caption="Corde Saumon (mm) :"/>
+	</LEditCordeSaumon>
+	<LEditEpRelativeSaumon>
+		<SubLabel Caption="Epaisseur relative Saumon :"/>
+	</LEditEpRelativeSaumon>
+	<LEditVrillageEmplanture>
+		<SubLabel Caption="Vrillage (°) :"/>
+	</LEditVrillageEmplanture>
+	<LEditVrillageSaumon>
+		<SubLabel Caption="Vrillage (°) :"/>
+	</LEditVrillageSaumon>
+	<LabeledEditDepart>
+		<SubLabel Caption="Hauteur Départ (mm) :"/>
+	</LabeledEditDepart>
+	<LabeledEditDegagement>
+		<SubLabel Caption="Hauteur Dégagement (mm) :"/>
+	</LabeledEditDegagement>
+	<CheckBoxVrillage Caption="Aperçu du vrillage"/>
+	<CheckBoxAssistantDecoupe Caption="Assistant Découpe"/>
+
+	<RadioGroupAile Caption="Aile">
+		<Items>
+			<Item Index="0" Value="Gauche"/>
+     			<Item Index="1" Value="Droite"/>
+		</Items>
+	</RadioGroupAile>
+	
+	<GroupBoxPeauEmpl Caption="Gestion de la peau"/>
+	<LabeledEditEpaisseurEmpl>
+		<SubLabel Caption="Epaisseur de la peau (mm) :"/>
+	</LabeledEditEpaisseurEmpl>
+	<CheckBoxInverserPeauEmpl Caption="Inverser"/>
+
+	<GroupBoxPeauSaum Caption="Gestion de la peau"/>
+	<LabeledEditEpaisseurSaum>
+		<SubLabel Caption="Epaisseur de la peau (mm) :"/>
+	</LabeledEditEpaisseurSaum>
+	<CheckBoxInverserPeauSaum Caption="Inverser"/>
+
+	<LabelDescription Caption="Description :"/>
+	<CheckBoxProfilSymetrique Caption="Profil symétrique"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Impossible d'ouvrir ce fichier."/>
+		<Item Name="MessageErreur02" Value="Une erreur est apparue lors du calcul des points des profils."/>
+		<Item Name="TexteInterface01" Value="Sans nom - Découpe"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Profil (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat"/>
+	</JvTranslatorStrings>
+</FChildDecoupe>
+
+<FChildProfil>
+	<LblNom Caption="Nom :"/>	
+	<LblEpaisseurRelative Caption="Epaisseur relative :"/>
+	<LblDescription Caption="Description :"/>
+	<LblExtrado Caption="--> Extrado"/>
+	<BitBtnAppliquer Caption="Appliquer"/>
+	<LblIntrado Caption="--> Intrado"/>
+
+	<!-- <PopupMenuChildProfil> -->
+		<Insrer1 Caption="Insérer"/>
+		<Supprimer1 Caption="Supprimer"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Impossible d'ouvrir ce fichier."/>
+		<Item Name="MessageErreur02" Value="L'épaisseur relative ne peut pas être égale à 0."/>
+		<Item Name="MessageTexte01" Value="Aucune descrition n'est disponible pour ce format de fichier."/>
+		<Item Name="TexteInterface01" Value="Sans Nom - Profil"/>
+	</JvTranslatorStrings>
+
+</FChildProfil>
+
+<FConfirmationDecoupe Caption="Découper">
+	<MemoAssistant>
+		<Lines>
+			<Item Index="0" Value="Configuration de l'assistant de découpe :"/>
+		</Lines>
+	</MemoAssistant>
+	<BtnAssistant Caption="Configurer"/>
+	<RadioButtonMateriau Caption="Chauffe en fonction du matériau :"/>
+	<RadioButtonManuel Caption="Chauffe réglée manuellement :"/>
+	<LblConfirmation Caption="Confirmer le lancement de la découpe ?"/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Annuler"/>
+	<LblModeChauffe Caption="Mode de chauffe de la machine :"/>
+	<JvTranslatorStrings>
+		<Item Name="MessageEtatChauffeManuel" Value="Externe"/>
+		<Item Name="MessageEtatChauffePC" Value="PC"/>
+	</JvTranslatorStrings>
+</FConfirmationDecoupe>
+
+<FCycleDecoupe Caption="Cycle de découpe">
+
+	<RadioGroupCote Caption="Profil">
+		<Items>
+			<Item Index="0" Value="Emplanture"/>
+     			<Item Index="1" Value="Saumon"/>
+		</Items>
+	</RadioGroupCote>
+	
+	<GroupBoxAffichage Caption="Affichage"/>
+		<SpeedBtnZoomIn Hint="Zoom intérieur"/>
+		<SpeedBtnZoomOut Hint="Zoom extérieur"/>
+		<SpeedBtnShowPoint Hint="Afficher les points"/>
+
+	<GroupBoxKeyPoint Caption="Points Clés"/>
+		<SpeedBtnAddKey Hint="Ajouter un point clé"/>
+		<SpeedBtnDeleteKey Hint="Supprimer un point clé"/>
+
+	<BtnParDefaut Caption="Par défaut..."/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Annuler"/>
+	<BtnAppliquer Caption="Appliquer"/>
+
+	<FrameCycleAile>	
+		<LblListe Caption="Cycle de découpe :"/>
+	
+		<BtnSupprimer Caption="Supprimer"/>
+		<BtnSupprimerTout Caption="Supprimer Tout"/>
+	
+		<GroupBoxProprietes Caption="Propriétés"/>
+			<LabeledEditDeplacement>
+				<SubLabel Caption="Déplacement (mm) :"/>
+			</LabeledEditDeplacement>
+			<CheckBoxLissage Caption="Lissage"/>
+			<CheckBoxInverser Caption="Inverser"/>
+			<RadioGroupQualification Caption="Type">
+				<Items>
+					<Item Index="0" Value="Neutre"/>
+	     				<Item Index="1" Value="Comptabilisé"/>
+	     				<Item Index="2" Value="RAZ Compteur"/>
+				</Items>
+			</RadioGroupQualification>
+			<RadioGroupVitesse Caption="Vitesse">
+				<Items>
+					<Item Index="0" Value="Découpe"/>
+	     				<Item Index="1" Value="Rapide"/>
+				</Items>
+			</RadioGroupVitesse>
+			<RadioGroupSpecial Caption="Spécialité">
+				<Items>
+					<Item Index="0" Value="Standard"/>
+	     				<Item Index="1" Value="Hauteur Départ"/>
+	     				<Item Index="2" Value="Hauteur Dégagement"/>
+				</Items>
+			</RadioGroupSpecial>
+
+		<JvTranslatorStringsCycleAile>
+			<Item Name="MessageTexte01" Value="Extrado"/>
+			<Item Name="MessageTexte02" Value="Intrado"/>
+			<Item Name="MessageTexte03" Value="Pause"/>
+			<Item Name="MessageTexte04" Value="Horizontale"/>
+			<Item Name="MessageTexte05" Value="Verticale"/>
+			<Item Name="MessageTexte06" Value="Durée (ms) :"/>
+			<Item Name="MessageTexte07" Value="Déplacement (mm) :"/>
+		</JvTranslatorStringsCycleAile>
+
+	</FrameCycleAile>
+	
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="Souhaitez-vous utiliser ce cycle par défaut ?"/>
+		<Item Name="MessageDialogue02" Value="Le nombre de points clés est différent entre l'emplanture et le saumon.\nVoulez vous corriger ?"/>
+		<Item Name="MessageDialogue03" Value="L'emplanture et le saumon ont un nombre de points clés différent."/>
+	</JvTranslatorStrings>
+
+</FCycleDecoupe>
+
+<FDecoupeEnCours Caption="Communication machine">
+	<LabelDecoupe Caption="Découpe en cours"/>
+	<BtnPause Caption="Pause"/>
+	<BtnAnnuler Caption="Cancel"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageBtn01" Value="Pause"/>
+		<Item Name="MessageBtn02" Value="Reprendre"/>
+		<Item Name="MessageTexte01" Value="Découpe en cours..."/>
+		<Item Name="MessageTexte02" Value="Découpe en pause."/>
+	</JvTranslatorStrings>
+
+</FDecoupeEnCours>
+
+<FGestionLongeron Caption="Gestion des longerons">
+	<LblListeLongerons Caption="Liste des longerons :"/>
+
+	<GroupboxProprietes Caption="Propriétés"/>
+		<LabeledEditEmplantureHauteur>
+			<SubLabel Caption="Hauteur (mm) :"/>
+		</LabeledEditEmplantureHauteur>
+		<LabeledEditEmplantureLargeur>
+			<SubLabel Caption="Largeur (mm) :"/>
+		</LabeledEditEmplantureLargeur>
+		<LabeledEditSaumonHauteur>
+			<SubLabel Caption="Hauteur (mm) :"/>
+		</LabeledEditSaumonHauteur>
+		<LabeledEditSaumonLargeur>
+			<SubLabel Caption="Largeur (mm) :"/>
+		</LabeledEditSaumonLargeur>
+		<LabeledEditAngle>
+			<SubLabel Caption="Angle (°) :"/>
+		</LabeledEditAngle>
+		<CheckBoxParalleleAttaque Caption="Parallèle Bord d'Attaque"/>
+		<CheckBoxRegulier Caption="Section constante"/>
+		<LabeledEditEmplantureOffsetX>
+			<SubLabel Caption="Emplanture - Offset X (mm) :"/>
+		</LabeledEditEmplantureOffsetX>
+		<LabeledEditSaumonOffsetX>
+			<SubLabel Caption="Saumon - Offset X (mm) :"/>
+		</LabeledEditSaumonOffsetX>
+		<RadioGroupPosition Caption="Position">
+			<Items>
+				<Item Index="0" Value="Extrado"/>
+     				<Item Index="1" Value="Intrado"/>
+			</Items>
+		</RadioGroupPosition>
+		<LblEmplanture Caption="Emplanture"/>
+		<LblSaumon Caption="Saumon"/>
+
+	<BtnNouveau Caption="Nouveau"/>
+	<BtnSupprimer Caption="Supprimer"/>
+	<BtnSupprimerTout Caption="Supprimer Tout"/>
+	<BtnOk Caption="OK"/>
+	<Btnannuler Caption="Annuler"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageTexte01" Value="Rectangle"/>
+		<Item Name="MessageTexte02" Value="Rond"/>
+		<Item Name="MessageTexte03" Value="Hauteur (mm) :"/>
+		<Item Name="MessageTexte04" Value="Largeur (mm) :"/>
+		<Item Name="MessageTexte05" Value="Profondeur (mm) :"/>
+		<Item Name="MessageTexte06" Value="Diamètre (mm) :"/>
+	</JvTranslatorStrings>
+
+</FGestionLongeron>
+
+<FMain>
+<!-- MainMenu -->
+		<Fichier1 Caption="&Fichier"/>
+			<Nouveau1 Caption="&Nouveau"/>
+				<Dcoupe1 Caption="Découpe Aile"/>
+				<Profil1 Caption="Profil"/>
+			<Ouvrir1 caption="&Ouvrir"/>
+			<Enregistrer1 Caption="&Enregistrer"/>
+			<Enregistrersous1 Caption="Enregistrer sous..."/>
+			<Fermer1 Caption="Fermer"/>
+			<ToutFermer1 Caption="Tout fermer"/>
+			<ImporterDXF1 Caption="Importer DXF"/>
+			<Aperuavantdcoupe1 Caption="Aperçu avant découpe"/>
+			<Dcouper1 Caption="Découper"/>
+			<Quitter1 Caption="Quitter"/>
+		<Option1 Caption="&Outils"/>
+			<RinitialiserPosition1 Caption="Aller à la position de référence"/>
+			<EnregistrerPosition1 Caption="Enregistrer la position de référence"/>
+			<Assistantdcoupe1 Caption="Assistand de découpe"/>
+			<Gestiondeslongerons1 Caption="&Gestion des longerons"/>
+			<Cycledecoupe1 Caption="&Cycle de découpe"/>
+			<Logiciel1 Caption="&Options"/>
+		<Fentre1 Caption="&Fenêtre"/>
+			<Barredoutils1 Caption="Barre d'outils"/>
+			<Convertisseur1	 Caption="Convertisseur in/mm"/>
+			<Contrlemanuel1 Caption="Contrôle manuel"/>
+		<Help1 Caption="&Aide"/>
+			<AideJedicut Caption="Aide de Jedicut"/>
+			<Preferences1 Caption="Préférences"/>
+			<About1 Caption="A propos..."/>
+<!-- /MainMenu -->
+<!-- JVPopupMenu -->
+		<PetitesIcones1 Caption="Petites Icones"/>
+		<GrandesIcones1 Caption="Grandes Icones"/>
+		<Masquer1 Caption="Masquer"/>
+<!-- /JVPopupMenu -->
+	<LabeledEditDeplacement>
+		<SubLabel Caption="Déplacement (mm) :"/>
+	</LabeledEditDeplacement>
+
+	<CheckBoxDependance Caption="Dépendance"/>
+	<CheckBoxGuillotine Caption="Guillotine"/>
+	<CheckBoxOblique Caption="Oblique"/>
+	<CheckBoxLissage Caption="Lissage"/>
+
+	<RadioButtonLente Caption="Vitesse lente"/>
+	<RadioButtonRapide Caption="Vitesse rapide"/>
+
+	<CheckBoxActiverChauffe Caption="Activer la chauffe"/>
+	<GroupBoxChauffe Caption=""/>
+	<RadioButtonMateriau Caption="Choix d'un matériau"/>
+	<RadioButtonManuel Caption="Réglage manuel"/>
+
+	<BitBtnValider Caption="Valider"/>
+
+	<!-- Liste des chaines en dures -->
+	<JvTranslatorStringsMain>
+		<Item Name="MessageErreur01" Value="Fichier de langue absent : "/>
+		<Item Name="MessageErreur02" Value="Erreur avec le fichier de traduction."/>
+		<Item Name="MessageErreur03" Value="Dll Jedipix absente."/>
+		<Item Name="MessageErreur04" Value="Le fichier d'aide est introuvable."/>
+		<Item Name="MessageErreur05" Value="Vous devez installer la version 1.2 ou supérieure de Microsoft HTML Help."/>
+		<Item Name="MessageErreur06" Value="L'emplanture et le saumon ont un nombre de points clés différent. La découpe est impossible."/>
+  		<Item Name="OpenDialogFilterAll" Value="Découpe Aile (*.jdc)|*.jdc|Profil (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat|Tous|*.*"/>
+  		<Item Name="OpenDialogFilterImporterDXF" Value="Importer Fichier DXF|*.dxf"/>
+  		<Item Name="SaveDialogFilterJDC" Value="Découpe Aile (*.jdc)|*.jdc"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Profil (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat"/>
+  		<Item Name="MessageDialogue01" Value="Etes-vous sûr de vouloir ramener la machine à la position de référence ?"/>
+  		<Item Name="MessageDialogue02" Value="Confirmez-vous l'enregistrement de la position de la machine ?"/>
+  		<Item Name="PilotageManuel01" Value="Distance (mm) :"/>
+  		<Item Name="PilotageManuel02" Value="X (mm) :"/>
+  		<Item Name="PilotageManuel03" Value="Y (mm) :"/>
+  		<Item Name="PilotageManuel04" Value="Angle (°) :"/>
+	</JvTranslatorStringsMain>
+</FMain>
+
+<FOptions Caption="Options">
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="Voulez-vous vraiment supprimer cette table ?"/>
+		<Item Name="MessageDialogue02" Value="Cette table n'existe pas."/>
+		<Item Name="MessageDialogue03" Value="La table a été créée avec succès."/>
+		<Item Name="MessageDialogue04" Value="Erreur lors de l'écriture du fichier."/>
+		<Item Name="MessageDialogue05" Value="Cette table existe déjà. Saisissez un autre nom de table."/>
+	</JvTranslatorStrings>
+
+	<JvNavPanelPageCommunication Caption="Communication"/>
+
+	<JvNavPanelPageChauffe Caption="Chauffe"/>
+
+	<JvNavPanelPageMachine Caption="Machine"/>
+
+	<FrameNavChauffe1>
+		<LblTitre1 Caption="Activer la chauffe :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="L'activation de la chauffe impose la"/>
+				<Item Index="1" Value="synchronisation des moteurs avec un"/>
+				<Item Index="2" Value="timer externe."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Liste des matériaux :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Vous pouvez configurer la liste de vos"/>
+				<Item Index="1" Value="materiaux favoris afin de ne pas re"/>
+				<Item Index="2" Value="régler la chauffe pour chaque"/>
+				<Item Index="3" Value="découpe."/>
+			</Lines>
+		</Memo2>
+	</FrameNavChauffe1>
+	
+	<FrameNavCommunication1>
+		<LblTitre1 Caption="Plug-in :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Choisissez le plug-in adapté à votre"/>
+				<Item Index="1" Value="machine CNC."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Port Parallèle :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="La configuration manuelle des bits de"/>
+				<Item Index="1" Value="chauffe n'est pour l'instant pas"/>
+				<Item Index="2" Value="disponible."/>
+			</Lines>
+		</Memo2>
+	</FrameNavCommunication1>
+	
+	<FrameNavMachine1>
+		<LblTitre1 Caption="Moteur :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Nombre mm / pas : Indique la"/>
+				<Item Index="1" Value="distance parcouru par le chariot"/>
+				<Item Index="2" Value="en mm pour un pas moteur."/>
+				<Item Index="3" Value=""/>
+				<Item Index="4" Value="Vitesse : entier indiquant le"/>
+				<Item Index="5" Value="temps de pause entre 2 pas"/>
+				<Item Index="6" Value="moteur."/>
+				<Item Index="7" Value=""/>
+				<Item Index="8" Value="Inverser : Permet d'inverser le"/>
+				<Item Index="9" Value="sens de rotation du moteur."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Important :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Si la chauffe est activée, la"/>
+				<Item Index="1" Value="vitesse est définie par le nombre"/>
+				<Item Index="2" Value="d'impulsions du timer entre 2"/>
+				<Item Index="3" Value="pas."/>
+			</Lines>
+		</Memo2>
+	</FrameNavMachine1>
+
+
+	<FrameOptionCommunication1>
+		<GroupBoxPlugIn Caption="Plug-in"/>
+		<LblListePlugIn Caption="Mode de communication :"/>
+		<LblDescription Caption="Description :"/>
+
+		<GroupBoxConfiguration Caption="Configuration Port Parallèle"/>
+		<Label1 Caption="Moteur On/Off : "/>
+		<Label3 Caption="Vue du connecteur DB25 du cable"/>
+		<Label4 Caption="Moteur X1"/>
+		<Label5 Caption="Moteur X2"/>
+		<Label6 Caption="Moteur Y1"/>
+		<Label7 Caption="Moteur Y2"/>
+		<Label8 Caption="Sens"/>
+		<Label9 Caption="Horloge"/>
+		<Label11 Caption="Timer Externe :"/>
+		<Label12 Caption="Etat Chauffe :"/>
+		<Label13 Caption="Sortie Chauffe :"/>
+		<Label14 Caption="Entrée Chauffe :"/>
+
+		<CheckBoxSynchroniserMoteurAvecTimerExterne Caption="Synchroniser la rotation des moteurs avec un timer externe."/>
+		
+		<LblEditFrequenceTimer>
+			<SubLabel Caption="Fréquence timer :"/>
+		</LblEditFrequenceTimer>
+
+	</FrameOptionCommunication1>
+
+	<FrameOptionChauffe1>
+		<JvTranslatorStrings>
+			<Item Name="JvStringGridNom" Value="Nom du matériau"/>
+			<Item Name="JvStringGridV1" Value="V1"/>
+			<Item Name="JvStringGridC1" Value="C1"/>
+			<Item Name="JvStringGridR1" Value="R1"/>
+			<Item Name="JvStringGridV2" Value="V2"/>
+			<Item Name="JvStringGridC2" Value="C2"/>
+			<Item Name="JvStringGridR2" Value="R2"/>
+		</JvTranslatorStrings>
+		<CheckBoxActiverChauffe Caption="Activer / Désactiver le contrôle de la chauffe"/>
+		<CheckBoxLireMode Caption="Lire le mode de chauffe sur le port parallèle (Manu / Auto)"/>
+		<CheckBoxChauffeDynamique Caption="Activer la chauffe dynamique"/>
+		<LblListeMateriaux Caption="Liste des matériaux :"/>
+		<BtnAjouter Caption="Ajouter"/>
+		<BtnSupprimer Caption="Supprimer"/>
+		<LblEditDeplacement>
+			<SubLabel Caption="Déplacement axe X (mm) :"/>
+		</LblEditDeplacement>
+		<LblVitesse Caption="Vitesse :"/>
+		<BtnTester Caption="Tester"/>
+		<LblTitreValChauffe Caption="Chauffe mesurée :"/>
+		<BtnEnregistrer Caption="Enregistrer"/>
+		<LblEditNomMateriau>
+			<SubLabel Caption="Nom du matériau :"/>
+		</LblEditNomMateriau>
+		<LblEditRayonnement>
+			<SubLabel Caption="Rayonnement (mm) :"/>
+		</LblEditRayonnement>
+		<RadioBtnMesure1 Caption="Mesure 1"/>
+		<RadioBtnMesure2 Caption="Mesure 2"/>	
+	</FrameOptionChauffe1>
+	
+	<FrameOptionMachine1>
+		<GroupBoxX1 Caption="Moteur X1"/>
+		<LabeledEditCoeffX1>
+			<SubLabel Caption="Nb mm / pas"/>
+		</LabeledEditCoeffX1>
+		<LabeledEditVDecoupeX1>
+			<SubLabel Caption="Vitesse de Découpe"/>
+		</LabeledEditVDecoupeX1>
+		<LabeledEditVRapideX1>
+			<SubLabel Caption="Vitesse Rapide"/>
+		</LabeledEditVRapideX1>
+		<CheckBoxInverserX1 Caption="Inverser"/>
+
+		<GroupBoxX2 Caption="Moteur X2"/>
+		<LabeledEditCoeffX2>
+			<SubLabel Caption="Nb mm / pas"/>
+		</LabeledEditCoeffX2>
+		<LabeledEditVDecoupeX2>
+			<SubLabel Caption="Vitesse de Découpe"/>
+		</LabeledEditVDecoupeX2>
+		<LabeledEditVRapideX2>
+			<SubLabel Caption="Vitesse Rapide"/>
+		</LabeledEditVRapideX2>
+		<CheckBoxInverserX2 Caption="Inverser"/>
+
+		<GroupBoxY1 Caption="Moteur Y1"/>
+		<LabeledEditCoeffY1>
+			<SubLabel Caption="Nb mm / pas"/>
+		</LabeledEditCoeffY1>
+		<LabeledEditVDecoupeY1>
+			<SubLabel Caption="Vitesse de Découpe"/>
+		</LabeledEditVDecoupeY1>
+		<LabeledEditVRapideY1>
+			<SubLabel Caption="Vitesse Rapide"/>
+		</LabeledEditVRapideY1>
+		<CheckBoxInverserY11 Caption="Inverser"/>
+
+		<GroupBoxY2 Caption="Moteur Y2"/>
+		<LabeledEditCoeffY2>
+			<SubLabel Caption="Nb mm / pas"/>
+		</LabeledEditCoeffY2>
+		<LabeledEditVDecoupeY2>
+			<SubLabel Caption="Vitesse de Découpe"/>
+		</LabeledEditVDecoupeY2>
+		<LabeledEditVRapideY2>
+			<SubLabel Caption="Vitesse Rapide"/>
+		</LabeledEditVRapideY2>
+		<CheckBoxInverserY2 Caption="Inverser"/>
+
+		<LblEditLongueurMachine>
+			<SubLabel Caption="Longueur du fil chaud (mm) :"/>
+		</LblEditLongueurMachine>
+		<LblEditLargeurMachine>
+			<SubLabel Caption="Longueur de l'axe X (mm) :"/>
+		</LblEditLargeurMachine>
+
+		<LblEstimationDecoupeX1 Caption="Estimation (mm/s)"/>
+		<LblEstimationRapideX1 Caption="Estimation (mm/s)"/>
+		<LblEstimationDecoupeX2 Caption="Estimation (mm/s)"/>
+		<LblEstimationRapideX2 Caption="Estimation (mm/s)"/>
+		<LblEstimationDecoupeY1 Caption="Estimation (mm/s)"/>
+		<LblEstimationRapideY1 Caption="Estimation (mm/s)"/>
+		<LblEstimationDecoupeY2 Caption="Estimation (mm/s)"/>
+		<LblEstimationRapideY2 Caption="Estimation (mm/s)"/>
+
+	</FrameOptionMachine1>
+
+	<JvLblNomTable Caption="Table active :"/>
+	<JvBitBtnChargerTable Caption="Charger"/>
+	<JvBitBtnCreerTable Caption="Créer"/>
+	<JvBitBtnSupprimerTable Caption="Supprimer"/>
+
+	<BtnOk Caption="OK"/>
+	<BtnAppliquer Caption="Appliquer"/>	
+	<BtnAnnuler Caption="Annuler"/>
+</FOptions>
+
+<FSimulation Caption="Simulation">
+	<TabSheet1 Caption="Découpe"/>
+	<TabSheet2 Caption="Chauffe"/>
+	<GroupBoxPoly Caption="Polystyrène"/>
+		<LabeledEditHauteur>
+			<SubLabel Caption="Hauteur (mm) :"/>
+		</LabeledEditHauteur>
+		<LabeledEditLargeur>
+			<SubLabel Caption="Largeur (mm) :"/>
+		</LabeledEditLargeur>
+	<GroupBoxSimulation Caption="Simulation"/>
+		<CheckBoxMoteurX1Y1 Caption="Moteur X1 et Y1"/>
+		<CheckBoxMoteurX2Y2 Caption="Moteur X2 et Y2"/>
+	<GroupBoxZoom Caption="Affichage"/>
+	<BitBtnFermer Caption="Fermer"/>
+</FSimulation>
+
+<FConvertisseur Caption="Convertisseur">
+	<LblDescription Caption="Saisir la valeur à convertir en fonction son unité :"/>
+	<LblEdtMm>
+		<SubLabel Caption="mm"/>
+	</LblEdtMm>
+	<LblEditIn>
+		<SubLabel Caption="in"/>
+	</LblEditIn>
+</FConvertisseur>
+
+</Translation>
+

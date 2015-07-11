@@ -1,0 +1,628 @@
+<!-- ******************	-->
+<!-- Jedicut - Russian	-->
+<!-- Auteur : v_m@mail.ru	-->
+<!-- Date crйation : 30/01/07 	-->
+<!-- ******************	-->
+
+<Translation>
+
+<FAPropos Caption="Jedicut">
+	<MemoAPropos>
+		<Lines>
+			<Items Index="0" Value="I refuse all responsabilities in the use  that it has been done with this software."/>
+			<Items Index="1" Value=""/>
+			<Items Index="2" Value=""/>
+			<Items Index="3" Value="Thanks to report any bug on Aeropassion's forum."/>
+		</Lines>
+	</MemoAPropos>
+	<BtnOk Caption="OK"/>
+</FAPropos>
+
+<FAssistantDecoupe Caption="Мастер резки">
+	<LblDecalage Caption="Offset (mm):"/>
+	<LblEnvergure Caption="Scale (mm):"/>
+	<LblFleche Caption="Flиche (mm):"/>
+	<LblAile Caption="Wing"/>
+	<LblLongueurTable Caption="Length of hot wire (mm):"/>
+	<LblLongueurX Caption="Length of X (mm):"/>
+	<CheckBoxTroncon Caption="Multiple sections" />
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Отмена"/>
+
+	<JvSpeedBtnCentrer Hint="Center cut" />
+	<JvSpeedBtnAdd Hint="Add a section" />
+	<JvSpeedBtnDelete Hint="Delete the section" />
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="The value of offset is not compatible with the length of the cut."/>
+		<Item Name="MessageErreur02" Value="The length of the cut is not compatible with the length of the table."/>
+		<Item Name="JvStringGridNumero" Value="i"/>
+  		<Item Name="JvStringGridLongueur" Value="Length"/>
+		<Item Name="IHMAssistantDecalage" Value="O"/>
+  		<Item Name="IHMAssistantLongueur" Value="L"/>
+		<Item Name="IHMAssistantFleche" Value="S"/>
+	</JvTranslatorStrings>
+</FAssistantDecoupe>
+
+<FAssociation Caption="Preferences">
+	<LblTitreP1 Caption="Вы хотите ассоциировть эти "/>
+	<LblTitreP2 Caption="типы файлов с Jedicut ?"/>
+	<CheckBoxDAT Caption="*.dat - Файл профиля"/>
+	<CheckBoxJDC Caption="*.jdc - Файл резки крыла"/>
+	<CheckBoxJDP Caption="*.jdp - Файл профиля"/>
+	<CheckBoxPRF Caption="*.prf - Файл профиля"/>
+	<LblLangue Caption="Выберите язык для Jedicut."/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Отмена"/>
+</FAssociation>
+
+<FChildDecoupe>
+	<LabeledEditEmplanture>
+		<SubLabel Caption="Корневой профиль :"/>
+	</LabeledEditEmplanture>
+	<LabeledEditSaumon>
+		<SubLabel Caption="Концевой профиль :"/>
+	</LabeledEditSaumon>
+	<LEditCordeEmplanture>
+		<SubLabel Caption="Хорда коревого профиля (mm) :"/>
+	</LEditCordeEmplanture>
+	<LEditEpRelativeEmplanture>
+		<SubLabel Caption="Отн. толщина корневого профиля :"/>
+	</LEditEpRelativeEmplanture>
+	<LEditCordeSaumon>
+		<SubLabel Caption="Хорда концевого профиля (mm) :"/>
+	</LEditCordeSaumon>
+	<LEditEpRelativeSaumon>
+		<SubLabel Caption="Отн. толщина концевого профиля :"/>
+	</LEditEpRelativeSaumon>
+	<LEditVrillageEmplanture>
+		<SubLabel Caption="Угол крутки (°) :"/>
+	</LEditVrillageEmplanture>
+	<LEditVrillageSaumon>
+		<SubLabel Caption="Угол крутки (°) :"/>
+	</LEditVrillageSaumon>
+	<LabeledEditDepart>
+		<SubLabel Caption="Высота начала"/>
+	</LabeledEditDepart>
+	<LabeledEditDegagement>
+		<SubLabel Caption="Высота выхода"/>
+	</LabeledEditDegagement>
+	<CheckBoxVrillage Caption="Смотреть крутку"/>
+	<CheckBoxAssistantDecoupe Caption="Мастер резки"/>
+
+	<RadioGroupAile Caption="Крыло">
+		<Items>
+			<Item Index="0" Value="Левое"/>
+     			<Item Index="1" Value="Правое"/>
+		</Items>
+	</RadioGroupAile>
+	
+	<GroupBoxPeauEmpl Caption="Свойства обтяжки"/>
+	<LabeledEditEpaisseurEmpl>
+		<SubLabel Caption="Толщина (mm) :"/>
+	</LabeledEditEpaisseurEmpl>
+	<CheckBoxInverserPeauEmpl Caption="Инверсия"/>
+
+	<GroupBoxPeauSaum Caption="Свойства обтяжки"/>
+	<LabeledEditEpaisseurSaum>
+		<SubLabel Caption="Толщина (mm) :"/>
+	</LabeledEditEpaisseurSaum>
+	<CheckBoxInverserPeauSaum Caption="Инвертировать"/>
+
+	<LabelDescription Caption="Описание :"/>
+	<CheckBoxProfilSymetrique Caption="Симметричный профиль"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Jedicut can't open this file."/>
+		<Item Name="MessageErreur02" Value="An error occured'a calculating points of profiles."/>
+		<Item Name="TexteInterface01" Value="No Name - Cut"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Profile (*.jdp)|*.jdp|Profile (*.prf)|*.prf|Profile (*.dat)|*.dat"/>
+	</JvTranslatorStrings>
+</FChildDecoupe>
+
+<FChildProfil>
+	<LblNom Caption="Имя :"/>	
+	<LblEpaisseurRelative Caption="Относительная толщина :"/>
+	<LblDescription Caption="Описание :"/>
+	<LblExtrado Caption="--> Верхняя образующая"/>
+	<BitBtnAppliquer Caption="Применить"/>
+	<LblIntrado Caption="--> Нижняя образующая"/>
+
+	<!-- <PopupMenuChildProfil> -->
+		<Insrer1 Caption="Вставить"/>
+		<Supprimer1 Caption="Удалить"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Jedicut не может открыть этот файл."/>
+		<Item Name="MessageErreur02" Value="Относительная толщина не может быть равна нулю."/>
+		<Item Name="MessageTexte01" Value="Нет описания для этого типа файлов."/>
+		<Item Name="TexteInterface01" Value="Нет имени - Профиль"/>
+	</JvTranslatorStrings>
+
+</FChildProfil>
+
+<FConfirmationDecoupe Caption="Cut">
+	<MemoAssistant>
+		<Lines>
+			<Item Index="0" Value="Настройка Мастера резки"/>
+		</Lines>
+	</MemoAssistant>
+	<BtnAssistant Caption="Настройка"/>
+	<RadioButtonMateriau Caption="Завис-ть нагрева от материала"/>
+	<RadioButtonManuel Caption="Ручное управление нагревом"/>
+	<LblConfirmation Caption="Вы на самом деле хотите начать резку?"/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Отменить"/>
+	<LblModeChauffe Caption="Сейчас управление нагревом :"/>
+	<JvTranslatorStrings>
+		<Item Name="MessageEtatChauffeManuel" Value="Ручное"/>
+		<Item Name="MessageEtatChauffePC" Value="Компьютером"/>
+	</JvTranslatorStrings>
+</FConfirmationDecoupe>
+
+<FCycleDecoupe Caption="Менеджер настройки цикла резки">
+
+	<RadioGroupCote Caption="Профиль">
+		<Items>
+			<Item Index="0" Value="Корень крыла"/>
+     			<Item Index="1" Value="Конец крыла"/>
+		</Items>
+	</RadioGroupCote>
+
+	<GroupBoxAffichage Caption="View"/>
+		<SpeedBtnZoomIn Hint="Zoom in"/>
+		<SpeedBtnZoomOut Hint="Zoom out"/>
+		<SpeedBtnShowPoint Hint="View all points"/>
+
+	<GroupBoxKeyPoint Caption="Key points"/>
+		<SpeedBtnAddKey Hint="Add a key point"/>
+		<SpeedBtnDeleteKey Hint="Delete a key point"/>
+
+	<BtnParDefaut Caption="По умолчанию..."/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Отменить"/>
+	<BtnAppliquer Caption="Применить"/>
+
+	<FrameCycleAile>	
+		<LblListe Caption="Цикл резки"/>
+	
+		<BtnSupprimer Caption="Удалить"/>
+		<BtnSupprimerTout Caption="Удалить все"/>
+	
+		<GroupBoxProprietes Caption="Свойства"/>
+			<LabeledEditDeplacement>
+				<SubLabel Caption="Переместить (mm) :"/>
+			</LabeledEditDeplacement>
+			<CheckBoxLissage Caption="Плавно"/>
+			<CheckBoxInverser Caption="Инверсия"/>
+			<RadioGroupQualification Caption="Тип">
+				<Items>
+					<Item Index="0" Value="Нейтраль"/>
+	     				<Item Index="1" Value="Импульс"/>
+	     				<Item Index="2" Value="RAZ Счетчик"/>
+				</Items>
+			</RadioGroupQualification>
+			<RadioGroupVitesse Caption="Скорость">
+				<Items>
+					<Item Index="0" Value="Резка"/>
+	     				<Item Index="1" Value="Быстро"/>
+				</Items>
+			</RadioGroupVitesse>
+			<RadioGroupSpecial Caption="Особенность">
+				<Items>
+					<Item Index="0" Value="Стандарт"/>
+	     				<Item Index="1" Value="Высота начала"/>
+	     				<Item Index="2" Value="Высота выхода"/>
+				</Items>
+			</RadioGroupSpecial>
+
+		<JvTranslatorStringsCycleAile>
+			<Item Name="MessageTexte01" Value="Внешняя"/>
+			<Item Name="MessageTexte02" Value="Внутренняя"/>
+			<Item Name="MessageTexte03" Value="Пауза"/>
+			<Item Name="MessageTexte04" Value="Горизонтальная"/>
+			<Item Name="MessageTexte05" Value="Вертикальная"/>
+			<Item Name="MessageTexte06" Value="Время (ms) :"/>
+			<Item Name="MessageTexte07" Value="Переместить (mm) :"/>
+		</JvTranslatorStringsCycleAile>
+
+	</FrameCycleAile>
+	
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="Do you want to use this cut cycle as default ?"/>
+		<Item Name="MessageDialogue02" Value="The number of key points is different between wing root and wing tip.\nDo you want to correct it ?"/>
+		<Item Name="MessageDialogue03" Value="The number of key points is different between wing root and wing tip."/>
+	</JvTranslatorStrings>
+
+</FCycleDecoupe>
+
+<FDecoupeEnCours Caption="CNC controller communication">
+	<LabelDecoupe Caption="Cut in progress..."/>
+	<BtnPause Caption="Pause"/>
+	<BtnAnnuler Caption="Cancel"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageBtn01" Value="Pause"/>
+		<Item Name="MessageBtn02" Value="Resume"/>
+		<Item Name="MessageTexte01" Value="Cut in progress..."/>
+		<Item Name="MessageTexte02" Value="Cut in pause."/>
+	</JvTranslatorStrings>
+
+</FDecoupeEnCours>
+
+<FGestionLongeron Caption="Менеджер лонжеронов">
+	<LblListeLongerons Caption="Список лонжеронов"/>
+
+	<GroupboxProprietes Caption="Свойства"/>
+		<LabeledEditEmplantureHauteur>
+			<SubLabel Caption="Высота (mm) :"/>
+		</LabeledEditEmplantureHauteur>
+		<LabeledEditEmplantureLargeur>
+			<SubLabel Caption="Ширина (mm) :"/>
+		</LabeledEditEmplantureLargeur>
+		<LabeledEditSaumonHauteur>
+			<SubLabel Caption="Высота (mm) :"/>
+		</LabeledEditSaumonHauteur>
+		<LabeledEditSaumonLargeur>
+			<SubLabel Caption="Ширина (mm) :"/>
+		</LabeledEditSaumonLargeur>
+		<LabeledEditAngle>
+			<SubLabel Caption="Угол входа струны (°) :"/>
+		</LabeledEditAngle>
+		<CheckBoxParalleleAttaque Caption="Паралельно п. кромке"/>
+		<CheckBoxRegulier Caption="Постоянное сечение"/>
+		<LabeledEditEmplantureOffsetX>
+			<SubLabel Caption="Корень - смещение по X (mm) :"/>
+		</LabeledEditEmplantureOffsetX>
+		<LabeledEditSaumonOffsetX>
+			<SubLabel Caption="Конец - смещение по X (mm) :"/>
+		</LabeledEditSaumonOffsetX>
+		<RadioGroupPosition Caption="Расположение">
+			<Items>
+				<Item Index="0" Value="Верхнее"/>
+     				<Item Index="1" Value="Нижнее"/>
+			</Items>
+		</RadioGroupPosition>
+		<LblEmplanture Caption="Корень крыла"/>
+		<LblSaumon Caption="Конец крыла"/>
+
+	<BtnNouveau Caption="Новый"/>
+	<BtnSupprimer Caption="Удалить"/>
+	<BtnSupprimerTout Caption="Удалить все"/>
+	<BtnOk Caption="OK"/>
+	<Btnannuler Caption="Отменить"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageTexte01" Value="Прямоугольник"/>
+		<Item Name="MessageTexte02" Value="Круглый"/>
+		<Item Name="MessageTexte03" Value="Высота (mm) :"/>
+		<Item Name="MessageTexte04" Value="Ширина (mm) :"/>
+		<Item Name="MessageTexte05" Value="Глубина (mm) :"/>
+		<Item Name="MessageTexte06" Value="Диаметр (mm) :"/>
+	</JvTranslatorStrings>
+
+</FGestionLongeron>
+
+<FMain>
+<!-- MainMenu -->
+		<Fichier1 Caption="&Файл"/>
+			<Nouveau1 Caption="&Создать"/>
+				<Dcoupe1 Caption="Файл резки крыла"/>
+				<Profil1 Caption="Профиль"/>
+			<Ouvrir1 caption="&Открыть"/>
+			<Enregistrer1 Caption="&Сохранить"/>
+			<Enregistrersous1 Caption="Сохранить &как..."/>
+			<Fermer1 Caption="Закрыть"/>
+			<ToutFermer1 Caption="Закрыть все"/>
+			<ImporterDXF1 Caption="Импорт DXF"/>
+			<Aperuavantdcoupe1 Caption="Предварительный просмотр резки"/>
+			<Dcouper1 Caption="Резать"/>
+			<Quitter1 Caption="Выход"/>
+		<Option1 Caption="&Инструменты"/>
+			<RinitialiserPosition1 Caption="Go to the reference position"/>
+			<EnregistrerPosition1 Caption="Save the reference position"/>
+			<Assistantdcoupe1 Caption="Мастер &Резки"/>
+			<Gestiondeslongerons1 Caption="&Менеджер лонжеронов"/>
+			<Cycledecoupe1 Caption="&Менеджер проходов резки"/>
+			<Logiciel1 Caption="&Настройки"/>
+		<Fentre1 Caption="&Окно"/>
+			<Barredoutils1 Caption="Tool Bar"/>
+			<Convertisseur1	 Caption="Converter in/mm"/>
+			<Contrlemanuel1 Caption="Manual control"/>
+		<Help1 Caption="&Помощь"/>
+			<AideJedicut Caption="Jedicut Помощь"/>
+			<Preferences1 Caption="Интерфейс"/>
+			<About1 Caption="О программе..."/>
+<!-- /MainMenu -->
+<!-- JVPopupMenu -->
+		<PetitesIcones1 Caption="Small Icons"/>
+		<GrandesIcones1 Caption="Big Icons"/>
+		<Masquer1 Caption="Hide"/>
+<!-- /JVPopupMenu -->
+	<LabeledEditDeplacement>
+		<SubLabel Caption="Переместить (mm) :"/>
+	</LabeledEditDeplacement>
+
+	<CheckBoxDependance Caption="Вместе"/>
+	<CheckBoxGuillotine Caption="Гильотина"/>
+	<CheckBoxOblique Caption="Oblique"/>
+	<CheckBoxLissage Caption="Плавно"/>
+
+	<RadioButtonLente Caption="Медленно"/>
+	<RadioButtonRapide Caption="Быстро"/>
+
+	<CheckBoxActiverChauffe Caption="Вкл. нагрев"/>
+	<GroupBoxChauffe Caption=""/>
+	<RadioButtonMateriau Caption="Выбор материала"/>
+	<RadioButtonManuel Caption="Ручное управлен."/>
+
+	<BitBtnValider Caption="Применить"/>
+
+	<!-- Liste des chaines en dures -->
+	<JvTranslatorStringsMain>
+		<Item Name="MessageErreur01" Value="Отсутствует языковой файл : "/>
+		<Item Name="MessageErreur02" Value="Ошибка в языковом файле."/>
+		<Item Name="MessageErreur03" Value="Dll Jedipix отсутствует."/>
+		<Item Name="MessageErreur04" Value="Help file can't be found."/>
+		<Item Name="MessageErreur05" Value="You should install Microsoft HTML Help 1.2 or superior."/>
+		<Item Name="MessageErreur06" Value="The number of key points is different between wing root and wing tip."/>
+  		<Item Name="OpenDialogFilterAll" Value="Файл для резки крыла (*.jdc)|*.jdc|Профиль  (*.jdp)|*.jdp|Профиль (*.prf)|*.prf|Профиль (*.dat)|*.dat|Все|*.*"/>
+  		<Item Name="OpenDialogFilterImporterDXF" Value="Импорт DXF Файла|*.dxf"/>
+  		<Item Name="SaveDialogFilterJDC" Value="Файл для резки крыла (*.jdc)|*.jdc"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Профиль (*.jdp)|*.jdp|Профиль (*.prf)|*.prf|Профиль (*.dat)|*.dat"/>
+  		<Item Name="MessageDialogue01" Value="Are you sure you want to bring the machine to the reference position ?"/>
+  		<Item Name="MessageDialogue02" Value="Do you want to save the reference position ?"/>
+  		<Item Name="PilotageManuel01" Value="Move (mm) :"/>
+  		<Item Name="PilotageManuel02" Value="X (mm) :"/>
+  		<Item Name="PilotageManuel03" Value="Y (mm) :"/>
+  		<Item Name="PilotageManuel04" Value="Angle (°) :"/>
+	</JvTranslatorStringsMain>
+</FMain>
+
+<FOptions Caption="Настройки">
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="Do you want to remove this table ?"/>
+		<Item Name="MessageDialogue02" Value="This table doesn't exist."/>
+		<Item Name="MessageDialogue03" Value="The table was created successfully."/>
+		<Item Name="MessageDialogue04" Value="Error writing file."/>
+		<Item Name="MessageDialogue05" Value="This table already exist. Enter un new table name."/>
+	</JvTranslatorStrings>
+
+	<JvNavPanelPageCommunication Caption="Распиновка, библиотека"/>
+
+	<JvNavPanelPageChauffe Caption="Нагрев"/>
+
+	<JvNavPanelPageMachine Caption="CNC контроллер"/>
+
+	<FrameNavChauffe1>
+		<LblTitre1 Caption="Включить нагрев :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Чтобы включить авто нагрев,"/>
+				<Item Index="1" Value="вам надо синхронизировать "/>
+				<Item Index="2" Value="моторы с внешним таймером."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Список материалов :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Вы можете сохранить часто"/>
+				<Item Index="1" Value="используемые материалы в "/>
+				<Item Index="2" Value="списке и назначить каждому"/>
+				<Item Index="3" Value="свою температуру резки."/>
+			</Lines>
+		</Memo2>
+	</FrameNavChauffe1>
+	
+	<FrameNavCommunication1>
+		<LblTitre1 Caption="Библиотека :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Выберите библиотеку"/>
+				<Item Index="1" Value="для вашего контроллера."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Параллельный порт :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Ручная настройка управления"/>
+				<Item Index="1" Value="бита нагрева не доступна."/>
+				<Item Index="2" Value=""/>
+			</Lines>
+		</Memo2>
+	</FrameNavCommunication1>
+	
+	<FrameNavMachine1>
+		<LblTitre1 Caption="Моторы"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Количество mm / шаг : Это"/>
+				<Item Index="1" Value="расстояние между 2 шагами."/>
+				<Item Index="2" Value=""/>
+				<Item Index="3" Value="Скорость : Это время за"/>
+				<Item Index="4" Value="которое мотор делает один"/>
+				<Item Index="5" Value="шаг."/>
+				<Item Index="6" Value=""/>
+				<Item Index="7" Value="Реверс : Включить"/>
+				<Item Index="8" Value="изменение направления"/>
+				<Item Index="9" Value="вращения мотора."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Важно :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Если включено управление"/>
+				<Item Index="1" Value="нагревом - скорость вращения"/>
+				<Item Index="2" Value="мотора зависит от внешнего"/>
+				<Item Index="3" Value="таймера."/>
+			</Lines>
+		</Memo2>
+	</FrameNavMachine1>
+
+
+	<FrameOptionCommunication1>
+		<GroupBoxPlugIn Caption="Библиотека"/>
+		<LblListePlugIn Caption="Режим"/>
+		<LblDescription Caption="Описание"/>
+
+		<GroupBoxConfiguration Caption="Распиновка параллельного порта"/>
+		<Label1 Caption="Мотор Вкл/Выкл : "/>
+		<Label3 Caption="Вид разьема DB25"/>
+		<Label4 Caption="Мотор X1"/>
+		<Label5 Caption="Мотор X2"/>
+		<Label6 Caption="Мотор Y1"/>
+		<Label7 Caption="Мотор Y2"/>
+		<Label8 Caption="Направление"/>
+		<Label9 Caption="Шаг"/>
+		<Label11 Caption="Внешний таймер :"/>
+		<Label12 Caption="Статус нагрева :"/>
+		<Label13 Caption="Упр-ние нагревом :"/>
+		<Label14 Caption="Результат нагрева :"/>
+
+		<CheckBoxSynchroniserMoteurAvecTimerExterne Caption="Синхронизировать вращение мотора с внешним таймером."/>
+
+		<LblEditFrequenceTimer>
+			<SubLabel Caption="Frequency timer :"/>
+		</LblEditFrequenceTimer>
+
+	</FrameOptionCommunication1>
+
+	<FrameOptionChauffe1>
+		<JvTranslatorStrings>
+			<Item Name="JvStringGridNom" Value="Name of the material"/>
+			<Item Name="JvStringGridV1" Value="V1"/>
+			<Item Name="JvStringGridC1" Value="C1"/>
+			<Item Name="JvStringGridR1" Value="R1"/>
+			<Item Name="JvStringGridV2" Value="V2"/>
+			<Item Name="JvStringGridC2" Value="C2"/>
+			<Item Name="JvStringGridR2" Value="R2"/>
+		</JvTranslatorStrings>
+		<CheckBoxActiverChauffe Caption="Вкл / Выкл Управление нагревом "/>
+		<CheckBoxLireMode Caption="Отслеживать режим управления нагревом на LPT (Ручн / Авто)"/>
+		<CheckBoxChauffeDynamique Caption="Enable dynamic heating control"/>
+		<LblListeMateriaux Caption="Список материалов :"/>
+		<BtnAjouter Caption="Добавить"/>
+		<BtnSupprimer Caption="Удалить"/>
+		<LblEditDeplacement>
+			<SubLabel Caption="Move axis X (mm) :"/>
+		</LblEditDeplacement>
+		<LblVitesse Caption="Speed value :"/>
+		<BtnTester Caption="Test"/>
+		<LblTitreValChauffe Caption="Heating value :"/>
+		<BtnEnregistrer Caption="Save"/>
+		<LblEditNomMateriau>
+			<SubLabel Caption="Name of material :"/>
+		</LblEditNomMateriau>
+		<LblEditRayonnement>
+			<SubLabel Caption="Radiation (mm) :"/>
+		</LblEditRayonnement>
+		<RadioBtnMesure1 Caption="Measurement 1"/>
+		<RadioBtnMesure2 Caption="Measurement 2"/>	
+	</FrameOptionChauffe1>
+	
+	<FrameOptionMachine1>
+		<GroupBoxX1 Caption="Мотор X1"/>
+		<LabeledEditCoeffX1>
+			<SubLabel Caption="mm / шаг"/>
+		</LabeledEditCoeffX1>
+		<LabeledEditVDecoupeX1>
+			<SubLabel Caption="Скорость резки"/>
+		</LabeledEditVDecoupeX1>
+		<LabeledEditVRapideX1>
+			<SubLabel Caption="Высок. скорость"/>
+		</LabeledEditVRapideX1>
+		<CheckBoxInverserX1 Caption="Реверс"/>
+
+		<GroupBoxX2 Caption="Мотор X2"/>
+		<LabeledEditCoeffX2>
+			<SubLabel Caption="mm / шаг"/>
+		</LabeledEditCoeffX2>
+		<LabeledEditVDecoupeX2>
+			<SubLabel Caption="Скорость резки"/>
+		</LabeledEditVDecoupeX2>
+		<LabeledEditVRapideX2>
+			<SubLabel Caption="Высок. скорость"/>
+		</LabeledEditVRapideX2>
+		<CheckBoxInverserX2 Caption="Реверс"/>
+
+		<GroupBoxY1 Caption="Мотор Y1"/>
+		<LabeledEditCoeffY1>
+			<SubLabel Caption="mm / шаг"/>
+		</LabeledEditCoeffY1>
+		<LabeledEditVDecoupeY1>
+			<SubLabel Caption="Скорость резки"/>
+		</LabeledEditVDecoupeY1>
+		<LabeledEditVRapideY1>
+			<SubLabel Caption="Высок. скорость"/>
+		</LabeledEditVRapideY1>
+		<CheckBoxInverserY1 Caption="Реверс"/>
+
+		<GroupBoxY2 Caption="Мотор Y2"/>
+		<LabeledEditCoeffY2>
+			<SubLabel Caption="mm / шаг"/>
+		</LabeledEditCoeffY2>
+		<LabeledEditVDecoupeY2>
+			<SubLabel Caption="Скорость резки"/>
+		</LabeledEditVDecoupeY2>
+		<LabeledEditVRapideY2>
+			<SubLabel Caption="Высок. скорость"/>
+		</LabeledEditVRapideY2>
+		<CheckBoxInverserY2 Caption="Реверс"/>
+
+		<LblEditLongueurMachine>
+			<SubLabel Caption="Length of hot wire (mm) :"/>
+		</LblEditLongueurMachine>
+		<LblEditLargeurMachine>
+			<SubLabel Caption="Length of X axis (mm) :"/>
+		</LblEditLargeurMachine>
+
+		<LblEstimationDecoupeX1 Caption="Estimate (mm/s)"/>
+		<LblEstimationRapideX1 Caption="Estimate (mm/s)"/>
+		<LblEstimationDecoupeX2 Caption="Estimate (mm/s)"/>
+		<LblEstimationRapideX2 Caption="Estimate (mm/s)"/>
+		<LblEstimationDecoupeY1 Caption="Estimate (mm/s)"/>
+		<LblEstimationRapideY1 Caption="Estimate (mm/s)"/>
+		<LblEstimationDecoupeY2 Caption="Estimate (mm/s)"/>
+		<LblEstimationRapideY2 Caption="Estimate (mm/s)"/>
+
+	</FrameOptionMachine1>
+
+	<JvLblNomTable Caption="Active Table :"/>
+	<JvBitBtnChargerTable Caption="Load"/>
+	<JvBitBtnCreerTable Caption="New"/>
+	<JvBitBtnSupprimerTable Caption="Delete"/>
+
+	<BtnOk Caption="OK"/>
+	<BtnAppliquer Caption="Применить"/>	
+	<BtnAnnuler Caption="Отмена"/>
+</FOptions>
+
+<FSimulation Caption="">
+	<TabSheet1 Caption="Cut"/>
+	<TabSheet2 Caption="Heating"/>
+	<GroupBoxPoly Caption="Пенопласт"/>
+		<LabeledEditHauteur>
+			<SubLabel Caption="Высота"/>
+		</LabeledEditHauteur>
+		<LabeledEditLargeur>
+			<SubLabel Caption="Ширина"/>
+		</LabeledEditLargeur>
+	<GroupBoxSimulation Caption="Симуляция"/>
+		<CheckBoxMoteurX1Y1 Caption="Моторы X1 и Y1"/>
+		<CheckBoxMoteurX2Y2 Caption="Моторы X2 и Y2"/>
+	<GroupBoxZoom Caption="View"/>
+	<BitBtnFermer Caption="Закрыть"/>
+</FSimulation>
+
+<FConvertisseur Caption="Converter">
+	<LblDescription Caption="Enter value to convert by his unit :"/>
+	<LblEdtMm>
+		<SubLabel Caption="mm"/>
+	</LblEdtMm>
+	<LblEditIn>
+		<SubLabel Caption="in"/>
+	</LblEditIn>
+</FConvertisseur>
+
+</Translation>
+

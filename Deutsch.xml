@@ -1,0 +1,631 @@
+<!-- **************************	-->
+<!-- Jedicut - Deutsch 		-->
+<!-- Auteur v1 : Walo Hürzeler 	-->
+<!-- Auteur v0 : Corsairr	-->
+<!-- Date création : 11.01.2005 -->
+<!-- geändert: 29.12.2011	-->
+<!-- durch : Manfred Arendt     -->
+<!-- **************************	-->
+
+<Translation>
+
+<FAPropos Caption="Jedicut">
+	<MemoAPropos>
+		<Lines>
+			<Items Index="0" Value="Jegliche Haftung die aus dem Gebrauch dieser Software abgeleitet "/>
+			<Items Index="1" Value="werden kann, wird abgelehnt!"/>
+			<Items Index="2" Value=""/>
+			<Items Index="3" Value="Bitte melden Sie alle festgestellten Fehler im Forum von http://www.aeropassion.net."/>
+		</Lines>
+	</MemoAPropos>
+	<BtnOk Caption="OK"/>
+</FAPropos>
+
+<FAssistantDecoupe Caption="Zuschneideassistent">
+	<LblDecalage Caption="Offset (mm):"/>
+	<LblEnvergure Caption="Spannweite (mm):"/>
+	<LblFleche Caption="Pfeilung (mm):"/>
+	<LblAile Caption="Flügel"/>
+	<LblLongueurTable Caption="Länge des Heizdrahtes (mm):"/>
+	<LblLongueurX Caption="Länge der X-Achse (mm):"/>
+	<CheckBoxTroncon Caption="Teilbereiche" />
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Abbrechen"/>
+
+	<JvSpeedBtnCentrer Hint="zentrieren" />
+	<JvSpeedBtnAdd Hint="Bereich zufügen" />
+	<JvSpeedBtnDelete Hint="Bereich löschen" />
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Der Offset ist nicht kompatibel mit der Schnittlänge."/>
+		<Item Name="MessageErreur02" Value="Die Schnittlänge übersteigt die Tischlänge."/>
+		<Item Name="JvStringGridNumero" Value="i"/>
+  		<Item Name="JvStringGridLongueur" Value="Länge"/>
+		<Item Name="IHMAssistantDecalage" Value="O"/>
+  		<Item Name="IHMAssistantLongueur" Value="L"/>
+		<Item Name="IHMAssistantFleche" Value="P"/>
+	</JvTranslatorStrings>
+</FAssistantDecoupe>
+
+<FAssociation Caption="Einstellungen">
+	<LblTitreP1 Caption="Dateitypen einstellen:"/>
+	<LblTitreP2 Caption=""/>
+	<CheckBoxDAT Caption="*.dat - Profildatei"/>
+	<CheckBoxJDC Caption="*.jdc - Jedicut Flügelschnittdatei"/>
+	<CheckBoxJDP Caption="*.jdp - Jedicut Profildatei"/>
+	<CheckBoxPRF Caption="*.prf - Profildatei"/>
+	<LblLangue Caption="Sprachauswahl:"/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Abbrechen"/>
+</FAssociation>
+
+<FChildDecoupe>
+	<LabeledEditEmplanture>
+		<SubLabel Caption="Profil Flächenwurzel:"/>
+	</LabeledEditEmplanture>
+	<LabeledEditSaumon>
+		<SubLabel Caption="Profil Flächenende:"/>
+	</LabeledEditSaumon>
+	<LEditCordeEmplanture>
+		<SubLabel Caption="Tiefe Wurzel (mm):"/>
+	</LEditCordeEmplanture>
+	<LEditEpRelativeEmplanture>
+		<SubLabel Caption="Relative Dicke Wurzel:"/>
+	</LEditEpRelativeEmplanture>
+	<LEditCordeSaumon>
+		<SubLabel Caption="Tiefe Ende (mm):"/>
+	</LEditCordeSaumon>
+	<LEditEpRelativeSaumon>
+		<SubLabel Caption="Relative Dicke Flächenende:"/>
+	</LEditEpRelativeSaumon>
+	<LEditVrillageEmplanture>
+		<SubLabel Caption="Verwindung (°):"/>
+	</LEditVrillageEmplanture>
+	<LEditVrillageSaumon>
+		<SubLabel Caption="Verwindung (°):"/>
+	</LEditVrillageSaumon>
+	<LabeledEditDepart>
+		<SubLabel Caption="Höhe Nullline(mm):"/>
+	</LabeledEditDepart>
+	<LabeledEditDegagement>
+		<SubLabel Caption="Höhe Block(mm):"/>
+	</LabeledEditDegagement>
+	<CheckBoxVrillage Caption="Vorschau Verwindung"/>
+	<CheckBoxAssistantDecoupe Caption="mit Zuschneideassistent"/>
+
+	<RadioGroupAile Caption="Flügel">
+		<Items>
+			<Item Index="0" Value="Links"/>
+     			<Item Index="1" Value="Rechts"/>
+		</Items>
+	</RadioGroupAile>
+	
+	<GroupBoxPeauempl Caption="Beplankung"/>
+	<LabeledEditEpaisseurEmpl>
+		<SubLabel Caption="Dicke(mm):"/>
+	</LabeledEditEpaisseurEmpl>
+	<CheckBoxInverserPeauEmpl Caption="Invertieren:"/>
+
+	<GroupBoxPeauSaum Caption="Beplankung"/>
+	<LabeledEditEpaisseurSaum>
+		<SubLabel Caption="Dicke(mm):"/>
+	</LabeledEditEpaisseurSaum>
+	<CheckBoxInverserPeauSaum Caption="Invertieren:"/>
+
+
+	<LabelDescription Caption="Beschreibung:"/>
+	<CheckBoxProfilSymetrique Caption="Symmetrisch"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Datei kann nicht geöffnet werden."/>
+		<Item Name="MessageErreur02" Value="Bei der Berechnung des Profils ist ein Fehler aufgetreten."/>
+		<Item Name="TexteInterface01" Value="Schnitt ohne Namen"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Profil (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat"/>
+	</JvTranslatorStrings>
+</FChildDecoupe>
+
+<FChildProfil>
+	<LblNom Caption="Name:"/>	
+	<LblEpaisseurRelative Caption="Relative Dicke:"/>
+	<LblDescription Caption="Beschreibung:"/>
+	<LblExtrado Caption="--> Oberseite"/>
+	<BitBtnAppliquer Caption="Anwenden"/>
+	<LblIntrado Caption="--> Unterseite"/>
+
+	<!-- <PopupMenuChildProfil> -->
+		<Insrer1 Caption="Einfügen"/>
+		<Supprimer1 Caption="Löschen"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Datei kann nicht geöffnet werden."/>
+		<Item Name="MessageErreur02" Value="Die relative Dicke darf nicht null sein."/>
+		<Item Name="MessageTexte01" Value="Keine Beschreibung für dieses Dateformat verfügbar"/>
+		<Item Name="TexteInterface01" Value="Profil ohne Namen."/>
+	</JvTranslatorStrings>
+
+</FChildProfil>
+
+<FConfirmationDecoupe Caption="Schneiden">
+	<MemoAssistant>
+		<Lines>
+			<Item Index="0" Value="Konfiguration des Schnittassistenten:"/>
+		</Lines>
+	</MemoAssistant>
+	<BtnAssistant Caption="Einstellungen"/>
+	<RadioButtonMateriau Caption="Heizwert Material:"/>
+	<RadioButtonManuel Caption="Manueller Heizwert:"/>
+	<LblConfirmation Caption="Zuschneidevorgang starten?"/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Abbrechen"/>
+	<LblModeChauffe Caption="Heizdrahtkonfiguration :"/>
+	<JvTranslatorStrings>
+		<Item Name="MessageEtatChauffeManuel" Wert="Manuell "/>
+		<Item Name="MessageEtatChauffePC" Wert="PC"/>
+	</JvTranslatorStrings>
+</FConfirmationDecoupe>
+
+<FCycleDecoupe Caption="Schneidevorgang">
+
+	<RadioGroupCote Caption="Profildatei">
+		<Items>
+			<Item Index="0" Value="Wurzel"/>
+     			<Item Index="1" Value="Ende"/>
+		</Items>
+	</RadioGroupCote>
+	
+	<GroupBoxAffichage Caption="Ansicht"/>
+		<SpeedBtnZoomIn Hint="Zoom in"/>
+		<SpeedBtnZoomOut Hint="Zoom out"/>
+		<SpeedBtnShowPoint Hint="Alle Punkte ansehen"/>
+
+	<GroupBoxKeyPoint Caption="Sync.Punkte"/>
+		<SpeedBtnAddKey Hint="Einen Sync.Punkt addieren"/>
+		<SpeedBtnDeleteKey Hint="Einen Sync.Punkt löschen"/>
+
+	<BtnParDefaut Caption="Standardwert"/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Abbrechen"/>
+	<BtnAppliquer Caption="Anwenden"/>
+
+	<FrameCycleAile>	
+		<LblListe Caption="Schneidevorgang:"/>
+	
+		<BtnSupprimer Caption="Löschen"/>
+		<BtnSupprimerTout Caption="Alles löschen"/>
+	
+		<GroupBoxProprietes Caption="Eigenschaften"/>
+			<LabeledEditDeplacement>
+				<SubLabel Caption="Weg(mm):"/>
+			</LabeledEditDeplacement>
+			<CheckBoxLissage Caption="Glätten"/>
+			<CheckBoxInverser Caption="Invertieren"/>
+			<RadioGroupQualification Caption="Typ">
+				<Items>
+					<Item Index="0" Value="Neutral"/>
+	     				<Item Index="1" Value="Zählen"/>
+	     				<Item Index="2" Value="Ausgangsposition"/>
+				</Items>
+			</RadioGroupQualification>
+			<RadioGroupVitesse Caption="Geschwindigkeit">
+				<Items>
+					<Item Index="0" Value="Schnitt"/>
+	     				<Item Index="1" Value="Schnell"/>
+				</Items>
+			</RadioGroupVitesse>
+			<RadioGroupSpecial Caption="Spezial">
+				<Items>
+					<Item Index="0" Value="Standard"/>
+	     				<Item Index="1" Value="Starthöhe"/>
+	     				<Item Index="2" Value="Endhöhe"/>
+				</Items>
+			</RadioGroupSpecial>
+
+		<JvTranslatorStringsCycleAile>
+			<Item Name="MessageTexte01" Value="Einlauf"/>
+			<Item Name="MessageTexte02" Value="Auslauf"/>
+			<Item Name="MessageTexte03" Value="Pause"/>
+			<Item Name="MessageTexte04" Value="Horizontal"/>
+			<Item Name="MessageTexte05" Value="Senkrecht"/>
+			<Item Name="MessageTexte06" Value="Dauer (ms):"/>
+			<Item Name="MessageTexte07" Value="Weg (mm):"/>
+		</JvTranslatorStringsCycleAile>
+
+	</FrameCycleAile>
+	
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="Möchten Sie diese Einstellungen als Vorgabewert benutzen?"/>
+		<Item Name="MessageDialogue02" Value="Die Zahl Sync.Punkte ist zwischen Flügelwurzel und Flügelspitze unterschiedlich.\Möchtest Sie es ändern ?"/>
+		<Item Name="MessageDialogue03" Value="Die Zahl Sync.Punkte ist zwischen Flügelwurzel und Flügelspitze unterschiedlich."/>
+	</JvTranslatorStrings>
+
+</FCycleDecoupe>
+
+<FDecoupeEnCours Caption="Datenübertragung zum Controller">
+	<LabelDecoupe Caption="Es wird geschnitten"/>
+	<BtnPause Caption="Pause"/>
+	<BtnAnnuler Caption="Abbrechen"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageBtn01" Value="Pause"/>
+		<Item Name="MessageBtn02" Value="weiter"/>
+		<Item Name="MessageTexte01" Value="Es wird geschnitten"/>
+		<Item Name="MessageTexte02" Value="Schnittpause."/>
+	</JvTranslatorStrings>
+
+</FDecoupeEnCours>
+
+<FGestionLongeron Caption="Holme">
+	<LblListeLongerons Caption="Holmliste:"/>
+
+	<GroupboxProprietes Caption="Eigenschaften"/>
+		<LabeledEditEmplantureHauteur>
+			<SubLabel Caption="Höhe(mm):"/>
+		</LabeledEditEmplantureHauteur>
+		<LabeledEditEmplantureLargeur>
+		<SubLabel Caption="Breite(mm):"/>
+		</LabeledEditEmplantureLargeur>
+		<LabeledEditSaumonHauteur>
+			<SubLabel Caption="Höhe(mm):"/>
+		</LabeledEditSaumonHauteur>
+		<LabeledEditSaumonLargeur>
+			<SubLabel Caption="Breite(mm):"/>
+		</LabeledEditSaumonLargeur>
+		<LabeledEditAngle>
+			<SubLabel Caption="Winkel(°) :"/>
+		</LabeledEditAngle>
+		<CheckBoxParalleleAttaque Caption="Parallel zur Nasenleiste"/>
+		<LabeledEditEmplantureOffsetX>
+			<SubLabel Caption="Flächenwurzel - Offset X(mm):"/>
+		</LabeledEditEmplantureOffsetX>
+		<LabeledEditSaumonOffsetX>
+			<SubLabel Caption="Flächenende - Offset X(mm):"/>
+		</LabeledEditSaumonOffsetX>
+		<RadioGroupPosition Caption="Lage">
+			<Items>
+				<Item Index="0" Value="Einlauf"/>
+     				<Item Index="1" Value="Auslauf"/>
+			</Items>
+		</RadioGroupPosition>
+		<LblEmplanture Caption="Flächenwurzel"/>
+		<LblSaumon Caption="Flächenende"/>
+
+	<BtnNouveau Caption="Neu"/>
+	<BtnSupprimer Caption="Entfernen"/>
+	<BtnSupprimerTout Caption="Alles entfernen"/>
+	<BtnOk Caption="OK"/>
+	<Btnannuler Caption="Abbrechen"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageTexte01" Value="Holm"/>
+		<Item Name="MessageTexte02" Value="Kreis"/>
+		<Item Name="MessageTexte03" Value="Höhe(mm):"/>
+		<Item Name="MessageTexte04" Value="Breite(mm):"/>
+		<Item Name="MessageTexte05" Value="Tiefe(mm):"/>
+		<Item Name="MessageTexte06" Value="Durchmesser(mm):"/>
+	</JvTranslatorStrings>
+
+</FGestionLongeron>
+
+<FMain>
+<!-- MainMenu -->
+		<Fichier1 Caption="&Datei"/>
+			<Nouveau1 Caption="&Neu"/>
+				<Dcoupe1 Caption="Flächen Schneiden"/>
+				<Profil1 Caption="Profil"/>
+			<Ouvrir1 caption="&Öffnen"/>
+			<Enregistrer1 Caption="&Speichern"/>
+			<Enregistrersous1 Caption="Speichern unter..."/>
+			<Fermer1 Caption="Schliessen"/>
+			<ToutFermer1 Caption="Alles schliessen"/>
+			<ImporterDXF1 Caption="Importieren DXF"/>
+			<Aperuavantdcoupe1 Caption="Schnittvorschau"/>
+			<Dcouper1 Caption="Schnitt starten"/>
+			<Quitter1 Caption="Beenden"/>
+		<Option1 Caption="&Werkzeuge"/>
+			<RinitialiserPosition1 Caption="Referenzfahrt"/>
+			<EnregistrerPosition1 Caption="Referenzpunkt speichern"/>
+			<Assistantdcoupe1 Caption="&Zuschneideassistent"/>
+			<Gestiondeslongerons1 Caption="&Holme"/>
+			<Cycledecoupe1 Caption="&Zuschneidevorgang"/>
+			<Logiciel1 Caption="&Optionen"/>
+		<Fentre1 Caption="&Fenster"/>
+			<Barredoutils1 Caption="Werkzeuge"/>
+			<Convertisseur1	 Caption="Konverter in/mm"/>
+			<Contrlemanuel1 Caption="Manuelle Steuerung"/>
+		<Help1 Caption="&Hilfe"/>
+			<AideJedicut Caption="Jedicut Hilfe"/>
+			<Preferences1 Caption="Einstellungen"/>
+			<About1 Caption="Über Jedicut..."/>
+<!-- /MainMenu -->
+<!-- JVPopupMenu -->
+		<PetitesIcones1 Caption="kleine Icons"/>
+		<GrandesIcones1 Caption="große Icons"/>
+		<Masquer1 Caption="Hide"/>
+<!-- /JVPopupMenu -->
+	<LabeledEditDeplacement>
+		<SubLabel Caption="Weg (mm):"/>
+	</LabeledEditDeplacement>
+
+	<CheckBoxDependance Caption="Schneiden"/>
+	<CheckBoxGuillotine Caption="Paralelschnitt"/>
+	<CheckBoxOblique Caption="Schrägschitt"/>
+	<CheckBoxLissage Caption="Glätten"/>
+
+	<RadioButtonLente Caption="Langsam"/>
+	<RadioButtonRapide Caption="Schnell"/>
+
+	<CheckBoxActiverChauffe Caption="Heizen"/>
+	<GroupBoxChauffe Caption=""/>
+	<RadioButtonMateriau Caption="Materialauswahl"/>
+	<RadioButtonManuel Caption="Manuell"/>
+
+	<BitBtnValider Caption="OK"/>
+
+	<!-- Liste des chaines en dures -->
+	<JvTranslatorStringsMain>
+		<Item Name="MessageErreur01" Value="Fehlende Sprachdatei: "/>
+		<Item Name="MessageErreur02" Value="Fehler in der Sprachdatei."/>
+		<Item Name="MessageErreur03" Value="Fehlende Jedipix dll."/>
+		<Item Name="MessageErreur04" Value="Hilfedatei nicht gefunden."/>
+		<Item Name="MessageErreur05" Value="Sie müssen die Microsoft HTML Hilfe 1.2 oder höher installieren."/>
+		<Item Name="MessageErreur06" Value="Die Zahl Schlüsselpunkten ist zwischen Flügelwurzel und Flügelspitze unterschiedlich."/>
+  		<Item Name="OpenDialogFilterAll" Value="Flächen Schneiden (*.jdc)|*.jdc|Profil  (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat|Alle|*.*"/>
+  		<Item Name="OpenDialogFilterImporterDXF" Value="Importieren Datei DXF|*.dxf"/>
+  		<Item Name="SaveDialogFilterJDC" Value="Flächen Schneiden (*.jdc)|*.jdc"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Profil (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat"/>
+  		<Item Name="MessageDialogue01" Value="Sind Sie sicher, dass Sie die Maschine in Referenzposition fahren möchten ?"/>
+  		<Item Name="MessageDialogue02" Value="Wollen Sie die Referenz-Position speichern ?"/>
+  		<Item Name="PilotageManuel01" Value="Weg(mm):"/>
+  		<Item Name="PilotageManuel02" Value="X(mm):"/>
+  		<Item Name="PilotageManuel03" Value="Y(mm):"/>
+  		<Item Name="PilotageManuel04" Value="Winkel(°):"/>
+	</JvTranslatorStringsMain>
+</FMain>
+
+<FOptions Caption="Optionen">
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="Möchten Sie diese Tabelle entfernen ?"/>
+		<Item Name="MessageDialogue02" Value="Diese Tabelle ist nicht vorhanden."/>
+		<Item Name="MessageDialogue03" Value="Die Tabelle wurde erfolgreich erstellt."/>
+		<Item Name="MessageDialogue04" Value="Fehler beim Schreiben der Datei."/>
+		<Item Name="MessageDialogue05" Value="Diese Tabelle gibt es bereits. Wählen Sie eine neue Tabelle."/>
+	</JvTranslatorStrings>
+
+	<JvNavPanelPageCommunication Caption="Kommunikation"/>
+
+	<JvNavPanelPageChauffe Caption="Heizung"/>
+
+	<JvNavPanelPageMachine Caption="Maschine"/>
+
+	<FrameNavChauffe1>
+		<LblTitre1 Caption="Drahtheizung aktivieren:"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Die Heizung wird mit den Motoren "/>
+				<Item Index="1" Value="synchronisiert, die Steuerung benötigt"/>
+				<Item Index="2" Value="einen Timer"/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Werkstoffe"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Sie können den Heizwert für "/>
+				<Item Index="1" Value="jedes Material festlegen."/>
+				<Item Index="2" Value="Dies ermöglicht gleichbleibende "/>
+				<Item Index="3" Value="Ergebnisse."/>
+			</Lines>
+		</Memo2>
+	</FrameNavChauffe1>
+	
+	<FrameNavCommunication1>
+		<LblTitre1 Caption="Plug-in:"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Wählen Sie die DLL die für "/>
+				<Item Index="1" Value="ihre CNC-Maschine angepasst ist."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Paralleler Port:(LPT1)"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Die manuelle Einstellung der Heizung ist "/>
+				<Item Index="1" Value="zur Zeit nicht verfügbar"/>
+				<Item Index="2" Value=""/>
+			</Lines>
+		</Memo2>
+	</FrameNavCommunication1>
+	
+	<FrameNavMachine1>
+		<LblTitre1 Caption="Motor:"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Weg(mm) pro Schritt:"/>  
+				<Item Index="1" Value="Geben Sie den Weg in mm pro "/>
+				<Item Index="2" Value="Schritt der Achse an."/>
+				<Item Index="3" Value=""/>
+				<Item Index="4" Value="Vorschub:"/>
+				<Item Index="5" Value="Wert ist die Zeit zwischen zwei "/>
+				<Item Index="6" Value="Schritten."/>
+				<Item Index="7" Value=""/>
+				<Item Index="8" Value="Invertieren: "/>
+				<Item Index="9" Value="Drehrichtung ändern."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Wichtig:"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Wenn das Heizen aktiviert ist,"/>
+				<Item Index="1" Value="ist die Geschwindigkeit die"/>
+				<Item Index="2" Value="Anzahl der Impulse des "/>
+				<Item Index="3" Value="Timers zw. 2 Schritten "/>
+			</Lines>
+		</Memo2>
+	</FrameNavMachine1>
+
+
+	<FrameOptionCommunication1>
+		<GroupBoxPlugIn Caption="Plug-in"/>
+		<LblListePlugIn Caption="Kommunikationsmodus:"/>
+		<LblDescription Caption="Beschreibung:"/>
+
+		<GroupBoxConfiguration Caption="Parallele Portkonfiguration"/>
+		<Label1 Caption="Motor Ein/Aus : "/>
+		<Label3 Caption="Ansicht Stecker"/>
+		<Label4 Caption="Motor X1"/>
+		<Label5 Caption="Motor X2"/>
+		<Label6 Caption="Motor Y1"/>
+		<Label7 Caption="Motor Y2"/>
+		<Label8 Caption="Richtung"/>
+		<Label9 Caption="Takt"/>
+		<Label11 Caption="Externer Timer:"/>
+		<Label12 Caption="Rückmeld.Heizung:"/>
+		<Label13 Caption="Ausgang Heizung:"/>
+		<Label14 Caption="Eingang Heizung:"/>
+
+		<CheckBoxSynchroniserMoteurAvecTimerExterne Caption="Motoren mit externem Timer synchronisieren."/>
+
+		<LblEditFrequenceTimer>
+			<SubLabel Caption="Frequenztimer :"/>
+		</LblEditFrequenceTimer>
+
+	</FrameOptionCommunication1>
+
+	<FrameOptionChauffe1>
+		<JvTranslatorStrings>
+			<Item Name="JvStringGridNom" Value="Material"/>
+			<Item Name="JvStringGridV1" Value="V1"/>
+			<Item Name="JvStringGridC1" Value="C1"/>
+			<Item Name="JvStringGridR1" Value="R1"/>
+			<Item Name="JvStringGridV2" Value="V2"/>
+			<Item Name="JvStringGridC2" Value="C2"/>
+			<Item Name="JvStringGridR2" Value="R2"/>
+		</JvTranslatorStrings>
+		<CheckBoxActiverChauffe Caption="ohne/mit Heizdrahtregelung"/>
+		<CheckBoxLireMode Caption="Hand/Automatik Heizdrahtregelung"/>
+		<CheckBoxChauffeDynamique Caption="Dynamische Heizdrahtregelung"/>
+		<LblListeMateriaux Caption="Materialliste:"/>
+		<BtnAjouter Caption="Hinzuzufügen"/>
+		<BtnSupprimer Caption="Entfernen"/>
+		<LblEditDeplacement>
+			<SubLabel Caption="Weg X-Achse (mm) :"/>
+		</LblEditDeplacement>
+		<LblVitesse Caption="Geschwindigkeit :"/>
+		<BtnTester Caption="Test"/>
+		<LblTitreValChauffe Caption="Heizwert:"/>
+		<BtnEnregistrer Caption="Sichern"/>
+		<LblEditNomMateriau>
+			<SubLabel Caption="Name des Materials :"/>
+		</LblEditNomMateriau>
+		<LblEditRayonnement>
+			<SubLabel Caption="Abbrand (mm) :"/>
+		</LblEditRayonnement>
+		<RadioBtnMesure1 Caption="Messung 1"/>
+		<RadioBtnMesure2 Caption="Messung 2"/>	
+	</FrameOptionChauffe1>
+	
+	<FrameOptionMachine1>
+		<GroupBoxX1 Caption="Motor X1"/>
+		<LabeledEditCoeffX1>
+			<SubLabel Caption="Weg(mm) pro Schritt"/>
+		</LabeledEditCoeffX1>
+		<LabeledEditVDecoupeX1>
+			<SubLabel Caption="Vorschub"/>
+		</LabeledEditVDecoupeX1>
+		<LabeledEditVRapideX1>
+			<SubLabel Caption="Schneller Vorschub"/>
+		</LabeledEditVRapideX1>
+		<CheckBoxInverserX1 Caption="Invertieren"/>
+
+		<GroupBoxX2 Caption="Motor X2"/>
+		<LabeledEditCoeffX2>
+			<SubLabel Caption="Weg(mm) pro Schritt"/>
+		</LabeledEditCoeffX2>
+		<LabeledEditVDecoupeX2>
+			<SubLabel Caption="Vorschub"/>
+		</LabeledEditVDecoupeX2>
+		<LabeledEditVRapideX2>
+			<SubLabel Caption="Schneller Vorschub"/>
+		</LabeledEditVRapideX2>
+		<CheckBoxInverserX2 Caption="Invertieren"/>
+
+		<GroupBoxY1 Caption="Motor Y1"/>
+		<LabeledEditCoeffY1>
+			<SubLabel Caption="Weg(mm) pro Schritt"/>
+		</LabeledEditCoeffY1>
+		<LabeledEditVDecoupeY1>
+			<SubLabel Caption="Vorschub"/>
+		</LabeledEditVDecoupeY1>
+		<LabeledEditVRapideY1>
+			<SubLabel Caption="Schneller Vorschub"/>
+		</LabeledEditVRapideY1>
+		<CheckBoxInverserY1 Caption="Invertieren"/>
+
+		<GroupBoxY2 Caption="Motor Y2"/>
+		<LabeledEditCoeffY2>
+			<SubLabel Caption="Weg(mm) pro Schritt"/>
+		</LabeledEditCoeffY2>
+		<LabeledEditVDecoupeY2>
+			<SubLabel Caption="Vorschub"/>
+		</LabeledEditVDecoupeY2>
+		<LabeledEditVRapideY2>
+			<SubLabel Caption="Schneller Vorschub"/>
+		</LabeledEditVRapideY2>
+		<CheckBoxInverserY2 Caption="Invertieren"/>
+
+		<LblEditLongueurMachine>
+			<SubLabel Caption="Länge des Heizdrahtes (mm) :"/>
+		</LblEditLongueurMachine>
+		<LblEditLargeurMachine>
+			<SubLabel Caption="Länge der X-Achse (mm) :"/>
+		</LblEditLargeurMachine>
+
+		<LblEstimationDecoupeX1 Caption="ca. (mm/s)"/>
+		<LblEstimationRapideX1 Caption="ca. (mm/s)"/>
+		<LblEstimationDecoupeX2 Caption="ca. (mm/s)"/>
+		<LblEstimationRapideX2 Caption="ca. (mm/s)"/>
+		<LblEstimationDecoupeY1 Caption="ca. (mm/s)"/>
+		<LblEstimationRapideY1 Caption="ca. (mm/s)"/>
+		<LblEstimationDecoupeY2 Caption="ca. (mm/s)"/>
+		<LblEstimationRapideY2 Caption="ca. (mm/s)"/>
+
+	</FrameOptionMachine1>
+
+	<JvLblNomTable Caption="Aktive Tabelle :"/>
+	<JvBitBtnChargerTable Caption="Laden"/>
+	<JvBitBtnCreerTable Caption="Neu"/>
+	<JvBitBtnSupprimerTable Caption="Löschen"/>
+
+	<BtnOk Caption="OK"/>
+	<BtnAppliquer Caption="Anwenden"/>	
+	<BtnAnnuler Caption="Abbrechen"/>
+</FOptions>
+
+<FSimulation Caption="Simulation">
+	<TabSheet1 Caption="Schneiden"/>
+	<TabSheet2 Caption="Heizung"/>
+	<GroupBoxPoly Caption="Polystyrol"/>
+		<LabeledEditHauteur>
+			<SubLabel Caption="Höhe(mm):"/>
+		</LabeledEditHauteur>
+		<LabeledEditLargeur>
+			<SubLabel Caption="Breite(mm):"/>
+		</LabeledEditLargeur>
+	<GroupBoxSimulation Caption="Simulation"/>
+		<CheckBoxMoteurX1Y1 Caption="Motor X1 + Y1"/>
+		<CheckBoxMoteurX2Y2 Caption="Motor X2 + Y2"/>
+	<GroupBoxZoom Caption="Ansicht"/>
+	<BitBtnFermer Caption="Schliessen"/>
+</FSimulation>
+
+<FConvertisseur Caption="Konverter">
+	<LblDescription Caption="Zu konvertierender Wert :"/>
+	<LblEdtMm>
+		<SubLabel Caption="mm"/>
+	</LblEdtMm>
+	<LblEditIn>
+		<SubLabel Caption="in"/>
+	</LblEditIn>
+</FConvertisseur>
+
+</Translation>
+

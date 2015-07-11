@@ -1,0 +1,627 @@
+<!-- ******************	-->
+<!-- Jedicut - 	Èeština 	-->
+<!-- Autor : Smallgod 	-->
+<!-- Date vytvoøení : 18/11/10 	-->
+<!-- ******************	-->
+
+
+<Translation>
+
+<FAPropos Caption="Jedicut">
+	<MemoAPropos>
+		<Lines>
+			<Items Index="0" Value="Odmítám všechny škody používáním tímto programem."/>
+			<Items Index="1" Value=""/>
+			<Items Index="2" Value=""/>
+			<Items Index="3" Value="Dìkuji za zprávy o chybách na Aeropassion´s fóru."/>
+		</Lines>
+	</MemoAPropos>
+	<BtnOk Caption="OK"/>
+</FAPropos>
+
+<FAssistantDecoupe Caption="Prùvodce øezáním">
+	<LblDecalage Caption="Offset (mm):"/>
+	<LblEnvergure Caption="Délka(mm):"/>
+	<LblFleche Caption="Zkosení (mm):"/>
+	<LblAile Caption="Profil"/>
+	<LblLongueurTable Caption="Délka øezacího drátu (mm):"/>
+	<LblLongueurX Caption="Délka X (mm):"/>
+	<CheckBoxTroncon Caption="Více sekcí" />
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Zrušit"/>
+
+	<JvSpeedBtnCentrer Hint="Støed øezání" />
+	<JvSpeedBtnAdd Hint="Pøidat sekci" />
+	<JvSpeedBtnDelete Hint="Smazání sekce" />
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Šíøka øezu pøesahuje kapacitu øezaèky."/>
+		<Item Name="MessageErreur02" Value="Délka øezu pøesahuje kapacitu øezaèky."/>
+		<Item Name="JvStringGridNumero" Value="i"/>
+  		<Item Name="JvStringGridLongueur" Value="Délka"/>
+		<Item Name="IHMAssistantDecalage" Value="O"/>
+  		<Item Name="IHMAssistantLongueur" Value="L"/>
+		<Item Name="IHMAssistantFleche" Value="S"/>
+	</JvTranslatorStrings>
+</FAssistantDecoupe>
+
+<FAssociation Caption="Pøedvolby">
+	<LblTitreP1 Caption="Chcete asociovat typy souborù"/>
+	<LblTitreP2 Caption="s Jedicutem ?"/>
+	<CheckBoxDAT Caption="*.dat - Datový soubor"/>
+	<CheckBoxJDC Caption="*.jdc - Jedicut øezací soubor"/>
+	<CheckBoxJDP Caption="*.jdp - Jedicut soubor"/>
+	<CheckBoxPRF Caption="*.prf - Jedicut soubor"/>
+	<LblLangue Caption="Vyberte jazyk pro Jedicut."/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Zrušit"/>
+</FAssociation>
+
+<FChildDecoupe>
+	<LabeledEditEmplanture>
+		<SubLabel Caption="Koøen køídla :"/>
+	</LabeledEditEmplanture>
+	<LabeledEditSaumon>
+		<SubLabel Caption="Konec køídla :"/>
+	</LabeledEditSaumon>
+	<LEditCordeEmplanture>
+		<SubLabel Caption="Koøen køídla délka (mm) :"/>
+	</LEditCordeEmplanture>
+	<LEditEpRelativeEmplanture>
+		<SubLabel Caption="Relativní tlouška :"/>
+	</LEditEpRelativeEmplanture>
+	<LEditCordeSaumon>
+		<SubLabel Caption="Konec køídla délka (mm) :"/>
+	</LEditCordeSaumon>
+	<LEditEpRelativeSaumon>
+		<SubLabel Caption="Relativní tlouška :"/>
+	</LEditEpRelativeSaumon>
+	<LEditVrillageEmplanture>
+		<SubLabel Caption="Úhel zkroucení (°) :"/>
+	</LEditVrillageEmplanture>
+	<LEditVrillageSaumon>
+		<SubLabel Caption="Úhel zkroucení (°) :"/>
+	</LEditVrillageSaumon>
+	<LabeledEditDepart>
+		<SubLabel Caption="Poèátek øezu - osa Y"/>
+	</LabeledEditDepart>
+	<LabeledEditDegagement>
+		<SubLabel Caption="Poèátek øezu - osa X"/>
+	</LabeledEditDegagement>
+	<CheckBoxVrillage Caption="Zobrazit zkroucení"/>
+	<CheckBoxAssistantDecoupe Caption="Prùvodce øezáním"/>
+
+	<RadioGroupAile Caption="Køídlo">
+		<Items>
+			<Item Index="0" Value="Levá"/>
+     			<Item Index="1" Value="Pravá"/>
+		</Items>
+	</RadioGroupAile>
+	
+	<GroupBoxPeauEmpl Caption="Potah"/>
+	<LabeledEditEpaisseurEmpl>
+		<SubLabel Caption="Tlouška (mm) :"/>
+	</LabeledEditEpaisseurEmpl>
+	<CheckBoxInverserPeauEmpl Caption="Obrácenì"/>
+
+	<GroupBoxPeauSaum Caption="Potah"/>
+	<LabeledEditEpaisseurSaum>
+		<SubLabel Caption="Tlouška (mm) :"/>
+	</LabeledEditEpaisseurSaum>
+	<CheckBoxInverserPeauSaum Caption="Obrácenì"/>
+
+	<LabelDescription Caption="Poznámky :"/>
+	<CheckBoxProfilSymetrique Caption="Symetrický profil"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Jedicut nemùže otevøít tento soubor."/>
+		<Item Name="MessageErreur02" Value="Chyba pøi výpoètu bodù profilu."/>
+		<Item Name="TexteInterface01" Value="Bez názvu - Øez"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Profile (*.jdp)|*.jdp|Profile (*.prf)|*.prf|Profile (*.dat)|*.dat"/>
+	</JvTranslatorStrings>
+</FChildDecoupe>
+
+<FChildProfil>
+	<LblNom Caption="Název :"/>	
+	<LblEpaisseurRelative Caption="Relativní tlouška :"/>
+	<LblDescription Caption="Popis :"/>
+	<LblExtrado Caption="--> Horní"/>
+	<BitBtnAppliquer Caption="Použít"/>
+	<LblIntrado Caption="--> Spodní"/>
+
+	<!-- <PopupMenuChildProfil> -->
+		<Insrer1 Caption="Vložit"/>
+		<Supprimer1 Caption="Smazat"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Jedicut nemùže otevøít tento soubor.."/>
+		<Item Name="MessageErreur02" Value="Relativní tlouštka se nemùže rovnat 0."/>
+		<Item Name="MessageTexte01" Value="Nelze vložit poznámky pro tento soubor."/>
+		<Item Name="TexteInterface01" Value="Bez názvu - Profil"/>
+	</JvTranslatorStrings>
+
+</FChildProfil>
+
+<FConfirmationDecoupe Caption="Øezání">
+	<MemoAssistant>
+		<Lines>
+			<Item Index="0" Value="Prùvodce konfigurací"/>
+		</Lines>
+	</MemoAssistant>
+	<BtnAssistant Caption="Náhled "/>
+	<RadioButtonMateriau Caption="Nastavení øezné teploty materiálu"/>
+	<RadioButtonManuel Caption="Manuální øízení teploty"/>
+	<LblConfirmation Caption="Opravdu chcete zaèít øezat?"/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Zrušit"/>
+	<LblModeChauffe Caption="Ovládání øezné teploty :"/>
+	<JvTranslatorStrings>
+		<Item Name="MessageEtatChauffeManuel" Value="Manuálnì"/>
+		<Item Name="MessageEtatChauffePC" Value="Poèítaèem"/>
+	</JvTranslatorStrings>
+</FConfirmationDecoupe>
+
+<FCycleDecoupe Caption="Manažer øezání">
+
+	<RadioGroupCote Caption="Profil">
+		<Items>
+			<Item Index="0" Value="Koøen køídla"/>
+     			<Item Index="1" Value="Konec køídla"/>
+		</Items>
+	</RadioGroupCote>
+
+	<GroupBoxAffichage Caption="Zobrazení"/>
+		<SpeedBtnZoomIn Hint="Zvìtšit"/>
+		<SpeedBtnZoomOut Hint="Zmenšit"/>
+		<SpeedBtnShowPoint Hint="Zobrazit všechny body"/>
+
+	<GroupBoxKeyPoint Caption="Klíèový bod"/>
+		<SpeedBtnAddKey Hint="Pøidat klíèový bod"/>
+		<SpeedBtnDeleteKey Hint="Smazat klíèový bod"/>
+
+	<BtnParDefaut Caption="Výchozí..."/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Zrušit"/>
+	<BtnAppliquer Caption="Použít "/>
+
+	<FrameCycleAile>	
+		<LblListe Caption="Cyklus øezání"/>
+	
+		<BtnSupprimer Caption="Smazat"/>
+		<BtnSupprimerTout Caption="Smazat vše"/>
+	
+		<GroupBoxProprietes Caption="Vlastnosti"/>
+			<LabeledEditDeplacement>
+				<SubLabel Caption="Pøesunout (mm) :"/>
+			</LabeledEditDeplacement>
+			<CheckBoxLissage Caption="Hladké"/>
+			<CheckBoxInverser Caption="Obrácenì"/>
+			<RadioGroupQualification Caption="Typ">
+				<Items>
+					<Item Index="0" Value="Neutrální"/>
+	     				<Item Index="1" Value="Poèítat"/>
+	     				<Item Index="2" Value="RAZ Poèítadlo"/>
+				</Items>
+			</RadioGroupQualification>
+			<RadioGroupVitesse Caption="Rychlost">
+				<Items>
+					<Item Index="0" Value="Øez"/>
+	     				<Item Index="1" Value="Pøejezd"/>
+				</Items>
+			</RadioGroupVitesse>
+			<RadioGroupSpecial Caption="Výška pøejezdu">
+				<Items>
+					<Item Index="0" Value="Standartní"/>
+	     				<Item Index="1" Value="Støední"/>
+	     				<Item Index="2" Value="Vysoká"/>
+				</Items>
+			</RadioGroupSpecial>
+
+		<JvTranslatorStringsCycleAile>
+			<Item Name="MessageTexte01" Value="Vrchní"/>
+			<Item Name="MessageTexte02" Value="Spodní"/>
+			<Item Name="MessageTexte03" Value="Pauza"/>
+			<Item Name="MessageTexte04" Value="Vodorovná"/>
+			<Item Name="MessageTexte05" Value="Svislá"/>
+			<Item Name="MessageTexte06" Value="Èas (ms) :"/>
+			<Item Name="MessageTexte07" Value="Pøesunout (mm) :"/>
+		</JvTranslatorStringsCycleAile>
+
+	</FrameCycleAile>
+	
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="Chcete tento øez použít jako výchozí?"/>
+		<Item Name="MessageDialogue02" Value="Poèet klíèových bodù mezi koøenem a koncem køílda je rozdílný, chceš to opravit?"/>
+		<Item Name="MessageDialogue03" Value="Poèet bodù mezi koøenem a koncem køídla je rozdílný."/>
+	</JvTranslatorStrings>
+
+</FCycleDecoupe>
+
+<FDecoupeEnCours Caption="CNC správce komunikace">
+	<LabelDecoupe Caption="Pokraèovat v øezání..."/>
+	<BtnPause Caption="Pauza"/>
+	<BtnAnnuler Caption="Zrušit"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageBtn01" Value="Pauza"/>
+		<Item Name="MessageBtn02" Value="Pokraèovat"/>
+		<Item Name="MessageTexte01" Value="Pokraèovat v øezání..."/>
+		<Item Name="MessageTexte02" Value="Pauza v øezání."/>
+	</JvTranslatorStrings>
+
+</FDecoupeEnCours>
+
+<FGestionLongeron Caption="Správce nosníkù">
+	<LblListeLongerons Caption="Seznam nosníkù"/>
+
+	<GroupboxProprietes Caption="Vlastnosti"/>
+		<LabeledEditEmplantureHauteur>
+			<SubLabel Caption="Výška(mm) :"/>
+		</LabeledEditEmplantureHauteur>
+		<LabeledEditEmplantureLargeur>
+			<SubLabel Caption="Šíøka (mm) :"/>
+		</LabeledEditEmplantureLargeur>
+		<LabeledEditSaumonHauteur>
+			<SubLabel Caption="Výška (mm) :"/>
+		</LabeledEditSaumonHauteur>
+		<LabeledEditSaumonLargeur>
+			<SubLabel Caption="Šíøka (mm) :"/>
+		</LabeledEditSaumonLargeur>
+		<LabeledEditAngle>
+			<SubLabel Caption="Úhel (°) :"/>
+		</LabeledEditAngle>
+		<CheckBoxParalleleAttaque Caption="Paralelnì k nábìžné hranì"/>
+		<CheckBoxRegulier Caption="Konstantní prùøez"/>
+		<LabeledEditEmplantureOffsetX>
+			<SubLabel Caption="Vzdál. od náb. hrany (mm) :"/>
+		</LabeledEditEmplantureOffsetX>
+		<LabeledEditSaumonOffsetX>
+			<SubLabel Caption="Vzdál. od náb. hrany (mm) :"/>
+		</LabeledEditSaumonOffsetX>
+		<RadioGroupPosition Caption="Pozice">
+			<Items>
+				<Item Index="0" Value="Vrchní"/>
+     				<Item Index="1" Value="Spodní"/>
+			</Items>
+		</RadioGroupPosition>
+		<LblEmplanture Caption="Koøen køídla"/>
+		<LblSaumon Caption="Konec køídla"/>
+
+	<BtnNouveau Caption="Nový"/>
+	<BtnSupprimer Caption="Smazat"/>
+	<BtnSupprimerTout Caption="Smazat vše"/>
+	<BtnOk Caption="OK"/>
+	<Btnannuler Caption="Zrušit"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageTexte01" Value="Obdélník"/>
+		<Item Name="MessageTexte02" Value="Kruh"/>
+		<Item Name="MessageTexte03" Value="Výška (mm) :"/>
+		<Item Name="MessageTexte04" Value="Šíøka (mm) :"/>
+		<Item Name="MessageTexte05" Value="Hloubka (mm) :"/>
+		<Item Name="MessageTexte06" Value="Prùmìr (mm) :"/>
+	</JvTranslatorStrings>
+
+</FGestionLongeron>
+
+<FMain>
+<!-- MainMenu -->
+		<Fichier1 Caption="&Soubor"/>
+			<Nouveau1 Caption="&Nový"/>
+				<Dcoupe1 Caption="Øez køídla"/>
+				<Profil1 Caption="Profil"/>
+			<Ouvrir1 caption="&Otevøít"/>
+			<Enregistrer1 Caption="&Uložit"/>
+			<Enregistrersous1 Caption="Uložit &Jako..."/>
+			<Fermer1 Caption="Zavøít"/>
+			<ToutFermer1 Caption="Zavøít vše"/>
+			<ImporterDXF1 Caption="Import DXF"/>
+			<Aperuavantdcoupe1 Caption="Náhled øezání"/>
+			<Dcouper1 Caption="Øezání"/>
+			<Quitter1 Caption="Konec"/>
+		<Option1 Caption="&Nástroje"/>
+			<RinitialiserPosition1 Caption="Jít na Referenèní bod"/>
+			<EnregistrerPosition1 Caption="Uložit Referenèní bod"/>
+			<Assistantdcoupe1 Caption="Prùvodce øezáním"/>
+			<Gestiondeslongerons1 Caption="&Správce nosníkù"/>
+			<Cycledecoupe1 Caption="&Manažer øezání"/>
+			<Logiciel1 Caption="&Možnosti"/>
+		<Fentre1 Caption="&Zobrazení"/>
+			<Barredoutils1 Caption="Ikon"/>
+			<Convertisseur1	 Caption="Pøevod in/mm"/>
+			<Contrlemanuel1 Caption="Ruèní ovládání"/>
+		<Help1 Caption="&Nápovìda"/>
+			<AideJedicut Caption="Jedicut Help"/>
+			<Preferences1 Caption="Nastavení"/>
+			<About1 Caption="O aplikaci..."/>
+<!-- /MainMenu -->
+<!-- JVPopupMenu -->
+		<PetitesIcones1 Caption="Malé ikony"/>
+		<GrandesIcones1 Caption="Velké ikony"/>
+		<Masquer1 Caption="Skrýt"/>
+<!-- /JVPopupMenu -->
+	<LabeledEditDeplacement>
+		<SubLabel Caption="Pøesun (mm) :"/>
+	</LabeledEditDeplacement>
+
+	<CheckBoxDependance Caption="Závislý"/>
+	<CheckBoxGuillotine Caption="Odøíznutí"/>
+	<CheckBoxLissage Caption="Hladký"/>
+
+	<RadioButtonLente Caption="Pomalu"/>
+	<RadioButtonRapide Caption="Rychle"/>
+
+	<CheckBoxActiverChauffe Caption="Žhavení"/>
+	<GroupBoxChauffe Caption=""/>
+	<RadioButtonMateriau Caption="Vyber si materiál"/>
+	<RadioButtonManuel Caption="Ruèní ovládání"/>
+
+	<BitBtnValider Caption="Potvrdit"/>
+
+	<!-- Liste des chaines en dures -->
+	<JvTranslatorStringsMain>
+		<Item Name="MessageErreur01" Value="Jazykový soubor chybí : "/>
+		<Item Name="MessageErreur02" Value="Chyba v jazykovém soboru."/>
+		<Item Name="MessageErreur03" Value="Dll Jedipix chybí."/>
+		<Item Name="MessageErreur04" Value="Sobor s pomocí, nenalezen."/>
+		<Item Name="MessageErreur05" Value="Mìl bys nainstalovat Microsoft HTML Help 1.2 nebo vyšší."/>
+		<Item Name="MessageErreur06" Value="Poèet klíèových bodù mezi koøenem a koncem køídla chybí."/>
+  		<Item Name="OpenDialogFilterAll" Value="Wing Cut (*.jdc)|*.jdc|Profile  (*.jdp)|*.jdp|Profile (*.prf)|*.prf|Profile (*.dat)|*.dat|All|*.*"/>
+  		<Item Name="OpenDialogFilterImporterDXF" Value="Import DXF File|*.dxf"/>
+  		<Item Name="SaveDialogFilterJDC" Value="Øez køídla(*.jdc)|*.jdc"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Profil (*.jdp)|*.jdp|Profile (*.prf)|*.prf|Profile (*.dat)|*.dat"/>
+  		<Item Name="MessageDialogue01" Value="Opravdu chceš pøejet na referenèní pozici ?"/>
+  		<Item Name="MessageDialogue02" Value="Opravdu chceš uložit referenèní pozici ?"/>
+  		<Item Name="PilotageManuel01" Value="Pøesunout (mm) :"/>
+  		<Item Name="PilotageManuel02" Value="X (mm) :"/>
+  		<Item Name="PilotageManuel03" Value="Y (mm) :"/>
+  		<Item Name="PilotageManuel04" Value="Úhel (°) :"/>
+	</JvTranslatorStringsMain>
+</FMain>
+
+<FOptions Caption="Options">
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="Chcete odstranit tuto tabulku ?"/>
+		<Item Name="MessageDialogue02" Value="Tato tabulka neexistuje."/>
+		<Item Name="MessageDialogue03" Value="Tabulka byla úspìšnì vytvoøena."/>
+		<Item Name="MessageDialogue04" Value="Chyba pøi zápisu do souboru."/>
+		<Item Name="MessageDialogue05" Value="Tato tabulka již existuje. Zadej nové jméno tabulky."/>
+	</JvTranslatorStrings>
+
+	<JvNavPanelPageCommunication Caption="Komunikace"/>
+
+	<JvNavPanelPageChauffe Caption="Žhavení"/>
+
+	<JvNavPanelPageMachine Caption="CNC mašina"/>
+
+	<FrameNavChauffe1>
+		<LblTitre1 Caption="Aktivovat žhavení :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Chcete-li aktivovat žhavení"/>
+				<Item Index="1" Value="sesynchronizujte motory"/>
+				<Item Index="2" Value="s externím èasovaèem."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Seznam materiálu :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Mùžeš si nastavit seznam"/>
+				<Item Index="1" Value="oblíbeného materiálu, a uložit "/>
+				<Item Index="2" Value="teplotu žhavícího drátu pro "/>
+				<Item Index="3" Value="každý znich."/>
+			</Lines>
+		</Memo2>
+	</FrameNavChauffe1>
+	
+	<FrameNavCommunication1>
+		<LblTitre1 Caption="Plug-in :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Vyber si odpovídající Plug-in"/>
+				<Item Index="1" Value="pro tvou CNC mašinu."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Paralelní port :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Ruèní regulace žhavení"/>
+				<Item Index="1" Value="není k dispozici."/>
+				<Item Index="2" Value=""/>
+			</Lines>
+		</Memo2>
+	</FrameNavCommunication1>
+	
+	<FrameNavMachine1>
+		<LblTitre1 Caption="Motor"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="èíslo mm / krok : uvádí"/>
+				<Item Index="1" Value="rozdíl mezi  2 kroky."/>
+				<Item Index="2" Value=""/>
+				<Item Index="3" Value=""/>
+				<Item Index="4" Value="Rychlost : Èíslo udává"/>
+				<Item Index="5" Value="uplynulý èas mezi 2 kroky"/>
+				<Item Index="6" Value="motoru."/>
+				<Item Index="7" Value=""/>
+				<Item Index="8" Value="Reverz : Povoluje obrácený"/>
+				<Item Index="9" Value="chod motoru."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Important :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Jestli že je povoleno ruèní ovládání žhavení,"/>
+				<Item Index="1" Value="otáèky motoru jsou ovládány"/>
+				<Item Index="2" Value="externím èasovaèem."/>
+				<Item Index="3" Value=""/>
+			</Lines>
+		</Memo2>
+	</FrameNavMachine1>
+
+
+	<FrameOptionCommunication1>
+		<GroupBoxPlugIn Caption="Plug-in"/>
+		<LblListePlugIn Caption="Režim komunikace"/>
+		<LblDescription Caption="Poznámky"/>
+
+		<GroupBoxConfiguration Caption="Nastavení Paralelního portu"/>
+		<Label1 Caption="Motor On/Off : "/>
+		<Label3 Caption="Pohled na DB25 konektor"/>
+		<Label4 Caption="Motor X1"/>
+		<Label5 Caption="Motor X2"/>
+		<Label6 Caption="Motor Y1"/>
+		<Label7 Caption="Motor Y2"/>
+		<Label8 Caption="Step"/>
+		<Label9 Caption="Dir"/>
+		<Label11 Caption="Externí èasovaè Pin :"/>
+		<Label12 Caption="Stav žhavení Pin :"/>
+		<Label13 Caption="Kontrola žhavení Pin :"/>
+		<Label14 Caption="Návrat žhavení Pin :"/>
+
+		<CheckBoxSynchroniserMoteurAvecTimerExterne Caption="Synchronizace otáèek motoru s externím èasovaèem."/>
+
+		<LblEditFrequenceTimer>
+			<SubLabel Caption="Frekvence èasovaèe :"/>
+		</LblEditFrequenceTimer>
+
+	</FrameOptionCommunication1>
+
+	<FrameOptionChauffe1>
+		<JvTranslatorStrings>
+			<Item Name="JvStringGridNom" Value="Název materiálu"/>
+			<Item Name="JvStringGridV1" Value="V1"/>
+			<Item Name="JvStringGridC1" Value="C1"/>
+			<Item Name="JvStringGridR1" Value="R1"/>
+			<Item Name="JvStringGridV2" Value="V2"/>
+			<Item Name="JvStringGridC2" Value="C2"/>
+			<Item Name="JvStringGridR2" Value="R2"/>
+		</JvTranslatorStrings>
+		<CheckBoxActiverChauffe Caption="Zapnutí / Vypnutí kontroly žhavení "/>
+		<CheckBoxLireMode Caption="Pøeètení kontroly žhavení na parelním portu (Manu / Auto)"/>
+		<CheckBoxChauffeDynamique Caption="Povolení dynamického žhavení"/>
+		<LblListeMateriaux Caption="Seznam materiálu :"/>
+		<BtnAjouter Caption="Další"/>
+		<BtnSupprimer Caption="Smazat"/>
+		<LblEditDeplacement>
+			<SubLabel Caption="Pohyb osy X (mm) :"/>
+		</LblEditDeplacement>
+		<LblVitesse Caption="Hodnota rychlosti :"/>
+		<BtnTester Caption="Test"/>
+		<LblTitreValChauffe Caption="Výhøevnost :"/>
+		<BtnEnregistrer Caption="Uložit"/>
+		<LblEditNomMateriau>
+			<SubLabel Caption="Název materiálu :"/>
+		</LblEditNomMateriau>
+		<LblEditRayonnement>
+			<SubLabel Caption="Záøení (mm) :"/>
+		</LblEditRayonnement>
+		<RadioBtnMesure1 Caption="Meøení 1"/>
+		<RadioBtnMesure2 Caption="Meøení 2"/>	
+	</FrameOptionChauffe1>
+	
+	<FrameOptionMachine1>
+		<GroupBoxX1 Caption="Motor X1"/>
+		<LabeledEditCoeffX1>
+			<SubLabel Caption="mm / krok"/>
+		</LabeledEditCoeffX1>
+		<LabeledEditVDecoupeX1>
+			<SubLabel Caption="Rychlost øezu"/>
+		</LabeledEditVDecoupeX1>
+		<LabeledEditVRapideX1>
+			<SubLabel Caption="Rychl. pøejezdu"/>
+		</LabeledEditVRapideX1>
+		<CheckBoxInverserX1 Caption="Obrácenì"/>
+
+		<GroupBoxX2 Caption="Motor X2"/>
+		<LabeledEditCoeffX2>
+			<SubLabel Caption="mm / krok"/>
+		</LabeledEditCoeffX2>
+		<LabeledEditVDecoupeX2>
+			<SubLabel Caption="Rychlost øezu"/>
+		</LabeledEditVDecoupeX2>
+		<LabeledEditVRapideX2>
+			<SubLabel Caption="Rychl. pøejezdu"/>
+		</LabeledEditVRapideX2>
+		<CheckBoxInverserX2 Caption="Obrácenì"/>
+
+		<GroupBoxY1 Caption="Motor Y1"/>
+		<LabeledEditCoeffY1>
+			<SubLabel Caption="mm / krok"/>
+		</LabeledEditCoeffY1>
+		<LabeledEditVDecoupeY1>
+			<SubLabel Caption="Rychlost øezu"/>
+		</LabeledEditVDecoupeY1>
+		<LabeledEditVRapideY1>
+			<SubLabel Caption="Rychl. pøejezdu"/>
+		</LabeledEditVRapideY1>
+		<CheckBoxInverserY11 Caption="Obrácenì"/>
+
+		<GroupBoxY2 Caption="Motor Y2"/>
+		<LabeledEditCoeffY2>
+			<SubLabel Caption="mm / krok"/>
+		</LabeledEditCoeffY2>
+		<LabeledEditVDecoupeY2>
+			<SubLabel Caption="Rychlost øezu"/>
+		</LabeledEditVDecoupeY2>
+		<LabeledEditVRapideY2>
+			<SubLabel Caption="Rychl. pøejezdu"/>
+		</LabeledEditVRapideY2>
+		<CheckBoxInverserY2 Caption="Obrácenì"/>
+
+		<LblEditLongueurMachine>
+			<SubLabel Caption="Délka øezného drátu, (mm) :"/>
+		</LblEditLongueurMachine>
+		<LblEditLargeurMachine>
+			<SubLabel Caption="Délka osy X s (mm) :"/>
+		</LblEditLargeurMachine>
+
+		<LblEstimationDecoupeX1 Caption="Odhad (mm/s)"/>
+		<LblEstimationRapideX1 Caption="Odhad (mm/s)"/>
+		<LblEstimationDecoupeX2 Caption="Odhad (mm/s)"/>
+		<LblEstimationRapideX2 Caption="Odhad (mm/s)"/>
+		<LblEstimationDecoupeY1 Caption="Odhad (mm/s)"/>
+		<LblEstimationRapideY1 Caption="Odhad (mm/s)"/>
+		<LblEstimationDecoupeY2 Caption="Odhad (mm/s)"/>
+		<LblEstimationRapideY2 Caption="Odhad (mm/s)"/>
+
+	</FrameOptionMachine1>
+
+	<JvLblNomTable Caption="Aktivní tabulka :"/>
+	<JvBitBtnChargerTable Caption="Nahrát"/>
+	<JvBitBtnCreerTable Caption="Nový"/>
+	<JvBitBtnSupprimerTable Caption="Smazat"/>
+
+	<BtnOk Caption="OK"/>
+	<BtnAppliquer Caption="Použít"/>	
+	<BtnAnnuler Caption="Zrušit"/>
+</FOptions>
+
+<FSimulation Caption="">
+	<TabSheet1 Caption="Øezání"/>
+	<TabSheet2 Caption="Žhavení"/>
+	<GroupBoxPoly Caption="Polystyren"/>
+		<LabeledEditHauteur>
+			<SubLabel Caption="Výška"/>
+		</LabeledEditHauteur>
+		<LabeledEditLargeur>
+			<SubLabel Caption="Šíøka"/>
+		</LabeledEditLargeur>
+	<GroupBoxSimulation Caption="Simulace"/>
+		<CheckBoxMoteurX1Y1 Caption="Motor X1 a Y1"/>
+		<CheckBoxMoteurX2Y2 Caption="Motor X2 a Y2"/>
+	<GroupBoxZoom Caption="Pohled"/>
+	<BitBtnFermer Caption="Zavøít"/>
+</FSimulation>
+
+<FConvertisseur Caption="Pøevodník">
+	<LblDescription Caption="Zadejte hodnotu k pøevodu :"/>
+	<LblEdtMm>
+		<SubLabel Caption="mm"/>
+	</LblEdtMm>
+	<LblEditIn>
+		<SubLabel Caption="in"/>
+	</LblEditIn>
+</FConvertisseur>
+
+</Translation>

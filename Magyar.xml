@@ -1,0 +1,630 @@
+<!-- ******************		-->
+<!-- Jedicut - Hungary 		-->
+<!-- Fordító : Magi István. 	-->
+<!-- Készült : 2009.02.12.	-->
+<!-- Modosítva: 2010. 02. 15.	-->
+<!-- ***************************-->
+
+<Translation>
+
+<FAPropos Caption="Jedicut">
+	<MemoAPropos>
+		<Lines>
+			<Items Index="0" Value="A Softver használatából adódó károkért semmilyen "/>
+			<Items Index="1" Value="felelõségget nem vállalunk."/>
+			<Items Index="2" Value="A Fordítást végeszte: Magi István, www.hobbycnc.hu"/>
+			<Items Index="3" Value="Köszönettel veszünk minden információt az Aeropassion's forumon. "/>
+		</Lines>
+	</MemoAPropos>
+	<BtnOk Caption="OK"/>
+</FAPropos>
+
+<FAssistantDecoupe Caption="Vágó Varázsló">
+	<LblDecalage Caption="Távolság (mm):"/>
+	<LblEnvergure Caption="Méret (mm):"/>
+	<LblFleche Caption="Hátra (mm):"/>
+	<LblAile Caption="Szárny"/>
+	<LblLongueurTable Caption="Vágódrót hossza (mm):"/>
+	<LblLongueurX Caption="Hossza X (mm):"/>
+	<CheckBoxTroncon Caption="Több darabos" />
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Mégse"/>
+
+	<JvSpeedBtnCentrer Hint="Közép vágás" />
+	<JvSpeedBtnAdd Hint="Szekció hozzáadása" />
+	<JvSpeedBtnDelete Hint="Szekció törlése" />
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Az eltolás mértéke nem illeszkedik bele a vágási hosszba."/>
+		<Item Name="MessageErreur02" Value="A vágási hossz nem fér bele a tábla hosszába."/>
+		<Item Name="JvStringGridNumero" Value="i"/>
+  		<Item Name="JvStringGridLongueur" Value="Hossz"/>
+		<Item Name="IHMAssistantDecalage" Value="T"/>
+  		<Item Name="IHMAssistantLongueur" Value="DR"/>
+		<Item Name="IHMAssistantFleche" Value="H"/>
+	</JvTranslatorStrings>
+</FAssistantDecoupe>
+
+<FAssociation Caption="Beállítások">
+	<LblTitreP1 Caption="Mely File-okat társít"/>
+	<LblTitreP2 Caption="a Jedicut-hoz ?"/>
+	<CheckBoxDAT Caption="*.dat - Profil file"/>
+	<CheckBoxJDC Caption="*.jdc - Szárny vágási file"/>
+	<CheckBoxJDP Caption="*.jdp - Profil file"/>
+	<CheckBoxPRF Caption="*.prf - Profil file"/>
+	<LblLangue Caption="Válasszon nyelvet a Jedicut-hoz."/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Mégse"/>
+</FAssociation>
+
+<FChildDecoupe>
+	<LabeledEditEmplanture>
+		<SubLabel Caption="Szárnytõ :"/>
+	</LabeledEditEmplanture>
+	<LabeledEditSaumon>
+		<SubLabel Caption="Szárnyvég :"/>
+	</LabeledEditSaumon>
+	<LEditCordeEmplanture>
+		<SubLabel Caption="Szárnytõ mélysége (mm) :"/>
+	</LEditCordeEmplanture>
+	<LEditEpRelativeEmplanture>
+		<SubLabel Caption="Szárnytõ relativ vastagsága"/>
+	</LEditEpRelativeEmplanture>
+	<LEditCordeSaumon>
+		<SubLabel Caption="Szárnyvég mélysége (mm) :"/>
+	</LEditCordeSaumon>
+	<LEditEpRelativeSaumon>
+		<SubLabel Caption="Szárnyvég relativ vastagsága"/>
+	</LEditEpRelativeSaumon>
+
+	<LEditVrillageEmplanture>
+		<SubLabel Caption="Elcsavarás (°) :"/>
+	</LEditVrillageEmplanture>
+	<LEditVrillageSaumon>
+		<SubLabel Caption="Elcsavarás (°) :"/>
+	</LEditVrillageSaumon>		
+	<LabeledEditDepart>
+		<SubLabel Caption="Induló magasság"/>
+	</LabeledEditDepart>
+	<LabeledEditDegagement>
+		<SubLabel Caption="Kilépés magassága"/>
+	</LabeledEditDegagement>
+	<CheckBoxVrillage Caption="Látszik az állásszög"/>
+	<CheckBoxAssistantDecoupe Caption="Vágó Varázsló"/>
+
+	<RadioGroupAile Caption="Szárny">
+		<Items>
+			<Item Index="0" Value="Bal"/>
+     			<Item Index="1" Value="Jobb"/>
+		</Items>
+	</RadioGroupAile>
+	
+	<GroupBoxPeauEmpl Caption="Felület tulajdonsága"/>
+	<LabeledEditEpaisseurEmpl>
+		<SubLabel Caption="Vastagság (mm) :"/>
+	</LabeledEditEpaisseurEmpl>
+	<CheckBoxInverserPeauEmpl Caption="Fordított"/>
+
+	<GroupBoxPeauSaum Caption="Felület tulajdonsága"/>
+	<LabeledEditEpaisseurSaum>
+		<SubLabel Caption="Vastagság (mm) :"/>
+	</LabeledEditEpaisseurSaum>
+	<CheckBoxInverserPeauSaum Caption="Fordított"/>
+
+	<LabelDescription Caption="Leírása :"/>
+	<CheckBoxProfilSymetrique Caption="Szimmetrikus profil"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Jedicut nem tudja megnyitni."/>
+		<Item Name="MessageErreur02" Value="Hibás a Profil kiszámított pontjai."/>
+		<Item Name="TexteInterface01" Value="Nincs név - Vágás"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Profil (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat"/>
+	</JvTranslatorStrings>
+</FChildDecoupe>
+
+<FChildProfil>
+	<LblNom Caption="Név :"/>	
+	<LblEpaisseurRelative Caption="Követõ ív :"/>
+	<LblDescription Caption="Magyarázat :"/>
+	<LblExtrado Caption="--> Fenti"/>
+	<BitBtnAppliquer Caption="Alkalmaz"/>
+	<LblIntrado Caption="--> Lenti"/>
+
+	<!-- <PopupMenuChildProfil> -->
+		<Insrer1 Caption="Beilleszt"/>
+		<Supprimer1 Caption="Töröl"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Jedicut nem tudja megnyitni."/>
+		<Item Name="MessageErreur02" Value="A követõ ív nem 0."/>
+		<Item Name="MessageTexte01" Value="Nem található magyarázat ehhez a típushoz."/>
+		<Item Name="TexteInterface01" Value="Nincs név - Profil"/>
+	</JvTranslatorStrings>
+
+</FChildProfil>
+
+<FConfirmationDecoupe Caption="Vágás">
+	<MemoAssistant>
+		<Lines>
+			<Item Index="0" Value="Vágó Varázsló beállítás"/>
+		</Lines>
+	</MemoAssistant>
+	<BtnAssistant Caption="Beállítás"/>
+	<RadioButtonMateriau Caption="Anyag melegítési vezérlés"/>
+	<RadioButtonManuel Caption="Kézi fûtés"/>
+	<LblConfirmation Caption="Készen áll a vágásra?"/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Mégsem"/>
+	<LblModeChauffe Caption="Fûtés beállítás a kártyáról :"/>
+	<JvTranslatorStrings>
+		<Item Name="MessageEtatChauffeManuel" Value="Kézi"/>
+		<Item Name="MessageEtatChauffePC" Value="Számítógép"/>
+	</JvTranslatorStrings>
+</FConfirmationDecoupe>
+
+<FCycleDecoupe Caption="Vágási Ciklus Kezelés">
+
+	<RadioGroupCote Caption="Profil">
+		<Items>
+			<Item Index="0" Value="Szárnytõ"/>
+     			<Item Index="1" Value="Szárnyvég"/>
+		</Items>
+	</RadioGroupCote>
+
+	<GroupBoxAffichage Caption="Nézet"/>
+		<SpeedBtnZoomIn Hint="Nagyítás"/>
+		<SpeedBtnZoomOut Hint="kicsinyítés"/>
+		<SpeedBtnShowPoint Hint="Minden pont mutatása"/>
+
+	<GroupBoxKeyPoint Caption="Kulcspont"/>
+		<SpeedBtnAddKey Hint="Kulcspont hozzá adása"/>
+		<SpeedBtnDeleteKey Hint="Kulcspont törlése"/>
+
+	<BtnParDefaut Caption="Alap..."/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Mégse"/>
+	<BtnAppliquer Caption="Alkalmaz"/>
+
+	<FrameCycleAile>	
+		<LblListe Caption="Vágási ciklus"/>
+	
+		<BtnSupprimer Caption="Törlés"/>
+		<BtnSupprimerTout Caption="Töröl mindent"/>
+	
+		<GroupBoxProprietes Caption="Tulajdonság"/>
+			<LabeledEditDeplacement>
+				<SubLabel Caption="Mozgás (mm) :"/>
+			</LabeledEditDeplacement>
+			<CheckBoxLissage Caption="Sima"/>
+			<CheckBoxInverser Caption="Fordított"/>
+			<RadioGroupQualification Caption="Típus">
+				<Items>
+					<Item Index="0" Value="Semleges"/>
+	     				<Item Index="1" Value="Számlált"/>
+	     				<Item Index="2" Value="Ref.-re Számlált"/>
+				</Items>
+			</RadioGroupQualification>
+			<RadioGroupVitesse Caption="Sebesség">
+				<Items>
+					<Item Index="0" Value="Vágási"/>
+	     				<Item Index="1" Value="Gyorsjárati"/>
+				</Items>
+			</RadioGroupVitesse>
+			<RadioGroupSpecial Caption="Speciális">
+				<Items>
+					<Item Index="0" Value="Programozott"/>
+	     				<Item Index="1" Value="Indulási magasság"/>
+	     				<Item Index="2" Value="Kilépõ magasság"/>
+				</Items>
+			</RadioGroupSpecial>
+
+		<JvTranslatorStringsCycleAile>
+			<Item Name="MessageTexte01" Value="Ívtetõ"/>
+			<Item Name="MessageTexte02" Value="Ívhát"/>
+			<Item Name="MessageTexte03" Value="Szünet"/>
+			<Item Name="MessageTexte04" Value="Vízszintes"/>
+			<Item Name="MessageTexte05" Value="Függõleges"/>
+			<Item Name="MessageTexte06" Value="Idõ (ms) :"/>
+			<Item Name="MessageTexte07" Value="Mozgás (mm) :"/>
+		</JvTranslatorStringsCycleAile>
+
+	</FrameCycleAile>
+	
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="A vágási ciklushoz használja az alapértékeket ?"/>
+		<Item Name="MessageDialogue02" Value="A kulcspontok száma eltér a szárnytõ és a szárnyvégek között.\nEz így megfelelõ ?"/>
+		<Item Name="MessageDialogue03" Value="A kulcspontok száma eltér a szárnytõ és a szárnyvégek között."/>
+	</JvTranslatorStrings>
+
+</FCycleDecoupe>
+
+<FDecoupeEnCours Caption="CNC Vezérlõ Kommunikáció">
+	<LabelDecoupe Caption="Vágási folyamat..."/>
+	<BtnPause Caption="Szünet"/>
+	<BtnAnnuler Caption="Mégse"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageBtn01" Value="Szünet"/>
+		<Item Name="MessageBtn02" Value="Visszavon"/>
+		<Item Name="MessageTexte01" Value="Vágási folyamat..."/>
+		<Item Name="MessageTexte02" Value="Vágási szünet."/>
+	</JvTranslatorStrings>
+
+</FDecoupeEnCours>
+
+<FGestionLongeron Caption="Borda Kezelõ">
+	<LblListeLongerons Caption="Borda lista"/>
+
+	<GroupboxProprietes Caption="Tulajdonságok"/>
+		<LabeledEditEmplantureHauteur>
+			<SubLabel Caption="Magasság (mm) :"/>
+		</LabeledEditEmplantureHauteur>
+		<LabeledEditEmplantureLargeur>
+			<SubLabel Caption="Szélesség (mm) :"/>
+		</LabeledEditEmplantureLargeur>
+		<LabeledEditSaumonHauteur>
+			<SubLabel Caption="Magasság (mm) :"/>
+		</LabeledEditSaumonHauteur>
+		<LabeledEditSaumonLargeur>
+			<SubLabel Caption="Szélesség (mm) :"/>
+		</LabeledEditSaumonLargeur>
+		<LabeledEditAngle>
+			<SubLabel Caption="Szöge (°) :"/>
+		</LabeledEditAngle>
+		<CheckBoxParalleleAttaque Caption="Párhuzamos élû"/>
+		<CheckBoxRegulier Caption="Állandó metszet"/>
+		<LabeledEditEmplantureOffsetX>
+			<SubLabel Caption="Szárnytõ - eltolás X (mm) :"/>
+		</LabeledEditEmplantureOffsetX>
+		<LabeledEditSaumonOffsetX>
+			<SubLabel Caption="Szárnyvég - eltolás X (mm) :"/>
+		</LabeledEditSaumonOffsetX>
+		<RadioGroupPosition Caption="Pozíció">
+			<Items>
+				<Item Index="0" Value="Fenti"/>
+     				<Item Index="1" Value="Lenti"/>
+			</Items>
+		</RadioGroupPosition>
+		<LblEmplanture Caption="Szárnytõ"/>
+		<LblSaumon Caption="Szárnyvég"/>
+
+	<BtnNouveau Caption="Új"/>
+	<BtnSupprimer Caption="Törlés"/>
+	<BtnSupprimerTout Caption="Mindent töröl"/>
+	<BtnOk Caption="OK"/>
+	<Btnannuler Caption="Mégse"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageTexte01" Value="Négyzet"/>
+		<Item Name="MessageTexte02" Value="Kör"/>
+		<Item Name="MessageTexte03" Value="Magasság (mm) :"/>
+		<Item Name="MessageTexte04" Value="Szélesség (mm) :"/>
+		<Item Name="MessageTexte05" Value="Mélység (mm) :"/>
+		<Item Name="MessageTexte06" Value="Átmérõ (mm) :"/>
+	</JvTranslatorStrings>
+
+</FGestionLongeron>
+
+<FMain>
+<!-- MainMenu -->
+		<Fichier1 Caption="&Fájl"/>
+			<Nouveau1 Caption="&Új"/>
+				<Dcoupe1 Caption="Szárny vágás"/>
+				<Profil1 Caption="Profil"/>
+			<Ouvrir1 caption="Meg&nyitás"/>
+			<Enregistrer1 Caption="&Mentés"/>
+			<Enregistrersous1 Caption="Mentés Má&snéven..."/>
+			<Fermer1 Caption="Zárás"/>
+			<ToutFermer1 Caption="Mindent Zár"/>
+			<ImporterDXF1 Caption="Import DXF"/>
+			<Aperuavantdcoupe1 Caption="Vágási elõnézet"/>
+			<Dcouper1 Caption="Vágás"/>
+			<Quitter1 Caption="Kilép"/>
+		<Option1 Caption="&Eszközök"/>
+			<RinitialiserPosition1 Caption="Futás a refferencia pozícióba"/>
+			<EnregistrerPosition1 Caption="Refferencia pozíció mentése"/>
+			<Assistantdcoupe1 Caption="Vágási &Varázsló"/>
+			<Gestiondeslongerons1 Caption="&Borda Kezelõ"/>
+			<Cycledecoupe1 Caption="Vágási &Folyamat Kezelõ"/>
+			<Logiciel1 Caption="&Beállítások"/>
+		<Fentre1 Caption="&Ablakok"/>
+			<Barredoutils1 Caption="Eszköztár"/>
+			<Convertisseur1	 Caption="Konvertert in/mm"/>
+			<Contrlemanuel1 Caption="Kézi vezérlés"/>
+		<Help1 Caption="&Súgó"/>
+			<AideJedicut Caption="Jedicut súgó"/>
+			<Preferences1 Caption="Beállítások"/>
+			<About1 Caption="Névjegy..."/>
+<!-- /MainMenu -->
+<!-- JVPopupMenu -->
+		<PetitesIcones1 Caption="Kis Ikonok"/>
+		<GrandesIcones1 Caption="Nagy Ikonok"/>
+		<Masquer1 Caption="Rejtés"/>
+<!-- /JVPopupMenu -->
+	<LabeledEditDeplacement>
+		<SubLabel Caption="Mozgás (+-mm) :"/>
+	</LabeledEditDeplacement>
+
+	<CheckBoxDependance Caption="Együttfutás"/>
+	<CheckBoxGuillotine Caption="Síkvágó"/>
+	<CheckBoxOblique Caption="Ferde"/>
+	<CheckBoxLissage Caption="Simított"/>
+
+	<RadioButtonLente Caption="Lassú"/>
+	<RadioButtonRapide Caption="Gyors"/>
+
+	<CheckBoxActiverChauffe Caption="Fûtés vezérlés:"/>
+	<GroupBoxChauffe Caption=""/>
+	<RadioButtonMateriau Caption="Anyag Kiválasztása"/>
+	<RadioButtonManuel Caption="Kézi Vezérlés"/>
+
+	<BitBtnValider Caption="Végrehajtás"/>
+
+	<!-- Liste des chaines en dures -->
+	<JvTranslatorStringsMain>
+		<Item Name="MessageErreur01" Value="A nyelv file hibás : "/>
+		<Item Name="MessageErreur02" Value="Hiba van a nyelvi file-ban."/>
+		<Item Name="MessageErreur03" Value="Dll Jedipix hiányzik."/>
+		<Item Name="MessageErreur04" Value="Help file nem található."/>
+		<Item Name="MessageErreur05" Value="Installálni szükséges a Microsoft HTML Help 1.2 vagy magasabbat."/>
+		<Item Name="MessageErreur06" Value="A kulcspontok száma eltér a szárnytõ és a szárnyvégek között."/>
+  		<Item Name="OpenDialogFilterAll" Value="Szárny vágás (*.jdc)|*.jdc|Profil  (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat|Mind|*.*"/>
+  		<Item Name="OpenDialogFilterImporterDXF" Value="Importálás DXF File|*.dxf"/>
+  		<Item Name="SaveDialogFilterJDC" Value="Szárny vágás (*.jdc)|*.jdc"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Profil (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat"/>
+  		<Item Name="MessageDialogue01" Value="Biztos benne, hogy a gép menjen a refferencia pozícióba ?"/>
+  		<Item Name="MessageDialogue02" Value="Kívánja menteni ezt a pozíciót refferenciaként ?"/>
+	  	<Item Name="PilotageManuel01" Value="Távolságot (mm) :"/>
+  		<Item Name="PilotageManuel02" Value="X (mm) :"/>
+  		<Item Name="PilotageManuel03" Value="Y (mm) :"/>
+  		<Item Name="PilotageManuel04" Value="Irányból (°) :"/>
+</JvTranslatorStringsMain>
+</FMain>
+
+<FOptions Caption="Választások">
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="El szeretné távolítani ezt a táblázatot ?"/>
+		<Item Name="MessageDialogue02" Value="Ez a tábla nem létezik."/>
+		<Item Name="MessageDialogue03" Value="Az asztal sikeresen létrejött."/>
+		<Item Name="MessageDialogue04" Value="Hibás fájl."/>
+		<Item Name="MessageDialogue05" Value="Ez a tábla már létezik. Írja be az ENSZ új tábla nevét."/>
+	</JvTranslatorStrings>
+
+	<JvNavPanelPageCommunication Caption="Kommunikáció"/>
+
+	<JvNavPanelPageChauffe Caption="Fûtés"/>
+
+	<JvNavPanelPageMachine Caption="CNC Vezérlõ"/>
+
+	<FrameNavChauffe1>
+		<LblTitre1 Caption="Fûtés bekapcsolása :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Beállítja a fûtést,"/>
+				<Item Index="1" Value="belsõ szinkronizáció"/>
+				<Item Index="2" Value="a külsõ idõzitõhöz."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Anyagok listája :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Ön beállítja"/>
+				<Item Index="1" Value="a gyakran használt anyagok listáját"/>
+				<Item Index="2" Value="és a hozzátartozõ fûtés értékeket"/>
+				<Item Index="3" Value="majd használja minden vágás elõtt."/>
+			</Lines>
+		</Memo2>
+	</FrameNavChauffe1>
+	
+	<FrameNavCommunication1>
+		<LblTitre1 Caption="Beépülõk :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Válassza ki a megfelelõt"/>
+				<Item Index="1" Value="az Ön CNC-jéhez."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Parallel Port :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="A kézi beállításnál"/>
+				<Item Index="1" Value="a fûtés vezérlõ bit beállítása"/>
+				<Item Index="2" Value="nem lehetséges."/>
+			</Lines>
+		</Memo2>
+	</FrameNavCommunication1>
+	
+	<FrameNavMachine1>
+		<LblTitre1 Caption="Engine"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Értéke mm / step : értéke"/>
+				<Item Index="1" Value="2 lépés közötti távolság."/>
+				<Item Index="2" Value=""/>
+				<Item Index="3" Value=""/>
+				<Item Index="4" Value="Sebesség : egész érték, "/>
+				<Item Index="5" Value="2 lépés közötti idõt mutatja"/>
+				<Item Index="6" Value=""/>
+				<Item Index="7" Value=""/>
+				<Item Index="8" Value="Fordítás : engedélyezi a fordított"/>
+				<Item Index="9" Value="motor forgását."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Fontos :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Ha a fûtés vezérlése"/>
+				<Item Index="1" Value="engedélyezett,akkor"/>
+				<Item Index="2" Value="a léptetés a külsõ"/>
+				<Item Index="3" Value="idõzítõhöz igazodik!"/>
+			</Lines>
+		</Memo2>
+	</FrameNavMachine1>
+
+
+	<FrameOptionCommunication1>
+		<GroupBoxPlugIn Caption="Beépülõk"/>
+		<LblListePlugIn Caption="Kommunikációs mód"/>
+		<LblDescription Caption="Leírás"/>
+
+		<GroupBoxConfiguration Caption="Parallel Port Beállítása"/>
+		<Label1 Caption="Motor Be/Ki : "/>
+		<Label3 Caption="A DB25-ös csatlakozó nézete"/>
+		<Label4 Caption="Motor X1"/>
+		<Label5 Caption="Motor X2"/>
+		<Label6 Caption="Motor Y1"/>
+		<Label7 Caption="Motor Y2"/>
+		<Label8 Caption="Irány"/>
+		<Label9 Caption="Léptetés"/>
+		<Label11 Caption="Külsõ Idõzitõ Láb :"/>
+		<Label12 Caption="Fûtés Állapot Láb :"/>
+		<Label13 Caption="Fûtés Vezérlõ Láb :"/>
+		<Label14 Caption="Fûtés Visszatérõ Láb:"/>
+
+		<CheckBoxSynchroniserMoteurAvecTimerExterne Caption="Motor szinkronizáció a külsõ idõzítõhöz."/>
+
+		<LblEditFrequenceTimer>
+			<SubLabel Caption="Frekvencia értéke :"/>
+		</LblEditFrequenceTimer>
+
+	</FrameOptionCommunication1>
+
+	<FrameOptionChauffe1>
+		<JvTranslatorStrings>
+			<Item Name="JvStringGridNom" Value="Anyag Neve"/>
+			<Item Name="JvStringGridV1" Value="Seb.1"/>
+			<Item Name="JvStringGridC1" Value="Fûtés %"/>
+			<Item Name="JvStringGridR1" Value="Aura1"/>
+			<Item Name="JvStringGridV2" Value="Seb.2"/>
+			<Item Name="JvStringGridC2" Value="Fûtés %"/>
+			<Item Name="JvStringGridR2" Value="Aura2"/>
+		</JvTranslatorStrings>
+		<CheckBoxActiverChauffe Caption="Engedélyezése / Tiltása a fûtés vezérlésének "/>
+		<CheckBoxLireMode Caption="Fûtésvezérlés módjának lekérdezése a párhuzamos portról (Kézi/Autó)"/>
+		<CheckBoxChauffeDynamique Caption="Dinamikus fûtésvezérlés engedélyezése"/>
+		<LblListeMateriaux Caption="Anyagok listálya :"/>
+		<BtnAjouter Caption="Hozzáad"/>
+		<BtnSupprimer Caption="Töröl"/>
+		<LblEditDeplacement>
+			<SubLabel Caption="Tengely mozgatása X (mm) :"/>
+		</LblEditDeplacement>
+		<LblVitesse Caption="Sebesség értéke :"/>
+		<BtnTester Caption="Teszt"/>
+		<LblTitreValChauffe Caption="Fûtési érték (PWM):"/>
+		<BtnEnregistrer Caption="Mentés"/>
+		<LblEditNomMateriau>
+			<SubLabel Caption="Új anyag neve :"/>
+		</LblEditNomMateriau>
+		<LblEditRayonnement>
+			<SubLabel Caption="Aura (mm) :"/>
+		</LblEditRayonnement>
+		<RadioBtnMesure1 Caption="Mérés 1"/>
+		<RadioBtnMesure2 Caption="Mérés 2"/>	
+	</FrameOptionChauffe1>
+	
+	<FrameOptionMachine1>
+		<GroupBoxX1 Caption="Motor X1"/>
+		<LabeledEditCoeffX1>
+			<SubLabel Caption="mm / lépés"/>
+		</LabeledEditCoeffX1>
+		<LabeledEditVDecoupeX1>
+			<SubLabel Caption="Vágási sebesség"/>
+		</LabeledEditVDecoupeX1>
+		<LabeledEditVRapideX1>
+			<SubLabel Caption="Gyorsjárat"/>
+		</LabeledEditVRapideX1>
+		<CheckBoxInverserX1 Caption="Irányváltás"/>
+
+		<GroupBoxX2 Caption="Motor X2"/>
+		<LabeledEditCoeffX2>
+			<SubLabel Caption="mm / lépés"/>
+		</LabeledEditCoeffX2>
+		<LabeledEditVDecoupeX2>
+			<SubLabel Caption="Vágási sebesség"/>
+		</LabeledEditVDecoupeX2>
+		<LabeledEditVRapideX2>
+			<SubLabel Caption="Gyorsjárat"/>
+		</LabeledEditVRapideX2>
+		<CheckBoxInverserX2 Caption="Irányváltás"/>
+
+		<GroupBoxY1 Caption="Motor Y1"/>
+		<LabeledEditCoeffY1>
+			<SubLabel Caption="mm / lépés"/>
+		</LabeledEditCoeffY1>
+		<LabeledEditVDecoupeY1>
+			<SubLabel Caption="Vágási sebesség"/>
+		</LabeledEditVDecoupeY1>
+		<LabeledEditVRapideY1>
+			<SubLabel Caption="Gyorsjárat"/>
+		</LabeledEditVRapideY1>
+		<CheckBoxInverserY1 Caption="irányváltás"/>
+
+		<GroupBoxY2 Caption="Motor Y2"/>
+		<LabeledEditCoeffY2>
+			<SubLabel Caption="mm / lépés"/>
+		</LabeledEditCoeffY2>
+		<LabeledEditVDecoupeY2>
+			<SubLabel Caption="Vágási sebesség"/>
+		</LabeledEditVDecoupeY2>
+		<LabeledEditVRapideY2>
+			<SubLabel Caption="Gyorsjárat"/>
+		</LabeledEditVRapideY2>
+		<CheckBoxInverserY2 Caption="irányváltás"/>
+
+		<LblEditLongueurMachine>
+			<SubLabel Caption="Vágódrót hossza (mm) :"/>
+		</LblEditLongueurMachine>
+		<LblEditLargeurMachine>
+			<SubLabel Caption="hossztengely X (mm) :"/>
+		</LblEditLargeurMachine>
+		
+		<LblEstimationDecoupeX1 Caption="Becsült (mm/s)"/>
+		<LblEstimationRapideX1 Caption="Becsült (mm/s)"/>
+		<LblEstimationDecoupeX2 Caption="Becsült (mm/s)"/>
+		<LblEstimationRapideX2 Caption="Becsült (mm/s)"/>
+		<LblEstimationDecoupeY1 Caption="Becsült (mm/s)"/>
+		<LblEstimationRapideY1 Caption="Becsült (mm/s)"/>
+		<LblEstimationDecoupeY2 Caption="Becsült (mm/s)"/>
+		<LblEstimationRapideY2 Caption="Becsült (mm/s)"/>
+
+	</FrameOptionMachine1>
+
+	<JvLblNomTable Caption="Aktív tábla :"/>
+	<JvBitBtnChargerTable Caption="Tölt"/>
+	<JvBitBtnCreerTable Caption="Új"/>
+	<JvBitBtnSupprimerTable Caption="Töröl"/>
+
+	<BtnOk Caption="OK"/>
+	<BtnAppliquer Caption="Alkalmaz"/>	
+	<BtnAnnuler Caption="Mégsem"/>
+</FOptions>
+
+<FSimulation Caption="">
+	<TabSheet1 Caption="Vágás"/>
+	<TabSheet2 Caption="Fûtés"/>
+	<GroupBoxPoly Caption="Hab"/>
+		<LabeledEditHauteur>
+			<SubLabel Caption="Magasság"/>
+		</LabeledEditHauteur>
+		<LabeledEditLargeur>
+			<SubLabel Caption="Szélesség"/>
+		</LabeledEditLargeur>
+	<GroupBoxSimulation Caption="Szimuláció"/>
+		<CheckBoxMoteurX1Y1 Caption="Motor X1 és Y1"/>
+		<CheckBoxMoteurX2Y2 Caption="Motor X2 és Y2"/>
+	<GroupBoxZoom Caption="Nézet"/>
+	<BitBtnFermer Caption="Zárás"/>
+</FSimulation>
+
+<FConvertisseur Caption="Konvertert">
+	<LblDescription Caption="Írja be az átalakítandó értéket a sajnát helyére:"/>
+	<LblEdtMm>
+		<SubLabel Caption="mm"/>
+	</LblEdtMm>
+	<LblEditIn>
+		<SubLabel Caption="in"/>
+	</LblEditIn>
+</FConvertisseur>
+
+</Translation>
+
