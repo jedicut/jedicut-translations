@@ -228,6 +228,10 @@
 			<Item Name="MessageTexte05" Value="Senkrecht"/>
 			<Item Name="MessageTexte06" Value="Dauer (ms):"/>
 			<Item Name="MessageTexte07" Value="Weg (mm):"/>
+			<Item Name="MessageTexte08" Value="X (mm) :"/>
+			<Item Name="MessageTexte09" Value="Y (mm) :"/>
+			<Item Name="MessageTexte10" Value="Winkel(°) :"/>
+			<Item Name="MessageTexte11" Value="Schräg"/>
 		</JvTranslatorStringsCycleAile>
 
 	</FrameCycleAile>
@@ -236,6 +240,7 @@
 		<Item Name="MessageDialogue01" Value="Möchten Sie diese Einstellungen als Vorgabewert benutzen?"/>
 		<Item Name="MessageDialogue02" Value="Die Zahl Sync.Punkte ist zwischen Flügelwurzel und Flügelspitze unterschiedlich.\Möchtest Sie es ändern ?"/>
 		<Item Name="MessageDialogue03" Value="Die Zahl Sync.Punkte ist zwischen Flügelwurzel und Flügelspitze unterschiedlich."/>
+		<Item Name="DessinCycle01" Value="Sync.Punkte"/>		
 	</JvTranslatorStrings>
 
 </FCycleDecoupe>
@@ -462,6 +467,22 @@
 		</Memo2>
 	</FrameNavMachine1>
 
+	<FrameNavGCode1>
+		<LblTitre1 Caption="GCode :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Set the software according "/>
+				<Item Index="1" Value="to the characteristics of "/>
+				<Item Index="2" Value="the interpolation software "/>
+				<Item Index="3" Value="you are using."/>
+				<Item Index="4" Value=""/>
+				<Item Index="5" Value="Jedicut produces the GCode, "/>
+				<Item Index="6" Value="but doesn't send it to the CNC "/>
+				<Item Index="7" Value="machine."/>
+				<Item Index="8" Value=""/>				
+			</Lines>
+		</Memo1>
+	</FrameNavGCode1>
 
 	<FrameOptionCommunication1>
 		<GroupBoxPlugIn Caption="Plug-in"/>
@@ -590,6 +611,46 @@
 
 	</FrameOptionMachine1>
 
+	<FrameOptionGCode1>
+		<GroupBoxGeneral Caption=" Main "/>
+		<LblEditEmplacement>
+			<SubLabel Caption="Directory :"/>
+		</LblEditEmplacement>
+		<LblUnit Caption="Unit"/>
+		<ComboBoxUnit>
+			<Items>
+				<Item Index="0" Value="Millimeter"/>
+	     		<Item Index="1" Value="Inch"/>	
+			</Items>
+		</ComboBoxUnit>
+		<LblVitesse Caption="Speed Mode :"/>
+		<ComboBoxSpeed>
+			<Items>
+				<Item Index="0" Value="Constant"/>
+				<Item Index="1" Value="Controlled"/>
+			</Items>
+		</ComboBoxSpeed>
+		<LblDecimalSeparator Caption="Decimal Separator :"/>
+		<LblTimeUnit Caption="Time :"/>
+		<ComboBoxTimeUnit>
+			<Items>
+				<Item Index="0" Value="Millisecond"/>
+				<Item Index="1" Value="Second"/>
+				<Item Index="2" Value="Minute"/>
+			</Items>
+		</ComboBoxTimeUnit>
+		<LblFixHeader Caption="Static header :"/>
+		<GroupBoxAxesNames Caption=" Name of axes "/>
+		<CheckBoxIncludeComment Caption="Include comments"/>
+		<LblEditStartComment>
+			<SubLabel Caption="Start caracters :"/>
+		</LblEditStartComment>
+		<LblEditEndComment>
+			<SubLabel Caption="End caracters :"/>
+		</LblEditEndComment>
+		
+	</FrameOptionGCode1>
+	
 	<JvLblNomTable Caption="Aktive Tabelle :"/>
 	<JvBitBtnChargerTable Caption="Laden"/>
 	<JvBitBtnCreerTable Caption="Neu"/>

@@ -2,6 +2,7 @@
 <!-- Jedicut - Español II 	-->
 <!-- Auteur : F. G. Magnetti 	-->
 <!-- Date création : 28/08/10 	-->
+<!-- Date Modification : 15/01/17 -->
 <!-- ******************	-->
 
 
@@ -225,6 +226,10 @@
 			<Item Name="MessageTexte05" Value="Vertical"/>
 			<Item Name="MessageTexte06" Value="Tiempo (ms) :"/>
 			<Item Name="MessageTexte07" Value="Mover (mm) :"/>
+			<Item Name="MessageTexte08" Value="X (mm) :"/>
+			<Item Name="MessageTexte09" Value="Y (mm) :"/>
+			<Item Name="MessageTexte10" Value="Angulo (°) :"/>
+			<Item Name="MessageTexte11" Value="Oblicuo"/>
 		</JvTranslatorStringsCycleAile>
 
 	</FrameCycleAile>
@@ -233,6 +238,7 @@
 		<Item Name="MessageDialogue01" Value="Quiere usar esta configuración como ciclo por defecto ?"/>
 		<Item Name="MessageDialogue02" Value="El numero de puntos de referencias es diferente entre raiz y puntera.\n¿Quiere corregirlo?"/>
 		<Item Name="MessageDialogue03" Value="El numero de puntos de referencias es diferente entre raiz y puntera."/>
+		<Item Name="DessinCycle01" Value="Punto clave"/>		
 	</JvTranslatorStrings>
 
 </FCycleDecoupe>
@@ -460,6 +466,22 @@
 		</Memo2>
 	</FrameNavMachine1>
 
+	<FrameNavGCode1>
+		<LblTitre1 Caption="GCode :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Set the software according "/>
+				<Item Index="1" Value="to the characteristics of "/>
+				<Item Index="2" Value="the interpolation software "/>
+				<Item Index="3" Value="you are using."/>
+				<Item Index="4" Value=""/>
+				<Item Index="5" Value="Jedicut produces the GCode, "/>
+				<Item Index="6" Value="but doesn't send it to the CNC "/>
+				<Item Index="7" Value="machine."/>
+				<Item Index="8" Value=""/>				
+			</Lines>
+		</Memo1>
+	</FrameNavGCode1>
 
 	<FrameOptionCommunication1>
 		<GroupBoxPlugIn Caption="Plug-in"/>
@@ -587,6 +609,46 @@
 		<LblEstimationRapideY2 Caption="Estima (mm/s)"/>
 
 	</FrameOptionMachine1>
+
+	<FrameOptionGCode1>
+		<GroupBoxGeneral Caption=" Main "/>
+		<LblEditEmplacement>
+			<SubLabel Caption="Directory :"/>
+		</LblEditEmplacement>
+		<LblUnit Caption="Unit"/>
+		<ComboBoxUnit>
+			<Items>
+				<Item Index="0" Value="Millimeter"/>
+	     		<Item Index="1" Value="Inch"/>	
+			</Items>
+		</ComboBoxUnit>
+		<LblVitesse Caption="Speed Mode :"/>
+		<ComboBoxSpeed>
+			<Items>
+				<Item Index="0" Value="Constant"/>
+				<Item Index="1" Value="Controlled"/>
+			</Items>
+		</ComboBoxSpeed>
+		<LblDecimalSeparator Caption="Decimal Separator :"/>
+		<LblTimeUnit Caption="Time :"/>
+		<ComboBoxTimeUnit>
+			<Items>
+				<Item Index="0" Value="Millisecond"/>
+				<Item Index="1" Value="Second"/>
+				<Item Index="2" Value="Minute"/>
+			</Items>
+		</ComboBoxTimeUnit>
+		<LblFixHeader Caption="Static header :"/>
+		<GroupBoxAxesNames Caption=" Name of axes "/>
+		<CheckBoxIncludeComment Caption="Include comments"/>
+		<LblEditStartComment>
+			<SubLabel Caption="Start caracters :"/>
+		</LblEditStartComment>
+		<LblEditEndComment>
+			<SubLabel Caption="End caracters :"/>
+		</LblEditEndComment>
+		
+	</FrameOptionGCode1>
 
 	<JvLblNomTable Caption="Tabla activa:"/>
 	<JvBitBtnChargerTable Caption="Cargar"/>
