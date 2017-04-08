@@ -1,7 +1,8 @@
 <!-- ******************	-->
 <!-- Jedicut - Français 	-->
-<!-- Auteur : Jerome 	-->
+<!-- Auteur : Jerome from aeropassion.net 	-->
 <!-- Date création : 25/09/05 	-->
+<!-- Date Modification : 15/01/17 -->
 <!-- ******************	-->
 
 <Translation>
@@ -459,6 +460,20 @@
 		</Memo2>
 	</FrameNavMachine1>
 
+	<FrameNavGCode1>
+		<LblTitre1 Caption="Interpréteur de GCode :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Paramétrer Jedicut selon les"/>
+				<Item Index="1" Value="caractéristiques du logiciel"/>
+				<Item Index="2" Value="d'interpolation que vous utilisez."/>
+				<Item Index="3" Value=""/>
+				<Item Index="4" Value="Jedicut produit le GCode, mais ne"/>
+				<Item Index="5" Value="l'envoie pas à la machine CNC."/>
+				<Item Index="6" Value=""/>
+			</Lines>
+		</Memo1>
+	</FrameNavGCode1>
 
 	<FrameOptionCommunication1>
 		<GroupBoxPlugIn Caption="Plug-in"/>
@@ -586,6 +601,48 @@
 		<LblEstimationRapideY2 Caption="Estimation (mm/s)"/>
 
 	</FrameOptionMachine1>
+	
+	<FrameOptionGCode1>
+		<GroupBoxGeneral Caption="Général"/>
+		<LblEditEmplacement>
+			<SubLabel Caption="Emplacement :"/>
+		</LblEditEmplacement>
+		<LblUnit Caption="Unité"/>
+		<ComboBoxUnit>
+			<Items>
+				<Item Index="0" Value="Millimètre"/>
+	     		<Item Index="1" Value="Pouce"/>	
+			</Items>
+		</ComboBoxUnit>
+		<LblVitesse Caption="Vitesse :"/>
+		<ComboBoxSpeed>
+			<Items>
+				<Item Index="0" Value="Constante"/>
+				<Item Index="1" Value="Asservie"/>
+			</Items>
+		</ComboBoxSpeed>
+		
+		<LblDecimalSeparator Caption="Séparateur décimal :"/>
+		<LblTimeUnit Caption="Temps :"/>
+		<ComboBoxTimeUnit>
+			<Items>
+				<Item Index="0" Value="Milliseconde"/>
+				<Item Index="1" Value="Seconde"/>
+				<Item Index="2" Value="Minute"/>
+			</Items>
+		</ComboBoxTimeUnit>
+		<LblFixHeader Caption="En-tête fixe :"/>
+		<GroupBoxAxesNames Caption=" Nom des axes "/>
+		<CheckBoxIncludeComment Caption="Inclure commentaires"/>
+		<LblEditStartComment>
+			<SubLabel Caption="Symboles de début :"/>
+		</LblEditStartComment>
+		<LblEditEndComment>
+			<SubLabel Caption="Symboles de fins :"/>
+		</LblEditEndComment>
+		
+	</FrameOptionGCode1>
+	
 
 	<JvLblNomTable Caption="Table active :"/>
 	<JvBitBtnChargerTable Caption="Charger"/>
