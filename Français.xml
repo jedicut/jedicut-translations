@@ -1,8 +1,6 @@
 <!-- ******************	-->
 <!-- Jedicut - Français 	-->
-<!-- Auteur : Jerome from aeropassion.net 	-->
-<!-- Date création : 25/09/05 	-->
-<!-- Date Modification : 15/01/17 -->
+<!-- Auteur : Jerome from jedicut.com 	-->
 <!-- ******************	-->
 
 <Translation>
@@ -390,10 +388,13 @@
 	</JvTranslatorStrings>
 
 	<JvNavPanelPageCommunication Caption="Communication"/>
-
 	<JvNavPanelPageChauffe Caption="Chauffe"/>
-
 	<JvNavPanelPageMachine Caption="Machine"/>
+
+	<LblMenuCom Caption="Communication"/>
+	<LblMenuChauffe Caption="Chauffe"/>
+	<LblMenuMachine Caption="Machine"/>
+	<LblMenuGCode Caption="GCode"/>
 
 	<FrameNavChauffe1>
 		<LblTitre1 Caption="Activer la chauffe :"/>

@@ -2,8 +2,6 @@
 <!-- Jedicut - Deutsch 		-->
 <!-- Auteur v1 : Walo Hürzeler 	-->
 <!-- Auteur v0 : Corsairr	-->
-<!-- Date création : 11.01.2005 -->
-<!-- geändert: 29.12.2011	-->
 <!-- durch : Manfred Arendt     -->
 <!-- **************************	-->
 
@@ -397,10 +395,13 @@
 	</JvTranslatorStrings>
 
 	<JvNavPanelPageCommunication Caption="Kommunikation"/>
-
 	<JvNavPanelPageChauffe Caption="Heizung"/>
-
 	<JvNavPanelPageMachine Caption="Maschine"/>
+
+	<LblMenuCom Caption="Kommunikation"/>
+	<LblMenuChauffe Caption="Heizung"/>
+	<LblMenuMachine Caption="Maschine"/>
+	<LblMenuGCode Caption="GCode"/>	
 
 	<FrameNavChauffe1>
 		<LblTitre1 Caption="Drahtheizung aktivieren:"/>

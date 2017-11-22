@@ -1,8 +1,6 @@
 <!-- ******************	-->
 <!-- Jedicut - Polish 	-->
 <!-- Auteur : Józef 	-->
-<!-- Date création : 09/01/11 	-->
-<!-- Date Modification : 15/01/17 -->
 <!-- ******************	-->
 
 
@@ -395,11 +393,14 @@
 	</JvTranslatorStrings>
 
 	<JvNavPanelPageCommunication Caption="Komunikacja"/>
-
 	<JvNavPanelPageChauffe Caption="Grzanie"/>
-
 	<JvNavPanelPageMachine Caption="CNC kontroller"/>
 
+	<LblMenuCom Caption="Komunikacja"/>
+	<LblMenuChauffe Caption="Grzanie"/>
+	<LblMenuMachine Caption="CNC kontroller"/>
+	<LblMenuGCode Caption="GCode"/>	
+	
 	<FrameNavChauffe1>
 		<LblTitre1 Caption="W³¹cz grzanie :"/>
 		<Memo1>

@@ -1,8 +1,6 @@
 <!-- ******************	-->
 <!-- Jedicut - Italiano 	-->
 <!-- Auteur : Fabrizio 	-->
-<!-- Date création : 28/05/07 	-->
-<!-- Date Modification : 15/01/17 -->
 <!-- ******************	-->
 
 <Translation>
@@ -393,11 +391,14 @@
 	</JvTranslatorStrings>
 
 	<JvNavPanelPageCommunication Caption="Comunicazione"/>
-
 	<JvNavPanelPageChauffe Caption="Riscaldamento"/>
-
 	<JvNavPanelPageMachine Caption="Controllo cnc"/>
 
+	<LblMenuCom Caption="Comunicazione"/>
+	<LblMenuChauffe Caption="Riscaldamento"/>
+	<LblMenuMachine Caption="Controllo CNC"/>
+	<LblMenuGCode Caption="GCode"/>	
+	
 	<FrameNavChauffe1>
 		<LblTitre1 Caption="Attivera riscaldamento :"/>
 		<Memo1>

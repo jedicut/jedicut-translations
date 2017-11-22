@@ -1,8 +1,6 @@
 <!-- ******************	-->
 <!-- Jedicut - 	Èeština 	-->
 <!-- Autor : Smallgod 	-->
-<!-- Date vytvoøení : 18/11/10 	-->
-<!-- Date Modification : 15/01/17 -->
 <!-- ******************	-->
 
 
@@ -395,10 +393,13 @@
 	</JvTranslatorStrings>
 
 	<JvNavPanelPageCommunication Caption="Komunikace"/>
-
 	<JvNavPanelPageChauffe Caption="Žhavení"/>
-
 	<JvNavPanelPageMachine Caption="CNC mašina"/>
+
+	<LblMenuCom Caption="Komunikace"/>
+	<LblMenuChauffe Caption="Žhavení"/>
+	<LblMenuMachine Caption="CNC mašina"/>
+	<LblMenuGCode Caption="GCode"/>	
 
 	<FrameNavChauffe1>
 		<LblTitre1 Caption="Aktivovat žhavení :"/>

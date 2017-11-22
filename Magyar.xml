@@ -1,9 +1,6 @@
 <!-- ******************		-->
 <!-- Jedicut - Hungary 		-->
 <!-- Fordító : Magi István. 	-->
-<!-- Készült : 2009.02.12.	-->
-<!-- Modosítva: 2010. 02. 15.	-->
-<!-- Date Modification : 15/01/17 -->
 <!-- ***************************-->
 
 <Translation>
@@ -397,11 +394,14 @@
 	</JvTranslatorStrings>
 
 	<JvNavPanelPageCommunication Caption="Kommunikáció"/>
-
 	<JvNavPanelPageChauffe Caption="Fûtés"/>
-
 	<JvNavPanelPageMachine Caption="CNC Vezérlõ"/>
 
+	<LblMenuCom Caption="Kommunikáció"/>
+	<LblMenuChauffe Caption="Fûtés"/>
+	<LblMenuMachine Caption="CNC Vezérlõ"/>
+	<LblMenuGCode Caption="GCode"/>	
+	
 	<FrameNavChauffe1>
 		<LblTitre1 Caption="Fûtés bekapcsolása :"/>
 		<Memo1>
