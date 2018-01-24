@@ -52,6 +52,7 @@
 	<CheckBoxJDP Caption="*.jdp - archivo de perfil"/>
 	<CheckBoxPRF Caption="*.prf - archivo de perfil"/>
 	<LblLangue Caption="Seleccionar idioma."/>
+	<CheckBoxUpdate Caption="Check for updates automatically"/>	
 	<BtnOk Caption="OK"/>
 	<BtnAnnuler Caption="Cancelar"/>
 </FAssociation>
@@ -338,6 +339,7 @@
 			<AideJedicut Caption="Help"/>
 			<Preferences1 Caption="Preferencias"/>
 			<About1 Caption="Acerca de..."/>
+		<MenuItemUpdate Caption="New update available !"/>
 <!-- /MainMenu -->
 <!-- JVPopupMenu -->
 		<PetitesIcones1 Caption="Iconos Chicos"/>

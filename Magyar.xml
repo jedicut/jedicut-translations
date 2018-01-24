@@ -51,6 +51,7 @@
 	<CheckBoxJDP Caption="*.jdp - Profil file"/>
 	<CheckBoxPRF Caption="*.prf - Profil file"/>
 	<LblLangue Caption="Válasszon nyelvet a Jedicut-hoz."/>
+	<CheckBoxUpdate Caption="Check for updates automatically"/>	
 	<BtnOk Caption="OK"/>
 	<BtnAnnuler Caption="Mégse"/>
 </FAssociation>
@@ -338,6 +339,7 @@
 			<AideJedicut Caption="Jedicut súgó"/>
 			<Preferences1 Caption="Beállítások"/>
 			<About1 Caption="Névjegy..."/>
+		<MenuItemUpdate Caption="New update available !"/>
 <!-- /MainMenu -->
 <!-- JVPopupMenu -->
 		<PetitesIcones1 Caption="Kis Ikonok"/>

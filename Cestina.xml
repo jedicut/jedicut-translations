@@ -52,6 +52,7 @@
 	<CheckBoxJDP Caption="*.jdp - Jedicut soubor"/>
 	<CheckBoxPRF Caption="*.prf - Jedicut soubor"/>
 	<LblLangue Caption="Vyberte jazyk pro Jedicut."/>
+	<CheckBoxUpdate Caption="Check for updates automatically"/>	
 	<BtnOk Caption="OK"/>
 	<BtnAnnuler Caption="Zrušit"/>
 </FAssociation>
@@ -338,6 +339,7 @@
 			<AideJedicut Caption="Jedicut Help"/>
 			<Preferences1 Caption="Nastavení"/>
 			<About1 Caption="O aplikaci..."/>
+		<MenuItemUpdate Caption="New update available !"/>
 <!-- /MainMenu -->
 <!-- JVPopupMenu -->
 		<PetitesIcones1 Caption="Malé ikony"/>
