@@ -1,6 +1,8 @@
 <!-- ******************	-->
 <!-- Jedicut - Polish 	-->
 <!-- Auteur : Józef 	-->
+<!-- Date création : 09/01/11 	-->
+<!-- Date of third Polish modification : 13/02/18-->
 <!-- ******************	-->
 
 
@@ -10,7 +12,7 @@
 	<MemoAPropos>
 		<Lines>
 			<Items Index="0" Value="Nie ponoszê odpowiedzialnoœci za niew³aœciwe wykorzystanie tego oprogramowania."/>
-			<Items Index="1" Value=""/>
+			<Items Index="1" Value="aplikacja"/>
 			<Items Index="2" Value=""/>
 			<Items Index="3" Value="Dziêkujê za zg³aszanie b³êdów na forum Aeropassion's."/>
 		</Lines>
@@ -19,23 +21,23 @@
 </FAPropos>
 
 <FAssistantDecoupe Caption="Kreator ciêcia">
-	<LblDecalage Caption="Odleg³oœæ D (mm):"/>
-	<LblEnvergure Caption="Skala (mm):"/>
-	<LblFleche Caption="Skos dodatni (mm):"/>
+	<LblDecalage Caption="Odleg³oœæ O (mm):"/>
+	<LblEnvergure Caption="Rozpiêtoœæ R (mm):"/>
+	<LblFleche Caption="Skos dodatni S (mm):"/>
 	<LblAile Caption="Skrzyd³o"/>
 	<LblLongueurTable Caption="D³ugoœæ gor¹cego drutu (mm):"/>
-	<LblLongueurX Caption="Odleg³oœæ osi X (mm):"/>
-	<CheckBoxTroncon Caption="Wiele odcinków" />
+	<LblLongueurX Caption="D³ugoœæ osi X (mm):"/>
+	<CheckBoxTroncon Caption="Wiele sekcji" />
 	<BtnOk Caption="OK"/>
 	<BtnAnnuler Caption="Anuluj"/>
 
-	<JvSpeedBtnCentrer Hint="Centrum ciêcia" />
+	<JvSpeedBtnCentrer Hint="Wyœrodkuj materia³" />
 	<JvSpeedBtnAdd Hint="Dodaj sekcjê" />
 	<JvSpeedBtnDelete Hint="Usuñ sekcjê" />
 
 	<JvTranslatorStrings>
-		<Item Name="MessageErreur01" Value="Wartoœæ przesuniêcia nie jest zgodna z d³ugoœci¹ ciêcia."/>
-		<Item Name="MessageErreur02" Value="D³ugoœæ ciêcia nie jest zgodna z d³ugoœci¹ sto³u."/>
+		<Item Name="MessageErreur01" Value="Szerokoœæ ciêcia przekracza szerokoœæ sto³u."/>
+		<Item Name="MessageErreur02" Value="D³ugoœæ ciêcia przekracza d³ugoœæ sto³u."/>
 		<Item Name="JvStringGridNumero" Value="i"/>
   		<Item Name="JvStringGridLongueur" Value="D³ugoœæ"/>
 		<Item Name="IHMAssistantDecalage" Value="O"/>
@@ -48,11 +50,11 @@
 	<LblTitreP1 Caption="Czy chcesz skojarzyæ poni¿sze typy"/>
 	<LblTitreP2 Caption="plików z programem Jedicut?"/>
 	<CheckBoxDAT Caption="*.dat - Plik profilu"/>
-	<CheckBoxJDC Caption="*.jdc - Plik ciêcia skrzyd³a"/>
+	<CheckBoxJDC Caption="*.jdc - Plik ciêcia Jedicut"/>
 	<CheckBoxJDP Caption="*.jdp - Plik profilu"/>
 	<CheckBoxPRF Caption="*.prf - Plik profilu"/>
 	<LblLangue Caption="Wybierz jêzyk Jedicut."/>
-	<CheckBoxUpdate Caption="Check for updates automatically"/>	
+	<CheckBoxUpdate Caption="SprawdŸ aktualizacje automatycznie"/>
 	<BtnOk Caption="OK"/>
 	<BtnAnnuler Caption="Anuluj"/>
 </FAssociation>
@@ -68,13 +70,13 @@
 		<SubLabel Caption="Ciêciwa nasady skrzyd³a (mm) :"/>
 	</LEditCordeEmplanture>
 	<LEditEpRelativeEmplanture>
-		<SubLabel Caption="Wzglêdna gruboœæ nasady skrzyd³a :"/>
+		<SubLabel Caption="Wzglêdna gruboœæ nasady % :"/>
 	</LEditEpRelativeEmplanture>
 	<LEditCordeSaumon>
 		<SubLabel Caption="Ciêciwa koñcówki skrzyd³a (mm) :"/>
 	</LEditCordeSaumon>
 	<LEditEpRelativeSaumon>
-		<SubLabel Caption="Wzglêdna gruboœæ koñcówki skrzyd³a :"/>
+		<SubLabel Caption="Wzglêdna gruboœæ koñcówki % :"/>
 	</LEditEpRelativeSaumon>
 	<LEditVrillageEmplanture>
 		<SubLabel Caption="K¹t skrêcenia (°) :"/>
@@ -83,12 +85,12 @@
 		<SubLabel Caption="K¹t skrêcenia (°) :"/>
 	</LEditVrillageSaumon>
 	<LabeledEditDepart>
-		<SubLabel Caption="Dojazd"/>
+		<SubLabel Caption="Wysokoœæ wejœcia"/>
 	</LabeledEditDepart>
 	<LabeledEditDegagement>
-		<SubLabel Caption="Wyjazd"/>
+		<SubLabel Caption="Wysokoœæ przejœcia"/>
 	</LabeledEditDegagement>
-	<CheckBoxVrillage Caption="Widok k¹ta"/>
+	<CheckBoxVrillage Caption="Poka¿ skrêcenie"/>
 	<CheckBoxAssistantDecoupe Caption="Kreator ciêcia"/>
 
 	<RadioGroupAile Caption="Skrzyd³o">
@@ -98,20 +100,20 @@
 		</Items>
 	</RadioGroupAile>
 	
-	<GroupBoxPeauEmpl Caption="W³aœciwoœæ poszcia"/>
+	<GroupBoxPeauEmpl Caption="Warstwa topiona"/>
 	<LabeledEditEpaisseurEmpl>
 		<SubLabel Caption="Gruboœæ (mm) :"/>
 	</LabeledEditEpaisseurEmpl>
 	<CheckBoxInverserPeauEmpl Caption="Odwrócenie"/>
 
-	<GroupBoxPeauSaum Caption="W³aœciwoœæ poszcia"/>
+	<GroupBoxPeauSaum Caption="Warstwa topiona"/>
 	<LabeledEditEpaisseurSaum>
 		<SubLabel Caption="Gruboœæ (mm) :"/>
 	</LabeledEditEpaisseurSaum>
 	<CheckBoxInverserPeauSaum Caption="Odwrócenie"/>
 
 	<LabelDescription Caption="Opis :"/>
-	<CheckBoxProfilSymetrique Caption="Profil symetryczny"/>
+	<CheckBoxProfilSymetrique Caption="Nasada = koñcówka"/>
 
 	<JvTranslatorStrings>
 		<Item Name="MessageErreur01" Value="Jedicut nie mo¿e otworzyæ tego pliku."/>
@@ -149,21 +151,21 @@
 		</Lines>
 	</MemoAssistant>
 	<BtnAssistant Caption="Konfigracja"/>
-	<RadioButtonMateriau Caption="Materia³owe sterowanie grzaniem"/>
-	<RadioButtonManuel Caption="Rêczne sterowanie ogrzewaniem"/>
+	<RadioButtonMateriau Caption="Ustawianie temperatury ciêcia materia³u"/>
+	<RadioButtonManuel Caption="Rêczna regulacja temperatury"/>
 	<LblConfirmation Caption="Czy na pewno chcesz rozpocz¹æ ciêcie?"/>
 	<BtnOk Caption="OK"/>
 	<BtnAnnuler Caption="Anuluj"/>
-	<LblModeChauffe Caption="Konfiguracja regulatora grzania :"/>
+	<LblModeChauffe Caption="Kontrola temperatury ciêcia :"/>
 	<JvTranslatorStrings>
-		<Item Name="MessageEtatChauffeManuel" Value="Rêczna"/>
+		<Item Name="MessageEtatChauffeManuel" Value="Zewnêtrzna"/>
 		<Item Name="MessageEtatChauffePC" Value="Komputer"/>
 	</JvTranslatorStrings>
 </FConfirmationDecoupe>
 
 <FCycleDecoupe Caption="Menad¿er cyklu ciêcia">
 
-	<RadioGroupCote Caption="Profil">
+	<RadioGroupCote Caption="Edycja profilu">
 		<Items>
 			<Item Index="0" Value="Nasada skrzyd³a"/>
      			<Item Index="1" Value="Koñcówka skrzyd³a"/>
@@ -200,7 +202,7 @@
 				<Items>
 					<Item Index="0" Value="Neutralny"/>
 	     				<Item Index="1" Value="Obliczony"/>
-	     				<Item Index="2" Value="Licznik RAZ"/>
+	     				<Item Index="2" Value="Poz wyjœciowa"/>
 				</Items>
 			</RadioGroupQualification>
 			<RadioGroupVitesse Caption="Prêdkoœæ">
@@ -209,11 +211,11 @@
 	     				<Item Index="1" Value="Ruch ja³owy"/>
 				</Items>
 			</RadioGroupVitesse>
-			<RadioGroupSpecial Caption="Specjalny">
+			<RadioGroupSpecial Caption="Wysokoœæ przejœcia">
 				<Items>
-					<Item Index="0" Value="Standard"/>
-	     				<Item Index="1" Value="Dojazd"/>
-	     				<Item Index="2" Value="Wyjazd"/>
+					<Item Index="0" Value="Wybrana"/>
+	     				<Item Index="1" Value="Wys wyjœcia"/>
+	     				<Item Index="2" Value="Wys przejœcia"/>
 				</Items>
 			</RadioGroupSpecial>
 
@@ -227,8 +229,8 @@
 			<Item Name="MessageTexte07" Value="Przesuniêcie (mm) :"/>
 			<Item Name="MessageTexte08" Value="X (mm) :"/>
 			<Item Name="MessageTexte09" Value="Y (mm) :"/>
-			<Item Name="MessageTexte10" Value="K¹t (°) :"/>
-			<Item Name="MessageTexte11" Value="Ukosny"/>
+			<Item Name="MessageTexte10" Value="K¹t(°) :"/>
+			<Item Name="MessageTexte11" Value="Ukoœnie"/>
 		</JvTranslatorStringsCycleAile>
 
 	</FrameCycleAile>
@@ -236,8 +238,8 @@
 	<JvTranslatorStrings>
 		<Item Name="MessageDialogue01" Value="Czy chcesz korzystaæ z tego cyklu ciêcia jako domyœlnego ?"/>
 		<Item Name="MessageDialogue02" Value="Liczba kluczowych punktów jest inna dla nasady i koñcówki skrzyd³a.\nCzy chcesz go poprawiæ?"/>
-		<Item Name="MessageDialogue03" Value="Liczba kluczowych punktów jest inna dla nasady i koñcówki skrzyd³a."/>
-		<Item Name="DessinCycle01" Value="Punkt kluczowy"/>
+		<Item Name="MessageDialogue03" Value="Nasada i koñcówka maj¹ inn¹ liczbê punktów kluczowych."/>
+		<Item Name="DessinCycle01" Value="Pkt. kluczowe"/>
 	</JvTranslatorStrings>
 
 </FCycleDecoupe>
@@ -278,10 +280,10 @@
 		<CheckBoxParalleleAttaque Caption="Równolegle do kraw nat"/>
 		<CheckBoxRegulier Caption="Sta³a gruboœæ"/>
 		<LabeledEditEmplantureOffsetX>
-			<SubLabel Caption="Nasada-odleg³oœæ X (mm) :"/>
+			<SubLabel Caption="Odleg³oœæ od KN (mm) :"/>
 		</LabeledEditEmplantureOffsetX>
 		<LabeledEditSaumonOffsetX>
-			<SubLabel Caption="Koñcówka-odleg³oœæ X (mm) :"/>
+			<SubLabel Caption="Odleg³oœæ od KN (mm) :"/>
 		</LabeledEditSaumonOffsetX>
 		<RadioGroupPosition Caption="Pozycja">
 			<Items>
@@ -314,7 +316,7 @@
 		<Fichier1 Caption="&Plik"/>
 			<Nouveau1 Caption="&Nowy"/>
 				<Dcoupe1 Caption="Ciêcie skrzyd³a"/>
-				<Profil1 Caption="Profil"/>
+				<Profil1 Caption="Edycja profilu"/>
 			<Ouvrir1 caption="&Otwórz"/>
 			<Enregistrer1 Caption="&Zapisz"/>
 			<Enregistrersous1 Caption="Zapisz &jako..."/>
@@ -328,7 +330,7 @@
 			<RinitialiserPosition1 Caption="PrzejdŸ do punktu odniesienia"/>
 			<EnregistrerPosition1 Caption="Zapisz punkt odniesienia"/>
 			<Assistantdcoupe1 Caption="Kreator &ciêcia"/>
-			<Gestiondeslongerons1 Caption="&Menad¿er ¿eber"/>
+			<Gestiondeslongerons1 Caption="&Menad¿er dŸwigarów"/>
 			<Cycledecoupe1 Caption="&Menad¿er cyklu ciêcia"/>
 			<Logiciel1 Caption="&Opcje"/>
 		<Fentre1 Caption="&Okna"/>
@@ -339,7 +341,7 @@
 			<AideJedicut Caption="Pomoc Jedicut"/>
 			<Preferences1 Caption="Preferencje"/>
 			<About1 Caption="O Jedicut..."/>
-		<MenuItemUpdate Caption="New update available !"/>
+		<MenuItemUpdate Caption="Dostêpna jest nowa wersja !"/>
 <!-- /MainMenu -->
 <!-- JVPopupMenu -->
 		<PetitesIcones1 Caption="Ma³e ikony"/>
@@ -352,6 +354,7 @@
 
 	<CheckBoxDependance Caption="Zale¿ny"/>
 	<CheckBoxGuillotine Caption="Gilotyna"/>
+	<CheckBoxOblique Caption="Ukoœnie"/>
 	<CheckBoxLissage Caption="Wyg³adzanie"/>
 
 	<RadioButtonLente Caption="Wolno"/>
@@ -362,16 +365,16 @@
 	<RadioButtonMateriau Caption="Wybierz materia³"/>
 	<RadioButtonManuel Caption="Sterowanie rêczne"/>
 
-	<BitBtnValider Caption="SprawdŸ"/>
+	<BitBtnValider Caption="W³¹cz silniki"/>
 
 	<!-- Liste des chaines en dures -->
 	<JvTranslatorStringsMain>
 		<Item Name="MessageErreur01" Value="Brakuje pliku jêzykowego : "/>
 		<Item Name="MessageErreur02" Value="Wyst¹pi³ b³¹d w pliku jêzyka."/>
-		<Item Name="MessageErreur03" Value="Brakuje Dll Jedipix."/>
+		<Item Name="MessageErreur03" Value="Brakuje pliku Jedipix.DLL."/>
 		<Item Name="MessageErreur04" Value="Nie mo¿na znaleŸæ pliku pomocy."/>
 		<Item Name="MessageErreur05" Value="Nale¿y zainstalowaæ Microsoft HTML Help 1.2 lub wy¿szy."/>
-		<Item Name="MessageErreur06" Value="Liczba kluczowych punktów jest inna dla nasady i koñcówki skrzyd³a."/>
+		<Item Name="MessageErreur06" Value="Liczba kluczowych punktów jest inna dla nasady i koñcówki skrzyd³a.Ciêcie jest niemo¿liwe."/>
   		<Item Name="OpenDialogFilterAll" Value="Ciêcie skrzyd³a (*.jdc)|*.jdc|Profil  (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat|All|*.*"/>
   		<Item Name="OpenDialogFilterImporterDXF" Value="Import pliku DXF|*.dxf"/>
   		<Item Name="SaveDialogFilterJDC" Value="Ciêcie skrzyd³a (*.jdc)|*.jdc"/>
@@ -407,8 +410,8 @@
 		<LblTitre1 Caption="W³¹cz grzanie :"/>
 		<Memo1>
 			<Lines>
-				<Item Index="0" Value="Aby w³¹czyæ grzanie trzeba"/>
-				<Item Index="1" Value="zsynchronizowaæ silniki"/>
+				<Item Index="0" Value="Aby za³¹czyæ grzanie trzeba"/>
+				<Item Index="1" Value="synchronizowaæ silniki"/>
 				<Item Index="2" Value="z zewnêtrznego zegara."/>
 			</Lines>
 		</Memo1>
@@ -428,7 +431,7 @@
 		<Memo1>
 			<Lines>
 				<Item Index="0" Value="Wybierz odpowiedni plug-in"/>
-				<Item Index="1" Value="dla CNC."/>
+				<Item Index="1" Value="dla swojej CNC."/>
 			</Lines>
 		</Memo1>
 		<LblTitre2 Caption="Port równoleg³y :"/>
@@ -445,11 +448,11 @@
 		<LblTitre1 Caption="Silnik"/>
 		<Memo1>
 			<Lines>
-				<Item Index="0" Value="Liczba mm / krok: nale¿y"/>
-				<Item Index="1" Value="podaæ odleg³oœæ miêdzy 2 krokami."/>
-				<Item Index="2" Value=""/>
+				<Item Index="0" Value="Liczba mm/krok: nale¿y"/>
+				<Item Index="1" Value="podaæ odleg³oœæ miêdzy "/>
+				<Item Index="2" Value="2 krokami silnika."/>
 				<Item Index="3" Value=""/>
-				<Item Index="4" Value="Prêdkoœæ: Liczba ca³kowita wskazuj¹ca"/>
+				<Item Index="4" Value="Prêdkoœæ: Liczba wskazuj¹ca"/>
 				<Item Index="5" Value="czas up³ywaj¹cy miêdzy"/>
 				<Item Index="6" Value="2 krokami silnika."/>
 				<Item Index="7" Value=""/>
@@ -460,31 +463,31 @@
 		<LblTitre2 Caption="Wa¿ne :"/>
 		<Memo2>
 			<Lines>
-				<Item Index="0" Value="Jeœli jest w³¹czone sterowanie grzaniem,"/>
-				<Item Index="1" Value="szybkoœæ silników jest"/>
-				<Item Index="2" Value="kontrolowana przez zewn"/>
-				<Item Index="3" Value="timer"/>
+				<Item Index="0" Value="Jeœli za³¹czono sterowanie"/>
+				<Item Index="1" Value="grzaniem, szybkoœæ silników"/>
+				<Item Index="2" Value="jest kontrolowana przez"/>
+				<Item Index="3" Value="zewnêtrzny zegar"/>
 			</Lines>
 		</Memo2>
 	</FrameNavMachine1>
 
-	<FrameNavGCode1>
-		<LblTitre1 Caption="GCode :"/>
+    <FrameNavGCode1>
+		<LblTitre1 Caption="Interpreter GCodu :"/>
 		<Memo1>
 			<Lines>
-				<Item Index="0" Value="Set the software according "/>
-				<Item Index="1" Value="to the characteristics of "/>
-				<Item Index="2" Value="the interpolation software "/>
-				<Item Index="3" Value="you are using."/>
+				<Item Index="0" Value="Ustaw oprogramowanie zgodnie "/>
+				<Item Index="1" Value="z w³aœciwoœciami interpolacji "/>
+				<Item Index="2" Value="oprogramowania jakiego u¿ywasz. "/>
+				<Item Index="3" Value=""/>
 				<Item Index="4" Value=""/>
-				<Item Index="5" Value="Jedicut produces the GCode, "/>
-				<Item Index="6" Value="but doesn't send it to the CNC "/>
-				<Item Index="7" Value="machine."/>
+				<Item Index="5" Value="Jedicut wytwarza GCod,ale "/>
+				<Item Index="6" Value="nie wyœle go do maszyny CNC "/>
+				<Item Index="7" Value=""/>
 				<Item Index="8" Value=""/>				
 			</Lines>
 		</Memo1>
 	</FrameNavGCode1>
-
+	
 	<FrameOptionCommunication1>
 		<GroupBoxPlugIn Caption="Plug-in"/>
 		<LblListePlugIn Caption="Tryb komunikacji"/>
@@ -497,8 +500,8 @@
 		<Label5 Caption="Silnik X2"/>
 		<Label6 Caption="Silnik Y1"/>
 		<Label7 Caption="Silnik Y2"/>
-		<Label8 Caption="Dane"/>
-		<Label9 Caption="Zegar"/>
+		<Label8 Caption="Krok"/>
+		<Label9 Caption="Kierunek"/>
 		<Label11 Caption="Zewnêtrzny zegar :"/>
 		<Label12 Caption="Status grzania :"/>
 		<Label13 Caption="Za³¹czenie grzania :"/>
@@ -523,7 +526,7 @@
 			<Item Name="JvStringGridR2" Value="R2"/>
 		</JvTranslatorStrings>
 		<CheckBoxActiverChauffe Caption="W³/wy³ sterowanie grzaniem "/>
-		<CheckBoxLireMode Caption="Odczyt trybu kontroli grzania zLPT Man/Auto"/>
+		<CheckBoxLireMode Caption="Odczyt trybu kontroli grzania z LPT Man/Auto"/>
 		<CheckBoxChauffeDynamique Caption="W³¹cz dynamiczne sterowanie grzaniem"/>
 		<LblListeMateriaux Caption="Lista materia³ów :"/>
 		<BtnAjouter Caption="Dodaj"/>
@@ -548,7 +551,7 @@
 	<FrameOptionMachine1>
 		<GroupBoxX1 Caption="Silnik X1"/>
 		<LabeledEditCoeffX1>
-			<SubLabel Caption="Nb mm / krok"/>
+			<SubLabel Caption="mm/krok"/>
 		</LabeledEditCoeffX1>
 		<LabeledEditVDecoupeX1>
 			<SubLabel Caption="Prêdkoœæ ciêcia"/>
@@ -560,7 +563,7 @@
 
 		<GroupBoxX2 Caption="Silnik X2"/>
 		<LabeledEditCoeffX2>
-			<SubLabel Caption="Nb mm / krok"/>
+			<SubLabel Caption="mm/krok"/>
 		</LabeledEditCoeffX2>
 		<LabeledEditVDecoupeX2>
 			<SubLabel Caption="Prêdkoœæ ciêcia"/>
@@ -572,7 +575,7 @@
 
 		<GroupBoxY1 Caption="Silnik Y1"/>
 		<LabeledEditCoeffY1>
-			<SubLabel Caption="Nb mm / krok"/>
+			<SubLabel Caption="mm/krok"/>
 		</LabeledEditCoeffY1>
 		<LabeledEditVDecoupeY1>
 			<SubLabel Caption="Prêdkoœæ ciêcia"/>
@@ -584,7 +587,7 @@
 
 		<GroupBoxY2 Caption="Silnik Y2"/>
 		<LabeledEditCoeffY2>
-			<SubLabel Caption="Nb mm / krok"/>
+			<SubLabel Caption="mm/krok"/>
 		</LabeledEditCoeffY2>
 		<LabeledEditVDecoupeY2>
 			<SubLabel Caption="Prêdkoœæ ciêcia"/>
@@ -598,7 +601,7 @@
 			<SubLabel Caption="D³ugoœæ gor¹cego drutu (mm) :"/>
 		</LblEditLongueurMachine>
 		<LblEditLargeurMachine>
-			<SubLabel Caption="Odleg³oœæ osi X (mm) :"/>
+			<SubLabel Caption="D³ugoœæ osi X (mm) :"/>
 		</LblEditLargeurMachine>
 
 		<LblEstimationDecoupeX1 Caption="Obliczone (mm/s)"/>
@@ -612,49 +615,50 @@
 
 	</FrameOptionMachine1>
 
-	<FrameOptionGCode1>
-		<GroupBoxGeneral Caption=" Main "/>
+		<FrameOptionGCode1>
+		<GroupBoxGeneral Caption=" G³ówny "/>
 		<LblEditEmplacement>
-			<SubLabel Caption="Directory :"/>
+			<SubLabel Caption="Katalog :"/>
 		</LblEditEmplacement>
-		<LblUnit Caption="Unit"/>
+		<LblUnit Caption="Jednostka"/>
 		<ComboBoxUnit>
 			<Items>
-				<Item Index="0" Value="Millimeter"/>
-	     		<Item Index="1" Value="Inch"/>	
+				<Item Index="0" Value="Milimetr"/>
+	     		<Item Index="1" Value="Cal"/>	
 			</Items>
 		</ComboBoxUnit>
-		<LblVitesse Caption="Speed Mode :"/>
+		<LblVitesse Caption="Szybkoœæ :"/>
 		<ComboBoxSpeed>
 			<Items>
-				<Item Index="0" Value="Constant"/>
-				<Item Index="1" Value="Controlled"/>
+				<Item Index="0" Value="Sta³a"/>
+				<Item Index="1" Value="Kontrolowana"/>
 			</Items>
 		</ComboBoxSpeed>
-		<LblDecimalSeparator Caption="Decimal Separator :"/>
-		<LblTimeUnit Caption="Time :"/>
+		
+		<LblDecimalSeparator Caption="Separator dziesiêtny :"/>
+		<LblTimeUnit Caption="Czas :"/>
 		<ComboBoxTimeUnit>
 			<Items>
-				<Item Index="0" Value="Millisecond"/>
-				<Item Index="1" Value="Second"/>
-				<Item Index="2" Value="Minute"/>
+				<Item Index="0" Value="Milisekundy"/>
+				<Item Index="1" Value="Sekundy"/>
+				<Item Index="2" Value="Minuty"/>
 			</Items>
 		</ComboBoxTimeUnit>
-		<LblFixHeader Caption="Static header :"/>
-		<GroupBoxAxesNames Caption=" Name of axes "/>
-		<CheckBoxIncludeComment Caption="Include comments"/>
+		<LblFixHeader Caption="Sta³y nag³ówek :"/>
+		<GroupBoxAxesNames Caption=" Nazwa osi "/>
+		<CheckBoxIncludeComment Caption="Do³¹cz komentarze"/>
 		<LblEditStartComment>
-			<SubLabel Caption="Start caracters :"/>
+			<SubLabel Caption="Symbol rozpoczêcia :"/>
 		</LblEditStartComment>
 		<LblEditEndComment>
-			<SubLabel Caption="End caracters :"/>
+			<SubLabel Caption="Symbol zakoñczenia :"/>
 		</LblEditEndComment>
 		
 	</FrameOptionGCode1>
-
+	
 	<JvLblNomTable Caption="Aktywna tabela :"/>
-	<JvBitBtnChargerTable Caption="£aduj"/>
-	<JvBitBtnCreerTable Caption="Nowy"/>
+	<JvBitBtnChargerTable Caption="Otwórz"/>
+	<JvBitBtnCreerTable Caption="Zapis"/>
 	<JvBitBtnSupprimerTable Caption="Usuñ"/>
 
 	<BtnOk Caption="OK"/>
@@ -662,7 +666,7 @@
 	<BtnAnnuler Caption="Anuluj"/>
 </FOptions>
 
-<FSimulation Caption="">
+<FSimulation Caption="Podgl¹d ciêcia">
 	<TabSheet1 Caption="Ciêcie"/>
 	<TabSheet2 Caption="Grzanie"/>
 	<GroupBoxPoly Caption="Styropian"/>
@@ -673,8 +677,8 @@
 			<SubLabel Caption="Szerokoœæ"/>
 		</LabeledEditLargeur>
 	<GroupBoxSimulation Caption="Symulacja"/>
-		<CheckBoxMoteurX1Y1 Caption="Silnik X1 i Y1"/>
-		<CheckBoxMoteurX2Y2 Caption="Silnik X2 i Y2"/>
+		<CheckBoxMoteurX1Y1 Caption="Silniki X1 i Y1"/>
+		<CheckBoxMoteurX2Y2 Caption="Silniki X2 i Y2"/>
 	<GroupBoxZoom Caption="Widok"/>
 	<BitBtnFermer Caption="Zamknij"/>
 </FSimulation>
