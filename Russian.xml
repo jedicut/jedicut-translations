@@ -43,19 +43,6 @@
 	</JvTranslatorStrings>
 </FAssistantDecoupe>
 
-<FAssociation Caption="Preferences">
-	<LblTitreP1 Caption="Вы хотите ассоциировть эти "/>
-	<LblTitreP2 Caption="типы файлов с Jedicut ?"/>
-	<CheckBoxDAT Caption="*.dat - Файл профиля"/>
-	<CheckBoxJDC Caption="*.jdc - Файл резки крыла"/>
-	<CheckBoxJDP Caption="*.jdp - Файл профиля"/>
-	<CheckBoxPRF Caption="*.prf - Файл профиля"/>
-	<LblLangue Caption="Выберите язык для Jedicut."/>
-	<CheckBoxUpdate Caption="Check for updates automatically"/>	
-	<BtnOk Caption="OK"/>
-	<BtnAnnuler Caption="Отмена"/>
-</FAssociation>
-
 <FChildDecoupe>
 	<LabeledEditEmplanture>
 		<SubLabel Caption="Корневой профиль :"/>
@@ -134,9 +121,13 @@
 
 	<JvTranslatorStrings>
 		<Item Name="MessageErreur01" Value="Jedicut не может открыть этот файл."/>
-		<Item Name="MessageErreur02" Value="Относительная толщина не может быть равна нулю."/>
+		<Item Name="MessageErreur2001" Value="Root and tip profiles don''t have the same number of key points. Cutting is impossible."/>
+		<Item Name="MessageErreur2003" Value="Относительная толщина не может быть равна нулю."/>
+		<Item Name="MessageErreur2004" Value="An error occured during cutting settings"/>
+		<Item Name="MessageErreur2006" Value="An error occured during profiles extrapolation"/>
 		<Item Name="MessageTexte01" Value="Нет описания для этого типа файлов."/>
 		<Item Name="TexteInterface01" Value="Нет имени - Профиль"/>
+		<Item Name="MessageWarning01" Value="First material settings are incorrect.\nJedicut will use static heating (50%)"/>		
 	</JvTranslatorStrings>
 
 </FChildProfil>
@@ -336,6 +327,7 @@
 			<Contrlemanuel1 Caption="Manual control"/>
 		<Help1 Caption="&Помощь"/>
 			<AideJedicut Caption="Jedicut Помощь"/>
+			<Donate1 Caption="Donate"/>
 			<Preferences1 Caption="Интерфейс"/>
 			<About1 Caption="О программе..."/>
 		<MenuItemUpdate Caption="New update available !"/>
@@ -652,6 +644,19 @@
 		
 	</FrameOptionGCode1>
 
+	<FrameOptionPreferences1>
+		<LblTitreP1 Caption="Вы хотите ассоциировть эти "/>
+		<LblTitreP2 Caption="типы файлов с Jedicut ?"/>
+		<CheckBoxDAT Caption="*.dat - Файл профиля"/>
+		<CheckBoxJDC Caption="*.jdc - Файл резки крыла"/>
+		<CheckBoxJDP Caption="*.jdp - Файл профиля"/>
+		<CheckBoxPRF Caption="*.prf - Файл профиля"/>
+		<LblLangue Caption="Выберите язык для Jedicut."/>
+		<CheckBoxUpdate Caption="Check for updates automatically"/>	
+		<BtnOk Caption="OK"/>
+		<BtnAnnuler Caption="Отмена"/>
+	</FrameOptionPreferences1>
+	
 	<JvLblNomTable Caption="Active Table :"/>
 	<JvBitBtnChargerTable Caption="Load"/>
 	<JvBitBtnCreerTable Caption="New"/>

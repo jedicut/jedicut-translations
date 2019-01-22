@@ -44,19 +44,6 @@
 	</JvTranslatorStrings>
 </FAssistantDecoupe>
 
-<FAssociation Caption="Pøedvolby">
-	<LblTitreP1 Caption="Chcete asociovat typy souborù"/>
-	<LblTitreP2 Caption="s Jedicutem ?"/>
-	<CheckBoxDAT Caption="*.dat - Datový soubor"/>
-	<CheckBoxJDC Caption="*.jdc - Jedicut øezací soubor"/>
-	<CheckBoxJDP Caption="*.jdp - Jedicut soubor"/>
-	<CheckBoxPRF Caption="*.prf - Jedicut soubor"/>
-	<LblLangue Caption="Vyberte jazyk pro Jedicut."/>
-	<CheckBoxUpdate Caption="Check for updates automatically"/>	
-	<BtnOk Caption="OK"/>
-	<BtnAnnuler Caption="Zrušit"/>
-</FAssociation>
-
 <FChildDecoupe>
 	<LabeledEditEmplanture>
 		<SubLabel Caption="Koøen køídla :"/>
@@ -135,9 +122,13 @@
 
 	<JvTranslatorStrings>
 		<Item Name="MessageErreur01" Value="Jedicut nemùže otevøít tento soubor.."/>
-		<Item Name="MessageErreur02" Value="Relativní tlouštka se nemùže rovnat 0."/>
+		<Item Name="MessageErreur2001" Value="Root and tip profiles don''t have the same number of key points. Cutting is impossible."/>
+		<Item Name="MessageErreur2003" Value="Relativní tlouštka se nemùže rovnat 0."/>
+		<Item Name="MessageErreur2004" Value="An error occured during cutting settings"/>
+		<Item Name="MessageErreur2006" Value="An error occured during profiles extrapolation"/>
 		<Item Name="MessageTexte01" Value="Nelze vložit poznámky pro tento soubor."/>
 		<Item Name="TexteInterface01" Value="Bez názvu - Profil"/>
+  		<Item Name="MessageWarning01" Value="First material settings are incorrect.\nJedicut will use static heating (50%)"/>
 	</JvTranslatorStrings>
 
 </FChildProfil>
@@ -337,6 +328,7 @@
 			<Contrlemanuel1 Caption="Ruèní ovládání"/>
 		<Help1 Caption="&Nápovìda"/>
 			<AideJedicut Caption="Jedicut Help"/>
+			<Donate1 Caption="Donate"/>
 			<Preferences1 Caption="Nastavení"/>
 			<About1 Caption="O aplikaci..."/>
 		<MenuItemUpdate Caption="New update available !"/>
@@ -651,6 +643,19 @@
 		</LblEditEndComment>
 		
 	</FrameOptionGCode1>
+
+	<FrameOptionPreferences1>
+		<LblTitreP1 Caption="Chcete asociovat typy souborù"/>
+		<LblTitreP2 Caption="s Jedicutem ?"/>
+		<CheckBoxDAT Caption="*.dat - Datový soubor"/>
+		<CheckBoxJDC Caption="*.jdc - Jedicut øezací soubor"/>
+		<CheckBoxJDP Caption="*.jdp - Jedicut soubor"/>
+		<CheckBoxPRF Caption="*.prf - Jedicut soubor"/>
+		<LblLangue Caption="Vyberte jazyk pro Jedicut."/>
+		<CheckBoxUpdate Caption="Check for updates automatically"/>	
+		<BtnOk Caption="OK"/>
+		<BtnAnnuler Caption="Zrušit"/>
+	</FrameOptionPreferences1>
 
 	<JvLblNomTable Caption="Aktivní tabulka :"/>
 	<JvBitBtnChargerTable Caption="Nahrát"/>

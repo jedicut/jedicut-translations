@@ -43,19 +43,6 @@
 	</JvTranslatorStrings>
 </FAssistantDecoupe>
 
-<FAssociation Caption="Préférences">
-	<LblTitreP1 Caption="Voulez-vous associer les types de fichiers"/>
-	<LblTitreP2 Caption="suivant avec Jedicut ?"/>
-	<CheckBoxDAT Caption="*.dat - Fichier de profil"/>
-	<CheckBoxJDC Caption="*.jdc - Fichier de découpe d'aile"/>
-	<CheckBoxJDP Caption="*.jdp - Fichier de profil"/>
-	<CheckBoxPRF Caption="*.prf - Fichier de profil"/>
-	<LblLangue Caption="Choix de la langue de Jedicut."/>
-	<CheckBoxUpdate Caption="Vérifier les mises à jour"/>	
-	<BtnOk Caption="OK"/>
-	<BtnAnnuler Caption="Annuler"/>
-</FAssociation>
-
 <FChildDecoupe>
 	<LabeledEditEmplanture>
 		<SubLabel Caption="Emplanture:"/>
@@ -114,9 +101,13 @@
 
 	<JvTranslatorStrings>
 		<Item Name="MessageErreur01" Value="Impossible d'ouvrir ce fichier."/>
-		<Item Name="MessageErreur02" Value="Une erreur est apparue lors du calcul des points des profils."/>
+		<Item Name="MessageErreur2001" Value="L''emplanture et le saumon ont un nombre de points clés différent. La découpe est impossible"/>
+		<Item Name="MessageErreur2003" Value="Une erreur est apparue lors du calcul des points des profils."/>
+		<Item Name="MessageErreur2004" Value="Erreur lors du paramétrage de la découpe"/>
+		<Item Name="MessageErreur2006" Value="Erreur lors de l''extrapolation des profils"/>
+		<Item Name="MessageTexte01" Value="Voulez-vous enregistrer les modifications de ce fichier : "/>
 		<Item Name="TexteInterface01" Value="Sans nom - Découpe"/>
-  		<Item Name="SaveDialogFilterProfil" Value="Profil (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat"/>
+  		<Item Name="MessageWarning01" Value="La configuration du premier matériau de la liste n''est pas correct.\nJedicut passe en chauffe fixe de 50%"/>		
 	</JvTranslatorStrings>
 </FChildDecoupe>
 
@@ -331,6 +322,7 @@
 			<Contrlemanuel1 Caption="Contrôle manuel"/>
 		<Help1 Caption="&Aide"/>
 			<AideJedicut Caption="Aide de Jedicut"/>
+			<Donate1 Caption="Faire un don"/>
 			<Preferences1 Caption="Préférences"/>
 			<About1 Caption="A propos..."/>
 		<MenuItemUpdate Caption="Nouvelle version disponible !"/>
@@ -645,7 +637,19 @@
 		</LblEditEndComment>
 		
 	</FrameOptionGCode1>
-	
+		
+	<FrameOptionPreferences1>
+		<LblTitreP1 Caption="Voulez-vous associer les types de fichiers"/>
+		<LblTitreP2 Caption="suivant avec Jedicut ?"/>
+		<CheckBoxDAT Caption="*.dat - Fichier de profil"/>
+		<CheckBoxJDC Caption="*.jdc - Fichier de découpe d'aile"/>
+		<CheckBoxJDP Caption="*.jdp - Fichier de profil"/>
+		<CheckBoxPRF Caption="*.prf - Fichier de profil"/>
+		<LblLangue Caption="Choix de la langue de Jedicut."/>
+		<CheckBoxUpdate Caption="Vérifier les mises à jour"/>	
+		<BtnOk Caption="OK"/>
+		<BtnAnnuler Caption="Annuler"/>
+	</FrameOptionPreferences1>
 
 	<JvLblNomTable Caption="Table active :"/>
 	<JvBitBtnChargerTable Caption="Charger"/>

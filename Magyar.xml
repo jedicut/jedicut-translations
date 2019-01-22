@@ -43,19 +43,6 @@
 	</JvTranslatorStrings>
 </FAssistantDecoupe>
 
-<FAssociation Caption="Beállítások">
-	<LblTitreP1 Caption="Mely File-okat társít"/>
-	<LblTitreP2 Caption="a Jedicut-hoz ?"/>
-	<CheckBoxDAT Caption="*.dat - Profil file"/>
-	<CheckBoxJDC Caption="*.jdc - Szárny vágási file"/>
-	<CheckBoxJDP Caption="*.jdp - Profil file"/>
-	<CheckBoxPRF Caption="*.prf - Profil file"/>
-	<LblLangue Caption="Válasszon nyelvet a Jedicut-hoz."/>
-	<CheckBoxUpdate Caption="Check for updates automatically"/>	
-	<BtnOk Caption="OK"/>
-	<BtnAnnuler Caption="Mégse"/>
-</FAssociation>
-
 <FChildDecoupe>
 	<LabeledEditEmplanture>
 		<SubLabel Caption="Szárnytõ :"/>
@@ -115,9 +102,13 @@
 
 	<JvTranslatorStrings>
 		<Item Name="MessageErreur01" Value="Jedicut nem tudja megnyitni."/>
-		<Item Name="MessageErreur02" Value="Hibás a Profil kiszámított pontjai."/>
+		<Item Name="MessageErreur2001" Value="Root and tip profiles don''t have the same number of key points. Cutting is impossible."/>
+		<Item Name="MessageErreur2003" Value="Hibás a Profil kiszámított pontjai."/>
+		<Item Name="MessageErreur2004" Value="An error occured during cutting settings"/>
+		<Item Name="MessageErreur2006" Value="An error occured during profiles extrapolation"/>
+		<Item Name="MessageTexte01" Value="Do you want to save file changes ?"/>
 		<Item Name="TexteInterface01" Value="Nincs név - Vágás"/>
-  		<Item Name="SaveDialogFilterProfil" Value="Profil (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat"/>
+  		<Item Name="MessageWarning01" Value="First material settings are incorrect.\nJedicut will use static heating (50%)"/>		
 	</JvTranslatorStrings>
 </FChildDecoupe>
 
@@ -337,6 +328,7 @@
 			<Contrlemanuel1 Caption="Kézi vezérlés"/>
 		<Help1 Caption="&Súgó"/>
 			<AideJedicut Caption="Jedicut súgó"/>
+			<Donate1 Caption="Donate"/>
 			<Preferences1 Caption="Beállítások"/>
 			<About1 Caption="Névjegy..."/>
 		<MenuItemUpdate Caption="New update available !"/>
@@ -652,6 +644,19 @@
 		</LblEditEndComment>
 		
 	</FrameOptionGCode1>
+
+	<FrameOptionPreferences1>
+		<LblTitreP1 Caption="Mely File-okat társít"/>
+		<LblTitreP2 Caption="a Jedicut-hoz ?"/>
+		<CheckBoxDAT Caption="*.dat - Profil file"/>
+		<CheckBoxJDC Caption="*.jdc - Szárny vágási file"/>
+		<CheckBoxJDP Caption="*.jdp - Profil file"/>
+		<CheckBoxPRF Caption="*.prf - Profil file"/>
+		<LblLangue Caption="Válasszon nyelvet a Jedicut-hoz."/>
+		<CheckBoxUpdate Caption="Check for updates automatically"/>	
+		<BtnOk Caption="OK"/>
+		<BtnAnnuler Caption="Mégse"/>
+	</FrameOptionPreferences1>
 
 	<JvLblNomTable Caption="Aktív tábla :"/>
 	<JvBitBtnChargerTable Caption="Tölt"/>

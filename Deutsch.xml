@@ -45,19 +45,6 @@
 	</JvTranslatorStrings>
 </FAssistantDecoupe>
 
-<FAssociation Caption="Einstellungen">
-	<LblTitreP1 Caption="Dateitypen einstellen:"/>
-	<LblTitreP2 Caption=""/>
-	<CheckBoxDAT Caption="*.dat - Profildatei"/>
-	<CheckBoxJDC Caption="*.jdc - Jedicut Flügelschnittdatei"/>
-	<CheckBoxJDP Caption="*.jdp - Jedicut Profildatei"/>
-	<CheckBoxPRF Caption="*.prf - Profildatei"/>
-	<LblLangue Caption="Sprachauswahl:"/>
-	<CheckBoxUpdate Caption="Check for updates automatically"/>	
-	<BtnOk Caption="OK"/>
-	<BtnAnnuler Caption="Abbrechen"/>
-</FAssociation>
-
 <FChildDecoupe>
 	<LabeledEditEmplanture>
 		<SubLabel Caption="Profil Flächenwurzel:"/>
@@ -117,9 +104,13 @@
 
 	<JvTranslatorStrings>
 		<Item Name="MessageErreur01" Value="Datei kann nicht geöffnet werden."/>
-		<Item Name="MessageErreur02" Value="Bei der Berechnung des Profils ist ein Fehler aufgetreten."/>
+		<Item Name="MessageErreur2001" Value="Root and tip profiles don''t have the same number of key points. Cutting is impossible."/>
+		<Item Name="MessageErreur2003" Value="Bei der Berechnung des Profils ist ein Fehler aufgetreten."/>
+		<Item Name="MessageErreur2004" Value="An error occured during cutting settings"/>
+		<Item Name="MessageErreur2006" Value="An error occured during profiles extrapolation"/>
+		<Item Name="MessageTexte01" Value="Do you want to save file changes ?"/>
 		<Item Name="TexteInterface01" Value="Schnitt ohne Namen"/>
-  		<Item Name="SaveDialogFilterProfil" Value="Profil (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat"/>
+  		<Item Name="MessageWarning01" Value="First material settings are incorrect.\nJedicut will use static heating (50%)"/>		
 	</JvTranslatorStrings>
 </FChildDecoupe>
 
@@ -338,6 +329,7 @@
 			<Contrlemanuel1 Caption="Manuelle Steuerung"/>
 		<Help1 Caption="&Hilfe"/>
 			<AideJedicut Caption="Jedicut Hilfe"/>
+			<Donate1 Caption="Donate"/>
 			<Preferences1 Caption="Einstellungen"/>
 			<About1 Caption="Über Jedicut..."/>
 		<MenuItemUpdate Caption="New update available !"/>
@@ -654,6 +646,19 @@
 		
 	</FrameOptionGCode1>
 	
+	<FrameOptionPreferences1>
+		<LblTitreP1 Caption="Dateitypen einstellen:"/>
+		<LblTitreP2 Caption=""/>
+		<CheckBoxDAT Caption="*.dat - Profildatei"/>
+		<CheckBoxJDC Caption="*.jdc - Jedicut Flügelschnittdatei"/>
+		<CheckBoxJDP Caption="*.jdp - Jedicut Profildatei"/>
+		<CheckBoxPRF Caption="*.prf - Profildatei"/>
+		<LblLangue Caption="Sprachauswahl:"/>
+		<CheckBoxUpdate Caption="Check for updates automatically"/>	
+		<BtnOk Caption="OK"/>
+		<BtnAnnuler Caption="Abbrechen"/>
+	</FrameOptionPreferences1>
+
 	<JvLblNomTable Caption="Aktive Tabelle :"/>
 	<JvBitBtnChargerTable Caption="Laden"/>
 	<JvBitBtnCreerTable Caption="Neu"/>

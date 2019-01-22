@@ -44,19 +44,6 @@
 	</JvTranslatorStrings>
 </FAssistantDecoupe>
 
-<FAssociation Caption="Preferencias">
-	<LblTitreP1 Caption="Quiere asociar estos tipos de archivo"/>
-	<LblTitreP2 Caption="con Jedicut ?"/>
-	<CheckBoxDAT Caption="*.dat - archivo de perfil"/>
-	<CheckBoxJDC Caption="*.jdc - Archivo de corte de ala"/>
-	<CheckBoxJDP Caption="*.jdp - archivo de perfil"/>
-	<CheckBoxPRF Caption="*.prf - archivo de perfil"/>
-	<LblLangue Caption="Seleccionar idioma."/>
-	<CheckBoxUpdate Caption="Check for updates automatically"/>	
-	<BtnOk Caption="OK"/>
-	<BtnAnnuler Caption="Cancelar"/>
-</FAssociation>
-
 <FChildDecoupe>
 	<LabeledEditEmplanture>
 		<SubLabel Caption="Raiz  :"/>
@@ -115,9 +102,13 @@
 
 	<JvTranslatorStrings>
 		<Item Name="MessageErreur01" Value="Jedicut no puede abrir este archivo"/>
-		<Item Name="MessageErreur02" Value="Se produjo un error calculando los puntos del perfil"/>
+		<Item Name="MessageErreur2001" Value="Root and tip profiles don''t have the same number of key points. Cutting is impossible."/>
+		<Item Name="MessageErreur2003" Value="Se produjo un error calculando los puntos del perfil"/>
+		<Item Name="MessageErreur2004" Value="An error occured during cutting settings"/>
+		<Item Name="MessageErreur2006" Value="An error occured during profiles extrapolation"/>
+		<Item Name="MessageTexte01" Value="Do you want to save file changes ?"/>
 		<Item Name="TexteInterface01" Value="Corte sin nombre"/>
-  		<Item Name="SaveDialogFilterProfil" Value="perfil (*.jdp)|*.jdp|Perfil (*.prf)|*.prf|Perfil (*.dat)|*.dat"/>
+  		<Item Name="MessageWarning01" Value="First material settings are incorrect.\nJedicut will use static heating (50%)"/>			
 	</JvTranslatorStrings>
 </FChildDecoupe>
 
@@ -337,6 +328,7 @@
 			<Contrlemanuel1 Caption="Control manual"/>
 		<Help1 Caption="&Help"/>
 			<AideJedicut Caption="Help"/>
+			<Donate1 Caption="Donate"/>
 			<Preferences1 Caption="Preferencias"/>
 			<About1 Caption="Acerca de..."/>
 		<MenuItemUpdate Caption="New update available !"/>
@@ -652,6 +644,19 @@
 		</LblEditEndComment>
 		
 	</FrameOptionGCode1>
+
+	<FrameOptionPreferences1>
+		<LblTitreP1 Caption="Quiere asociar estos tipos de archivo"/>
+		<LblTitreP2 Caption="con Jedicut ?"/>
+		<CheckBoxDAT Caption="*.dat - archivo de perfil"/>
+		<CheckBoxJDC Caption="*.jdc - Archivo de corte de ala"/>
+		<CheckBoxJDP Caption="*.jdp - archivo de perfil"/>
+		<CheckBoxPRF Caption="*.prf - archivo de perfil"/>
+		<LblLangue Caption="Seleccionar idioma."/>
+		<CheckBoxUpdate Caption="Check for updates automatically"/>	
+		<BtnOk Caption="OK"/>
+		<BtnAnnuler Caption="Cancelar"/>
+	</FrameOptionPreferences1>
 
 	<JvLblNomTable Caption="Tabla activa:"/>
 	<JvBitBtnChargerTable Caption="Cargar"/>
