@@ -20,7 +20,7 @@
 
 <FAssistantDecoupe Caption="Cutting Wizard">
 	<LblDecalage Caption="Offset (mm):"/>
-	<LblEnvergure Caption="Scale (mm):"/>
+	<LblEnvergure Caption="Span (mm):"/>
 	<LblFleche Caption="Sweepback (mm):"/>
 	<LblAile Caption="Wing"/>
 	<LblLongueurTable Caption="Length of hot wire (mm):"/>
@@ -64,10 +64,10 @@
 		<SubLabel Caption="Wing tip relative thickness :"/>
 	</LEditEpRelativeSaumon>
 	<LEditVrillageEmplanture>
-		<SubLabel Caption="Twist Angle (°) :"/>
+		<SubLabel Caption="Twist Angle (Â°) :"/>
 	</LEditVrillageEmplanture>
 	<LEditVrillageSaumon>
-		<SubLabel Caption="Twist Angle (°) :"/>
+		<SubLabel Caption="Twist Angle (Â°) :"/>
 	</LEditVrillageSaumon>
 	<LabeledEditDepart>
 		<SubLabel Caption="Start Height"/>
@@ -76,7 +76,7 @@
 		<SubLabel Caption="Release Height"/>
 	</LabeledEditDegagement>
 	<CheckBoxVrillage Caption="View Twist"/>
-	<CheckBoxAssistantDecoupe Caption="Cut Wizard"/>
+	<CheckBoxAssistantDecoupe Caption="Unlock Cut Wizard"/>
 
 	<RadioGroupAile Caption="Wing">
 		<Items>
@@ -85,17 +85,17 @@
 		</Items>
 	</RadioGroupAile>
 	
-	<GroupBoxPeauEmpl Caption="Skin Property"/>
+	<GroupBoxPeauEmpl Caption="Cutting Diameter"/>
 	<LabeledEditEpaisseurEmpl>
-		<SubLabel Caption="Thickness (mm) :"/>
+		<SubLabel Caption="Kerf Size (mm) :"/>
 	</LabeledEditEpaisseurEmpl>
-	<CheckBoxInverserPeauEmpl Caption="Inverse"/>
+	<CheckBoxInverserPeauEmpl Caption="Invert"/>
 
-	<GroupBoxPeauSaum Caption="Skin Property"/>
+	<GroupBoxPeauSaum Caption="Cutting Diameter"/>
 	<LabeledEditEpaisseurSaum>
-		<SubLabel Caption="Thickness (mm) :"/>
+		<SubLabel Caption="Kerf size (mm) :"/>
 	</LabeledEditEpaisseurSaum>
-	<CheckBoxInverserPeauSaum Caption="Inverse"/>
+	<CheckBoxInverserPeauSaum Caption="Invert"/>
 
 	<LabelDescription Caption="Description :"/>
 	<CheckBoxProfilSymetrique Caption="Symmetrical profile"/>
@@ -106,7 +106,7 @@
 		<Item Name="MessageErreur2003" Value="An error occured'a calculating points of profiles."/>
 		<Item Name="MessageErreur2004" Value="An error occured during cutting settings"/>
 		<Item Name="MessageErreur2006" Value="An error occured during profiles extrapolation"/>
-		<Item Name="MessageTexte01" Value="Do you want to save file changes ?"/>
+		<Item Name="MessageTexte01" Value="Do you want to save file changes? "/>
 		<Item Name="TexteInterface01" Value="No Name - Cut"/>
   		<Item Name="MessageWarning01" Value="First material settings are incorrect.\nJedicut will use static heating (50%)"/>		
 	</JvTranslatorStrings>
@@ -141,14 +141,14 @@
 	</MemoAssistant>
 	<BtnAssistant Caption="Configuration"/>
 	<RadioButtonMateriau Caption="Material heating control"/>
-	<RadioButtonManuel Caption="Manuel heating control"/>
-	<LblConfirmation Caption="Do you really want to start to cut out?"/>
+	<RadioButtonManuel Caption="Manual heating control"/>
+	<LblConfirmation Caption="Do you really want to start cutting?"/>
 	<BtnOk Caption="OK"/>
 	<BtnAnnuler Caption="Cancel"/>
 	<LblModeChauffe Caption="Heating control configuration of the board :"/>
 	<JvTranslatorStrings>
 		<Item Name="MessageEtatChauffeManuel" Value="External"/>
-		<Item Name="MessageEtatChauffePC" Value="Computeur"/>
+		<Item Name="MessageEtatChauffePC" Value="Computer"/>
 	</JvTranslatorStrings>
 </FConfirmationDecoupe>
 
@@ -186,7 +186,7 @@
 				<SubLabel Caption="Move (mm) :"/>
 			</LabeledEditDeplacement>
 			<CheckBoxLissage Caption="Smooth"/>
-			<CheckBoxInverser Caption="Inverse"/>
+			<CheckBoxInverser Caption="Invert"/>
 			<RadioGroupQualification Caption="Type">
 				<Items>
 					<Item Index="0" Value="Neutral"/>
@@ -259,7 +259,7 @@
 			<SubLabel Caption="Width (mm) :"/>
 		</LabeledEditSaumonLargeur>
 		<LabeledEditAngle>
-			<SubLabel Caption="Angle (°) :"/>
+			<SubLabel Caption="Angle (Â°) :"/>
 		</LabeledEditAngle>
 		<CheckBoxParalleleAttaque Caption="Parallel to Leading Edge"/>
 		<CheckBoxRegulier Caption="Constant section"/>
@@ -326,7 +326,7 @@
 			<Donate1 Caption="Donate"/>
 			<Preferences1 Caption="Preferences"/>
 			<About1 Caption="About..."/>
-		<MenuItemUpdate Caption="New update available !"/>
+		<MenuItemUpdate Caption="New update available!"/>
 <!-- /MainMenu -->
 <!-- JVPopupMenu -->
 		<PetitesIcones1 Caption="Small Icons"/>
@@ -369,13 +369,13 @@
   		<Item Name="PilotageManuel01" Value="Move (mm) :"/>
   		<Item Name="PilotageManuel02" Value="X (mm) :"/>
   		<Item Name="PilotageManuel03" Value="Y (mm) :"/>
-  		<Item Name="PilotageManuel04" Value="Angle (°) :"/>
+  		<Item Name="PilotageManuel04" Value="Angle (Â°) :"/>
 	</JvTranslatorStringsMain>
 </FMain>
 
 <FOptions Caption="Options">
 	<JvTranslatorStrings>
-		<Item Name="MessageDialogue01" Value="Do you want to remove this table ?"/>
+		<Item Name="MessageDialogue01" Value="Do you want to remove this table?"/>
 		<Item Name="MessageDialogue02" Value="This table doesn't exist."/>
 		<Item Name="MessageDialogue03" Value="The table was created successfully."/>
 		<Item Name="MessageDialogue04" Value="Error writing file."/>
@@ -478,7 +478,7 @@
 		<LblListePlugIn Caption="Communication mode"/>
 		<LblDescription Caption="Description"/>
 
-		<GroupBoxConfiguration Caption="Parallel Port configuation"/>
+		<GroupBoxConfiguration Caption="Parallel Port configuration"/>
 		<Label1 Caption="Engine On/Off : "/>
 		<Label3 Caption="View of the DB25 connector"/>
 		<Label4 Caption="Engine X1"/>
@@ -511,7 +511,7 @@
 			<Item Name="JvStringGridR2" Value="R2"/>
 		</JvTranslatorStrings>
 		<CheckBoxActiverChauffe Caption="Enable / Disable heating control "/>
-		<CheckBoxLireMode Caption="Read the heating controle mode on parallel port (Manu / Auto)"/>
+		<CheckBoxLireMode Caption="Read the heating control mode on parallel port (Manu / Auto)"/>
 		<CheckBoxChauffeDynamique Caption="Enable dynamic heating control"/>
 		<LblListeMateriaux Caption="Materials List :"/>
 		<BtnAjouter Caption="Add"/>
@@ -629,13 +629,13 @@
 			</Items>
 		</ComboBoxTimeUnit>
 		<LblFixHeader Caption="Static header :"/>
-		<GroupBoxAxesNames Caption=" Name of axes "/>
+		<GroupBoxAxesNames Caption=" Name of axis "/>
 		<CheckBoxIncludeComment Caption="Include comments"/>
 		<LblEditStartComment>
-			<SubLabel Caption="Start caracters :"/>
+			<SubLabel Caption="Start characters :"/>
 		</LblEditStartComment>
 		<LblEditEndComment>
-			<SubLabel Caption="End caracters :"/>
+			<SubLabel Caption="End characters :"/>
 		</LblEditEndComment>
 		
 	</FrameOptionGCode1>
@@ -690,5 +690,5 @@
 	</LblEditIn>
 </FConvertisseur>
 
-</Translation>
+</Translation
 
